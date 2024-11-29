@@ -99,6 +99,7 @@
             btnSiguiente.TabIndex = 5;
             btnSiguiente.Text = "SIGUIENTE";
             btnSiguiente.UseVisualStyleBackColor = false;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // Form1
             // 
