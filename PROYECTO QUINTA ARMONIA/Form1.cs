@@ -6,5 +6,13 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             InitializeComponent();
         }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            PresentacionSistema nuevo = new PresentacionSistema();
+            this.Hide();
+            nuevo.ShowDialog();
+            this.Close();
+        }
     }
 }
