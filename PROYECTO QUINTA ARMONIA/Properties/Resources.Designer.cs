@@ -73,6 +73,16 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_presentacion {
+            get {
+                object obj = ResourceManager.GetObject("Fondo-presentacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Integrantes {
             get {
                 object obj = ResourceManager.GetObject("Integrantes", resourceCulture);
