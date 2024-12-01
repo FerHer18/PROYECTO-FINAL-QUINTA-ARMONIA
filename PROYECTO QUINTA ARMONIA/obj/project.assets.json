@@ -1615,11 +1615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rosa Lizeth\\Desktop\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+      "projectUniqueName": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
       "projectName": "PROYECTO QUINTA ARMONIA",
-      "projectPath": "C:\\Users\\Rosa Lizeth\\Desktop\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+      "projectPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
       "packagesPath": "C:\\Users\\Rosa Lizeth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rosa Lizeth\\Desktop\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
+      "outputPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
