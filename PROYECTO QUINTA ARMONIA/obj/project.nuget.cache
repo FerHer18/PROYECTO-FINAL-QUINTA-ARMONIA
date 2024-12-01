@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gitZGThuZcY=",
+  "dgSpecHash": "pHZM+ziYrpE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rosa Lizeth\\Desktop\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+  "projectFilePath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rosa Lizeth\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Rosa Lizeth\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

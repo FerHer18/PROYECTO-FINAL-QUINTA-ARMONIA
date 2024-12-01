@@ -127,10 +127,11 @@
             Controls.Add(labelcontraseña);
             Controls.Add(labelusuario);
             Controls.Add(labelIniciarSesion);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "PresentacionSistema";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PresentacionSistema";
+            Load += PresentacionSistema_Load;
             ResumeLayout(false);
             PerformLayout();
         }
