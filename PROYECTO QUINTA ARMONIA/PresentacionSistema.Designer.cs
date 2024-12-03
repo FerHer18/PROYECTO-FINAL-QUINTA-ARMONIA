@@ -89,8 +89,8 @@
             // 
             buttonLogin.BackColor = Color.Transparent;
             buttonLogin.FlatAppearance.BorderSize = 0;
-            buttonLogin.FlatAppearance.MouseDownBackColor = Color.LightGray;
-            buttonLogin.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            buttonLogin.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonLogin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonLogin.Location = new Point(845, 529);
@@ -115,6 +115,7 @@
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir del sistema";
             buttonSalir.UseVisualStyleBackColor = false;
+            buttonSalir.Click += buttonSalir_Click;
             // 
             // PresentacionSistema
             // 

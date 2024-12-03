@@ -62,10 +62,10 @@ namespace PROYECTO_QUINTA_ARMONIA
                         while (reader.Read())
                         {
                             string tipo = reader["Cuenta"].ToString();
-           
+
                             if (tipo == "admin")
                             {
-                                string nombreAdm= reader["Nombre"].ToString();
+                                string nombreAdm = reader["Nombre"].ToString();
                                 this.Hide();
                                 InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreAdm);
                                 interfaceAdm.ShowDialog(); //se ejecuta el form admin y regresa a la siguiente instruccion
@@ -100,7 +100,12 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonLogin_Click_1(object sender, EventArgs e)
         {
             login(textBoxusuario.Text, textBox2contraseña.Text);
-            
+
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
