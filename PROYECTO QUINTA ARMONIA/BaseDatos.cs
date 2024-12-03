@@ -10,6 +10,12 @@ namespace PROYECTO_QUINTA_ARMONIA
     public class BaseDatos
     {
         private MySqlConnection connection;
+
+        public MySqlConnection Connection // Propiedad pública para acceder a la conexión
+        {
+            get { return connection; }
+        }
+
         public BaseDatos()
         {
             this.Connect();

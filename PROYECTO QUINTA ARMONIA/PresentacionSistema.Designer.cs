@@ -81,6 +81,7 @@
             // 
             textBox2contraseña.Location = new Point(845, 416);
             textBox2contraseña.Name = "textBox2contraseña";
+            textBox2contraseña.PasswordChar = '*';
             textBox2contraseña.Size = new Size(216, 31);
             textBox2contraseña.TabIndex = 4;
             // 
@@ -92,12 +93,13 @@
             buttonLogin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonLogin.Location = new Point(836, 527);
+            buttonLogin.Location = new Point(845, 529);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(177, 56);
+            buttonLogin.Size = new Size(167, 54);
             buttonLogin.TabIndex = 5;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = false;
+            buttonLogin.Click += buttonLogin_Click_1;
             // 
             // buttonSalir
             // 
@@ -113,6 +115,7 @@
             buttonSalir.TabIndex = 6;
             buttonSalir.Text = "Salir del sistema";
             buttonSalir.UseVisualStyleBackColor = false;
+            buttonSalir.Click += buttonSalir_Click;
             // 
             // PresentacionSistema
             // 

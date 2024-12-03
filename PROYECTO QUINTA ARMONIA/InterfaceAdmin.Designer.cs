@@ -32,12 +32,14 @@
             // 
             // InterfaceAdmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1320, 766);
+            ClientSize = new Size(1650, 958);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "InterfaceAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceAdmin";
+            Load += InterfaceAdmin_Load;
             ResumeLayout(false);
         }
 
