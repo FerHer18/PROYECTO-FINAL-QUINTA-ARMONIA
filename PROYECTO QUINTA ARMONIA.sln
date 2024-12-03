@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROYECTO QUINTA ARMONIA", "PROYECTO QUINTA ARMONIA\PROYECTO QUINTA ARMONIA.csproj", "{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{22DECE51-6D2D-4D61-A803-0D57D77D4D47}"
-	ProjectSection(SolutionItems) = preProject
-		InicioSesion.cs = InicioSesion.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
