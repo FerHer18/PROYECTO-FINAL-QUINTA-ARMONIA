@@ -81,6 +81,7 @@
             // 
             textBox2contraseña.Location = new Point(845, 416);
             textBox2contraseña.Name = "textBox2contraseña";
+            textBox2contraseña.PasswordChar = '*';
             textBox2contraseña.Size = new Size(216, 31);
             textBox2contraseña.TabIndex = 4;
             // 
@@ -88,16 +89,17 @@
             // 
             buttonLogin.BackColor = Color.Transparent;
             buttonLogin.FlatAppearance.BorderSize = 0;
-            buttonLogin.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonLogin.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            buttonLogin.FlatAppearance.MouseDownBackColor = Color.LightGray;
+            buttonLogin.FlatAppearance.MouseOverBackColor = Color.LightGray;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonLogin.Location = new Point(836, 527);
+            buttonLogin.Location = new Point(845, 529);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(177, 56);
+            buttonLogin.Size = new Size(167, 54);
             buttonLogin.TabIndex = 5;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = false;
+            buttonLogin.Click += buttonLogin_Click_1;
             // 
             // buttonSalir
             // 

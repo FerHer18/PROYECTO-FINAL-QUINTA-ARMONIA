@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+using System.Collections;
+using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
@@ -25,6 +30,77 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.MaximumSize = this.Size; //Establece un tamaño máximo igual al tamaño fijo
             this.MinimumSize = this.Size; //Establece un tamaño mínimo igual al tamaño fijo
             this.AutoScroll = true;
+        }
+
+        private void textBoxusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void login(string id, string contraseña)
+        {
+            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(contraseña))
+            {
+                MessageBox.Show("Complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            BaseDatos bd = new BaseDatos();
+            try
+            {
+                //string hashedContraseña = GenerarHash(contraseña);
+                string query = "SELECT * FROM usuarios WHERE Id = @Id AND Contraseña = @Contraseña;";
+                MySqlCommand command = new MySqlCommand(query, bd.Connection);
+                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        MessageBox.Show("---> BIENVENIDO A QUINTA ARMONIA <---");
+                        while (reader.Read())
+                        {
+                            string tipo = reader["Cuenta"].ToString();
+           
+                            if (tipo == "admin")
+                            {
+                                string nombreAdm= reader["Nombre"].ToString();
+                                this.Hide();
+                                InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreAdm);
+                                interfaceAdm.ShowDialog(); //se ejecuta el form admin y regresa a la siguiente instruccion
+                                this.Show();
+                            }
+                            else if (tipo == "usuario1" || tipo == "guest" || tipo == "usuario2" || tipo == "usuario3" || tipo == "usuario4")
+                            {
+                                string nombreUs = reader["Nombre"].ToString();
+                                InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUs);
+                                this.Hide();
+                                interfaceUsu.ShowDialog();
+                                this.Show();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Datos incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
+                bd.Disconnect();
+            }
+        }
+
+        private void buttonLogin_Click_1(object sender, EventArgs e)
+        {
+            login(textBoxusuario.Text, textBox2contraseña.Text);
+            
         }
     }
 }
