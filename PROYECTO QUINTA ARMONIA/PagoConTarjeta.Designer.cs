@@ -1,4 +1,5 @@
-﻿namespace PROYECTO_QUINTA_ARMONIA
+﻿
+namespace PROYECTO_QUINTA_ARMONIA
 {
     partial class PagoConTarjeta
     {
@@ -223,6 +224,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
