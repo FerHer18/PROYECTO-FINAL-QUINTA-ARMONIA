@@ -83,6 +83,7 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap datos1 {
             get {
                 object obj = ResourceManager.GetObject("datos1", resourceCulture);
@@ -148,6 +149,11 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap Fondo_presentacion {
+            get {
+                object obj = ResourceManager.GetObject("Fondo-presentacion", resourceCulture);
+>>>>>>> origin/main
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
