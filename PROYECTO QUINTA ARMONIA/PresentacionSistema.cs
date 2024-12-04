@@ -65,7 +65,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             string tipo = reader["Cuenta"].ToString();
 
-                            if (tipo == "admin") //si es admin
+                            if (tipo == "admin" || tipo == "admin1") //si es admin
                             {
                                 string nombreAdm = reader["Nombre"].ToString();
                                 this.Hide(); //se esconde el form de presentación 

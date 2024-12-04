@@ -42,5 +42,47 @@ namespace PROYECTO_QUINTA_ARMONIA
                 connection.Close();
             }
         }
+
+        public void guardar(int codigo, string nombre, string descripcion, int precio, int existencias, string imagen)
+        {
+            string query = "";
+            try
+            {
+                query = "INSERT INTO inventario (codigo, nombre, descripcion, precio, existencias, imagen) VALUES ("
+                       + "'" + codigo + "',"
+                       + "'" + nombre + "',"
+                       + "'" + descripcion + "',"
+                       + "'" + precio + "',"
+                       + "'" + existencias + "',"
+                       + "'" + imagen + "')";
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show(query + "Registro guardado correctamente.");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+                this.Disconnect();
+            }
+        }
+
+        public void eliminar(int cod)
+        {
+            string query = "";
+            try
+            {
+                query = "DELETE FROM inventario WHERE codigo = " + cod + ";";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show(query + "\nRegistro Eliminado");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(query + "\nError: " + ex.Message);
+                this.Disconnect();
+            }
+        }
     }
 }

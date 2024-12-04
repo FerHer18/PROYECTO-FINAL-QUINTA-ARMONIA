@@ -21,5 +21,13 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             this.Close();
         }
+
+        private void buttonRedondoEliminar_Click(object sender, EventArgs e)
+        {
+            BaseDatos obj = new BaseDatos();
+            obj.eliminar(Convert.ToInt32(this.textBoxBuscarCodigo.Text));
+            this.textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
+            obj.Disconnect();
+        }
     }
 }

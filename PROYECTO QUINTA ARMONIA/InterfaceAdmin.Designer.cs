@@ -36,6 +36,26 @@
             buttonRedondoAgregar = new WinFormsAppKhee.ButtonRedondo();
             buttonRedondoGrafica2 = new WinFormsAppKhee.ButtonRedondo();
             buttonRedondoVentTot2 = new WinFormsAppKhee.ButtonRedondo();
+            pictureBoxYakult = new PictureBox();
+            pictureBoxTakoyaki = new PictureBox();
+            pictureBoxLotus = new PictureBox();
+            pictureBoxMochi = new PictureBox();
+            pictureBoxCoffee = new PictureBox();
+            pictureBoxTiramisu = new PictureBox();
+            pictureBoxCalpico = new PictureBox();
+            pictureBoxRamune = new PictureBox();
+            pictureBoxRamen = new PictureBox();
+            pictureBoxWater = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxYakult).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTakoyaki).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLotus).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMochi).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCoffee).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTiramisu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCalpico).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRamune).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRamen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxWater).BeginInit();
             SuspendLayout();
             // 
             // buttonRedondoVentaTot
@@ -93,6 +113,7 @@
             buttonRedondoRegresar.Text = "LOGOUT";
             buttonRedondoRegresar.TextColor = Color.Black;
             buttonRedondoRegresar.UseVisualStyleBackColor = false;
+            buttonRedondoRegresar.Click += buttonRedondoRegresar_Click;
             // 
             // buttonRedondoListaProd
             // 
@@ -186,6 +207,116 @@
             buttonRedondoVentTot2.TextColor = Color.Black;
             buttonRedondoVentTot2.UseVisualStyleBackColor = false;
             // 
+            // pictureBoxYakult
+            // 
+            pictureBoxYakult.BackColor = Color.Transparent;
+            pictureBoxYakult.BackgroundImage = Properties.Resources.yakult_HD;
+            pictureBoxYakult.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxYakult.Location = new Point(98, 159);
+            pictureBoxYakult.Name = "pictureBoxYakult";
+            pictureBoxYakult.Size = new Size(170, 153);
+            pictureBoxYakult.TabIndex = 15;
+            pictureBoxYakult.TabStop = false;
+            // 
+            // pictureBoxTakoyaki
+            // 
+            pictureBoxTakoyaki.BackColor = Color.Transparent;
+            pictureBoxTakoyaki.BackgroundImage = Properties.Resources.takoyaki_HD;
+            pictureBoxTakoyaki.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxTakoyaki.Location = new Point(321, 159);
+            pictureBoxTakoyaki.Name = "pictureBoxTakoyaki";
+            pictureBoxTakoyaki.Size = new Size(170, 153);
+            pictureBoxTakoyaki.TabIndex = 16;
+            pictureBoxTakoyaki.TabStop = false;
+            // 
+            // pictureBoxLotus
+            // 
+            pictureBoxLotus.BackColor = Color.Transparent;
+            pictureBoxLotus.BackgroundImage = Properties.Resources.lotus_HD;
+            pictureBoxLotus.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxLotus.Location = new Point(543, 159);
+            pictureBoxLotus.Name = "pictureBoxLotus";
+            pictureBoxLotus.Size = new Size(170, 153);
+            pictureBoxLotus.TabIndex = 17;
+            pictureBoxLotus.TabStop = false;
+            // 
+            // pictureBoxMochi
+            // 
+            pictureBoxMochi.BackColor = Color.Transparent;
+            pictureBoxMochi.BackgroundImage = Properties.Resources.mochi_HD;
+            pictureBoxMochi.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxMochi.Location = new Point(764, 159);
+            pictureBoxMochi.Name = "pictureBoxMochi";
+            pictureBoxMochi.Size = new Size(170, 153);
+            pictureBoxMochi.TabIndex = 18;
+            pictureBoxMochi.TabStop = false;
+            // 
+            // pictureBoxCoffee
+            // 
+            pictureBoxCoffee.BackColor = Color.Transparent;
+            pictureBoxCoffee.BackgroundImage = Properties.Resources.coffee_HD;
+            pictureBoxCoffee.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxCoffee.Location = new Point(98, 305);
+            pictureBoxCoffee.Name = "pictureBoxCoffee";
+            pictureBoxCoffee.Size = new Size(170, 153);
+            pictureBoxCoffee.TabIndex = 19;
+            pictureBoxCoffee.TabStop = false;
+            // 
+            // pictureBoxTiramisu
+            // 
+            pictureBoxTiramisu.BackColor = Color.Transparent;
+            pictureBoxTiramisu.BackgroundImage = Properties.Resources.tiramisu_HD;
+            pictureBoxTiramisu.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxTiramisu.Location = new Point(321, 305);
+            pictureBoxTiramisu.Name = "pictureBoxTiramisu";
+            pictureBoxTiramisu.Size = new Size(170, 153);
+            pictureBoxTiramisu.TabIndex = 20;
+            pictureBoxTiramisu.TabStop = false;
+            // 
+            // pictureBoxCalpico
+            // 
+            pictureBoxCalpico.BackColor = Color.Transparent;
+            pictureBoxCalpico.BackgroundImage = Properties.Resources.calpico_HD;
+            pictureBoxCalpico.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxCalpico.Location = new Point(543, 305);
+            pictureBoxCalpico.Name = "pictureBoxCalpico";
+            pictureBoxCalpico.Size = new Size(170, 153);
+            pictureBoxCalpico.TabIndex = 21;
+            pictureBoxCalpico.TabStop = false;
+            // 
+            // pictureBoxRamune
+            // 
+            pictureBoxRamune.BackColor = Color.Transparent;
+            pictureBoxRamune.BackgroundImage = Properties.Resources.ramune_HD;
+            pictureBoxRamune.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxRamune.Location = new Point(764, 305);
+            pictureBoxRamune.Name = "pictureBoxRamune";
+            pictureBoxRamune.Size = new Size(170, 153);
+            pictureBoxRamune.TabIndex = 22;
+            pictureBoxRamune.TabStop = false;
+            // 
+            // pictureBoxRamen
+            // 
+            pictureBoxRamen.BackColor = Color.Transparent;
+            pictureBoxRamen.BackgroundImage = Properties.Resources.ramen_HD;
+            pictureBoxRamen.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxRamen.Location = new Point(98, 448);
+            pictureBoxRamen.Name = "pictureBoxRamen";
+            pictureBoxRamen.Size = new Size(170, 153);
+            pictureBoxRamen.TabIndex = 23;
+            pictureBoxRamen.TabStop = false;
+            // 
+            // pictureBoxWater
+            // 
+            pictureBoxWater.BackColor = Color.Transparent;
+            pictureBoxWater.BackgroundImage = Properties.Resources.water_HD;
+            pictureBoxWater.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxWater.Location = new Point(321, 448);
+            pictureBoxWater.Name = "pictureBoxWater";
+            pictureBoxWater.Size = new Size(170, 153);
+            pictureBoxWater.TabIndex = 24;
+            pictureBoxWater.TabStop = false;
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -193,6 +324,16 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(pictureBoxWater);
+            Controls.Add(pictureBoxRamen);
+            Controls.Add(pictureBoxRamune);
+            Controls.Add(pictureBoxCalpico);
+            Controls.Add(pictureBoxTiramisu);
+            Controls.Add(pictureBoxCoffee);
+            Controls.Add(pictureBoxMochi);
+            Controls.Add(pictureBoxLotus);
+            Controls.Add(pictureBoxTakoyaki);
+            Controls.Add(pictureBoxYakult);
             Controls.Add(buttonRedondoVentTot2);
             Controls.Add(buttonRedondoGrafica2);
             Controls.Add(buttonRedondoAgregar);
@@ -205,6 +346,16 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceAdmin";
             Load += InterfaceAdmin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxYakult).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTakoyaki).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLotus).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMochi).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCoffee).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTiramisu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCalpico).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRamune).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRamen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxWater).EndInit();
             ResumeLayout(false);
         }
 
@@ -218,5 +369,15 @@
         private WinFormsAppKhee.ButtonRedondo buttonRedondoAgregar;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoGrafica2;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoVentTot2;
+        private PictureBox pictureBoxYakult;
+        private PictureBox pictureBoxTakoyaki;
+        private PictureBox pictureBoxLotus;
+        private PictureBox pictureBoxMochi;
+        private PictureBox pictureBoxCoffee;
+        private PictureBox pictureBoxTiramisu;
+        private PictureBox pictureBoxCalpico;
+        private PictureBox pictureBoxRamune;
+        private PictureBox pictureBoxRamen;
+        private PictureBox pictureBoxWater;
     }
 }

@@ -121,6 +121,9 @@
   <data name="5886e1740ded23575a69d032c25af805" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\5886e1740ded23575a69d032c25af805.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ramen-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ramen-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Recursos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,8 +142,14 @@
   <data name="pngtree-down-arrow-gold-png-image_4375391-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngtree-down-arrow-gold-png-image_4375391-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calpico-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calpico-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo-ccb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\logo-ccb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mochi-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mochi-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngegg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +168,9 @@
   </data>
   <data name="mochi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mochi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoAgregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,6 +202,12 @@
   <data name="fondoAdmin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoAdmin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="takoyaki-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\takoyaki-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoEliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lotus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lotus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,6 +220,9 @@
   <data name="vecteezy_gold-right-arrow-icon_11934337 (1) - copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\vecteezy_gold-right-arrow-icon_11934337 (1) - copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ramune-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ramune-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Letras-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Letras-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,14 +232,23 @@
   <data name="coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lotus-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lotus-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngegg (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngegg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flechaAtras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flechaAtras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yakult-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yakult-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fondo-presentacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo-presentacion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coffee-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,10 +277,10 @@
   <data name="Letras-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Letras-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoAgregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tiramisu-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tiramisu-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoEliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="water-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\water-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
