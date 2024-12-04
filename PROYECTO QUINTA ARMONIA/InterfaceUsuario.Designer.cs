@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             patch = new PictureBox();
+            lblHora = new Label();
+            lblFecha = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)patch).BeginInit();
             SuspendLayout();
             // 
@@ -37,31 +41,66 @@
             patch.BackColor = Color.Transparent;
             patch.BackgroundImage = Properties.Resources.backgroundPatch224x164;
             patch.BackgroundImageLayout = ImageLayout.None;
-            patch.Location = new Point(352, 295);
+            patch.Location = new Point(402, 393);
+            patch.Margin = new Padding(3, 4, 3, 4);
             patch.Name = "patch";
-            patch.Size = new Size(185, 162);
+            patch.Size = new Size(211, 216);
             patch.TabIndex = 0;
             patch.TabStop = false;
             // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Segoe UI", 10F);
+            lblHora.Location = new Point(713, 96);
+            lblHora.Margin = new Padding(2, 0, 2, 0);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(45, 23);
+            lblHora.TabIndex = 28;
+            lblHora.Text = "hora";
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Segoe UI", 10F);
+            lblFecha.Location = new Point(446, 96);
+            lblFecha.Margin = new Padding(2, 0, 2, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(51, 23);
+            lblFecha.TabIndex = 27;
+            lblFecha.Text = "fecha";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // InterfaceUsuario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(944, 541);
+            ClientSize = new Size(1079, 721);
+            Controls.Add(lblHora);
+            Controls.Add(lblFecha);
             Controls.Add(patch);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "InterfaceUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceUsuario";
             Load += InterfaceUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)patch).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox patch;
+        private Label lblHora;
+        private Label lblFecha;
+        private System.Windows.Forms.Timer timer1;
     }
 }

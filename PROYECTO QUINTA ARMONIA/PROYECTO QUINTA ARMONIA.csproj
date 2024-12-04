@@ -10,6 +10,52 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="calpico-HD.png" />
+    <None Remove="coffee-HD.png" />
+    <None Remove="lotus-HD.png" />
+    <None Remove="mochi-HD.png" />
+    <None Remove="ramen-HD.png" />
+    <None Remove="ramune-HD.png" />
+    <None Remove="takoyaki-HD.png" />
+    <None Remove="tiramisu-HD.png" />
+    <None Remove="water-HD.png" />
+    <None Remove="yakult-HD.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="calpico-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="coffee-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lotus-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mochi-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ramen-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ramune-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="takoyaki-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tiramisu-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="water-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="yakult-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.1.0" />
   </ItemGroup>
 

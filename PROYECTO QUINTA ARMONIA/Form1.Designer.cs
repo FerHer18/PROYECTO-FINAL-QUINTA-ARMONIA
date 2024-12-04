@@ -32,7 +32,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            label1 = new Label();
+            lblFecha = new Label();
             btnSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -76,16 +76,17 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
-            // label1
+            // lblFecha
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lucida Fax", 22.2F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(30, 40, 115);
-            label1.Location = new Point(2, 701);
-            label1.Name = "label1";
-            label1.Size = new Size(652, 43);
-            label1.TabIndex = 4;
-            label1.Text = "Martes 17 de diciembre de 2024";
+            lblFecha.AutoSize = true;
+            lblFecha.Font = new Font("Lucida Fax", 22.2F, FontStyle.Bold);
+            lblFecha.ForeColor = Color.FromArgb(30, 40, 115);
+            lblFecha.Location = new Point(12, 701);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(652, 43);
+            lblFecha.TabIndex = 4;
+            lblFecha.Text = "Martes 17 de diciembre de 2024";
+            lblFecha.Click += lblFecha_Click;
             // 
             // btnSiguiente
             // 
@@ -108,7 +109,7 @@
             BackColor = Color.FromArgb(198, 216, 238);
             ClientSize = new Size(1320, 766);
             Controls.Add(btnSiguiente);
-            Controls.Add(label1);
+            Controls.Add(lblFecha);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -130,7 +131,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Label label1;
+        private Label lblFecha;
         private Button btnSiguiente;
     }
 }

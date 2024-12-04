@@ -14,5 +14,11 @@ namespace PROYECTO_QUINTA_ARMONIA
             nuevo.ShowDialog();
             this.Close();
         }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

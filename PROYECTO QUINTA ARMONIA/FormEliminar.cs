@@ -29,5 +29,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
             obj.Disconnect();
         }
+
+        private void FormEliminar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

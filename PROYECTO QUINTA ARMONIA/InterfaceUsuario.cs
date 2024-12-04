@@ -25,10 +25,16 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Nombre = nombre;
             MessageBox.Show($"Bienvenido {this.Nombre}", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-   
+
         private void InterfaceUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

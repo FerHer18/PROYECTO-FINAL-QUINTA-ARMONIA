@@ -55,7 +55,7 @@
             // 
             // label1
             // 
-            label1.Location = new Point(243, 175);
+            label1.Location = new Point(217, 183);
             label1.Name = "label1";
             label1.Size = new Size(162, 45);
             label1.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // textBoxBuscarCodigo
             // 
-            textBoxBuscarCodigo.Location = new Point(217, 260);
+            textBoxBuscarCodigo.Location = new Point(217, 257);
             textBoxBuscarCodigo.Name = "textBoxBuscarCodigo";
             textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
             textBoxBuscarCodigo.Size = new Size(162, 27);
@@ -103,7 +103,9 @@
             Controls.Add(buttonRedondoCancelar);
             DoubleBuffered = true;
             Name = "FormEliminar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormEliminar";
+            Load += FormEliminar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
