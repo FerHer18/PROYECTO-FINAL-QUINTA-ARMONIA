@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Valeria Bernal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\CLONACION 041224\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
+  },
+  "projects": {
+    "D:\\CLONACION 041224\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CLONACION 041224\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "projectName": "PROYECTO QUINTA ARMONIA",
+        "projectPath": "D:\\CLONACION 041224\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+        "outputPath": "D:\\CLONACION 041224\\PROYECTO QUINTA ARMONIA\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 4576536b1af026b7c5e675e39b224796382942e0
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +65,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.1.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.1.1, )"
             }
           },
           "imports": [

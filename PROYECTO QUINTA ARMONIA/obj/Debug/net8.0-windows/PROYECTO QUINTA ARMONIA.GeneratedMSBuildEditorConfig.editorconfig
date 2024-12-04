@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PROYECTO_QUINTA_ARMONIA
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\
+=======
+build_property.ProjectDir = D:\CLONACION 041224\PROYECTO QUINTA ARMONIA\
+>>>>>>> 4576536b1af026b7c5e675e39b224796382942e0
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
