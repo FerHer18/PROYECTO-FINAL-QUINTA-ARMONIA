@@ -132,7 +132,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             label1.Size = new Size(70, 20);
             label1.TabIndex = 7;
             label1.Text = "NOMBRE";
-            label1.Click += this.label1_Click;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -148,29 +148,37 @@ namespace PROYECTO_QUINTA_ARMONIA
             // 
             textBoxNumero.Location = new Point(48, 203);
             textBoxNumero.Name = "textBoxNumero";
+            textBoxNumero.PlaceholderText = "0000 0000 0000 0000";
             textBoxNumero.Size = new Size(243, 27);
             textBoxNumero.TabIndex = 9;
+            textBoxNumero.TextChanged += textBoxNumero_TextChanged;
             // 
             // textBoxExpira
             // 
             textBoxExpira.Location = new Point(48, 260);
             textBoxExpira.Name = "textBoxExpira";
+            textBoxExpira.PlaceholderText = "MM/AA";
             textBoxExpira.Size = new Size(98, 27);
             textBoxExpira.TabIndex = 10;
+            textBoxExpira.TextChanged += textBoxExpira_TextChanged;
             // 
             // textBoxCVV
             // 
             textBoxCVV.Location = new Point(330, 260);
             textBoxCVV.Name = "textBoxCVV";
+            textBoxCVV.PlaceholderText = "000";
             textBoxCVV.Size = new Size(98, 27);
             textBoxCVV.TabIndex = 11;
+            textBoxCVV.TextChanged += textBoxCVV_TextChanged;
             // 
             // textBoxCorreo
             // 
             textBoxCorreo.Location = new Point(48, 335);
             textBoxCorreo.Name = "textBoxCorreo";
+            textBoxCorreo.PlaceholderText = "nombre@dominio.com";
             textBoxCorreo.Size = new Size(243, 27);
             textBoxCorreo.TabIndex = 12;
+            textBoxCorreo.TextChanged += textBoxCorreo_TextChanged;
             // 
             // textBoxNombre
             // 
@@ -178,13 +186,16 @@ namespace PROYECTO_QUINTA_ARMONIA
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(243, 27);
             textBoxNombre.TabIndex = 13;
+            textBoxNombre.TextChanged += textBoxNombre_TextChanged;
             // 
             // textBoxNumContacto
             // 
             textBoxNumContacto.Location = new Point(48, 484);
             textBoxNumContacto.Name = "textBoxNumContacto";
+            textBoxNumContacto.PlaceholderText = "10 Digitos";
             textBoxNumContacto.Size = new Size(243, 27);
             textBoxNumContacto.TabIndex = 14;
+            textBoxNumContacto.TextChanged += textBoxNumContacto_TextChanged;
             // 
             // buttonPagar
             // 
@@ -195,6 +206,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             buttonPagar.TabIndex = 15;
             buttonPagar.Text = "PAGAR";
             buttonPagar.UseVisualStyleBackColor = false;
+            buttonPagar.Click += buttonPagar_Click;
             // 
             // PagoConTarjeta
             // 
