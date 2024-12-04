@@ -93,9 +93,29 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calpico_HD {
+            get {
+                object obj = ResourceManager.GetObject("calpico-HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee {
             get {
                 object obj = ResourceManager.GetObject("coffee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coffee_HD {
+            get {
+                object obj = ResourceManager.GetObject("coffee-HD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -305,9 +325,29 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lotus_HD {
+            get {
+                object obj = ResourceManager.GetObject("lotus-HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mochi {
             get {
                 object obj = ResourceManager.GetObject("mochi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mochi_HD {
+            get {
+                object obj = ResourceManager.GetObject("mochi-HD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,9 +415,29 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ramen_HD {
+            get {
+                object obj = ResourceManager.GetObject("ramen-HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ramune {
             get {
                 object obj = ResourceManager.GetObject("ramune", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ramune_HD {
+            get {
+                object obj = ResourceManager.GetObject("ramune-HD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -465,9 +525,29 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap takoyaki_HD {
+            get {
+                object obj = ResourceManager.GetObject("takoyaki-HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tiramisu {
             get {
                 object obj = ResourceManager.GetObject("tiramisu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tiramisu_HD {
+            get {
+                object obj = ResourceManager.GetObject("tiramisu-HD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -505,9 +585,29 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap water_HD {
+            get {
+                object obj = ResourceManager.GetObject("water-HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap yakult {
             get {
                 object obj = ResourceManager.GetObject("yakult", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yakult_HD {
+            get {
+                object obj = ResourceManager.GetObject("yakult-HD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

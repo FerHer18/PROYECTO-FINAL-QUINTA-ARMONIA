@@ -41,7 +41,12 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonRedondoEliminar_Click(object sender, EventArgs e)
         {
             FormEliminar fE = new FormEliminar();
-            this.Hide(); fE.ShowDialog(); this.Show();  
+            this.Hide(); fE.ShowDialog(); this.Show();
+        }
+
+        private void buttonRedondoRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
