@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             buttonRedondoVentaTot = new WinFormsAppKhee.ButtonRedondo();
             buttonRedondoGrafica = new WinFormsAppKhee.ButtonRedondo();
             buttonRedondoRegresar = new WinFormsAppKhee.ButtonRedondo();
@@ -46,6 +47,9 @@
             pictureBoxRamune = new PictureBox();
             pictureBoxRamen = new PictureBox();
             pictureBoxWater = new PictureBox();
+            lblHora = new Label();
+            lblFecha = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBoxYakult).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxTakoyaki).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLotus).BeginInit();
@@ -317,6 +321,35 @@
             pictureBoxWater.TabIndex = 24;
             pictureBoxWater.TabStop = false;
             // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Segoe UI", 10F);
+            lblHora.Location = new Point(764, 91);
+            lblHora.Margin = new Padding(2, 0, 2, 0);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(47, 23);
+            lblHora.TabIndex = 26;
+            lblHora.Text = "Hora";
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Segoe UI", 10F);
+            lblFecha.Location = new Point(764, 57);
+            lblFecha.Margin = new Padding(2, 0, 2, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(54, 23);
+            lblFecha.TabIndex = 25;
+            lblFecha.Text = "Fecha";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -324,6 +357,8 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(lblHora);
+            Controls.Add(lblFecha);
             Controls.Add(pictureBoxWater);
             Controls.Add(pictureBoxRamen);
             Controls.Add(pictureBoxRamune);
@@ -357,6 +392,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxRamen).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxWater).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -379,5 +415,8 @@
         private PictureBox pictureBoxRamune;
         private PictureBox pictureBoxRamen;
         private PictureBox pictureBoxWater;
+        private Label lblHora;
+        private Label lblFecha;
+        private System.Windows.Forms.Timer timer1;
     }
 }

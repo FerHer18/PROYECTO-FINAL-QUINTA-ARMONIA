@@ -109,5 +109,11 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             this.Dispose();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }

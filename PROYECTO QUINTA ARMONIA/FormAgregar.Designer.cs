@@ -224,6 +224,7 @@
             Controls.Add(buttonRedondoCancelar);
             DoubleBuffered = true;
             Name = "FormAgregar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAgregar";
             Load += FormAgregar_Load;
             ResumeLayout(false);

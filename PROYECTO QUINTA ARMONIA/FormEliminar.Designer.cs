@@ -103,6 +103,7 @@
             Controls.Add(buttonRedondoCancelar);
             DoubleBuffered = true;
             Name = "FormEliminar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormEliminar";
             ResumeLayout(false);
             PerformLayout();
