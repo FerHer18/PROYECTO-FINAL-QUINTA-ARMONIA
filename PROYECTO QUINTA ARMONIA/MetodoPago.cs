@@ -26,5 +26,10 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             PagoConTarjeta pagoConTarjeta = new PagoConTarjeta();
         }
+
+        private void MetodoPago_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

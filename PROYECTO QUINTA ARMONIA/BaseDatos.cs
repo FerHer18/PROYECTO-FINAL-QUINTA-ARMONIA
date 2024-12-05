@@ -84,7 +84,6 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.Disconnect();
             }
         }
-
         public List<string> NombreImagenes()
         {
             List<string> nombres = new List<string>();
