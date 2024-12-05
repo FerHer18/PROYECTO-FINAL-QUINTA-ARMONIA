@@ -373,3 +373,13 @@ C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\ob
 C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\obj\Debug\net8.0-windows\PROYECTO QUINTA ARMONIA.pdb
 C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\obj\Debug\net8.0-windows\PROYECTO QUINTA ARMONIA.genruntimeconfig.cache
 C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\obj\Debug\net8.0-windows\ref\PROYECTO QUINTA ARMONIA.dll
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\calpico-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\lotus-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\mochi-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\ramen-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\ramune-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\takoyaki-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\tiramisu-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\water-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\yakult-HD.png
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\coffee-HD.png
