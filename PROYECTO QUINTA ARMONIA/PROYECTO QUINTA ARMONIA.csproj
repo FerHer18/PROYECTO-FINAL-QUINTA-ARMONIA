@@ -14,12 +14,40 @@
     <None Remove="coffee-HD.png" />
     <None Remove="lotus-HD.png" />
     <None Remove="mochi-HD.png" />
+    <None Remove="musica-fondo.mp3" />
+    <None Remove="musica-fondo.wav" />
     <None Remove="ramen-HD.png" />
     <None Remove="ramune-HD.png" />
     <None Remove="takoyaki-HD.png" />
     <None Remove="tiramisu-HD.png" />
     <None Remove="water-HD.png" />
     <None Remove="yakult-HD.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <WrapperTool>aximp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="musica-fondo.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

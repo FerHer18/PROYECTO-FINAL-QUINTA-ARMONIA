@@ -39,6 +39,8 @@
             lblFecha = new Label();
             lblHora = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            btnPlay = new Button();
+            btnPause = new Button();
             SuspendLayout();
             // 
             // labelIniciarSesion
@@ -157,6 +159,40 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // btnPlay
+            // 
+            btnPlay.BackColor = Color.Transparent;
+            btnPlay.FlatAppearance.BorderSize = 0;
+            btnPlay.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPlay.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPlay.FlatStyle = FlatStyle.Flat;
+            btnPlay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPlay.Image = Properties.Resources.play;
+            btnPlay.Location = new Point(429, 80);
+            btnPlay.Margin = new Padding(2);
+            btnPlay.Name = "btnPlay";
+            btnPlay.Size = new Size(75, 69);
+            btnPlay.TabIndex = 11;
+            btnPlay.UseVisualStyleBackColor = false;
+            btnPlay.Click += button1_Click;
+            // 
+            // btnPause
+            // 
+            btnPause.BackColor = Color.Transparent;
+            btnPause.BackgroundImage = Properties.Resources.pause;
+            btnPause.FlatAppearance.BorderSize = 0;
+            btnPause.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPause.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPause.FlatStyle = FlatStyle.Flat;
+            btnPause.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPause.Location = new Point(526, 66);
+            btnPause.Margin = new Padding(2);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(98, 83);
+            btnPause.TabIndex = 12;
+            btnPause.UseVisualStyleBackColor = false;
+            btnPause.Click += btnPause_Click;
+            // 
             // PresentacionSistema
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -172,6 +208,8 @@
             Controls.Add(labelcontraseña);
             Controls.Add(labelusuario);
             Controls.Add(labelIniciarSesion);
+            Controls.Add(btnPlay);
+            Controls.Add(btnPause);
             Name = "PresentacionSistema";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PresentacionSistema";
@@ -192,5 +230,7 @@
         private Label lblFecha;
         private Label lblHora;
         private System.Windows.Forms.Timer timer1;
+        private Button btnPlay;
+        private Button btnPause;
     }
 }

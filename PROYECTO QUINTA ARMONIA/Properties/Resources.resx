@@ -130,9 +130,6 @@
   <data name="Recursos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flechaAdelante" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\flechaAdelante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ramune" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ramune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,11 +142,11 @@
   <data name="pngtree-down-arrow-gold-png-image_4375391-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngtree-down-arrow-gold-png-image_4375391-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Integrantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Integrantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo-ccb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\logo-ccb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backgroundPatch224x164" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundPatch224x164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +156,9 @@
   </data>
   <data name="calpico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calpico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngegg (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pngegg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Recursos__1_-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Recursos__1_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +196,8 @@
   <data name="logo-Mastercard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\logo-Mastercard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ramen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ramen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flechaAdelante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\flechaAdelante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngegg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,17 +205,23 @@
   <data name="tiramisu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tiramisu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yakult-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yakult-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fondoAdmin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoAdmin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simple-dotted-line-shape-vector-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\simple-dotted-line-shape-vector-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UAA-LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UAA-LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="takoyaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\takoyaki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recursos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lotus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lotus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yakult" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yakult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +247,8 @@
   <data name="coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngegg (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\pngegg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ramen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ramen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flechaAtras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flechaAtras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,11 +274,11 @@
   <data name="mochi-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mochi-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Recursos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="yakult-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yakult-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lotus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lotus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Integrantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Integrantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="datos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\datos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,7 +295,7 @@
   <data name="fondoAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoAgregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="simple-dotted-line-shape-vector-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\simple-dotted-line-shape-vector-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
