@@ -32,6 +32,18 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.MaximumSize = this.Size; //Establece un tamaño máximo igual al tamaño fijo
             this.MinimumSize = this.Size; //Establece un tamaño mínimo igual al tamaño fijo
             this.AutoScroll = true;
+
+            var rutaArchivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "musica-fondo.mp3");
+            try
+            {
+                player.URL = rutaArchivo;
+                player.settings.volume = 100;
+                player.controls.play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al reproducir el archivo: " + ex.Message);
+            }
         }
 
         private void textBoxusuario_TextChanged(object sender, EventArgs e)
@@ -120,17 +132,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var rutaArchivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "musica-fondo.mp3");
-            try
-            {
-                player.URL = rutaArchivo;
-                player.settings.volume = 100;
-                player.controls.play();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al reproducir el archivo: " + ex.Message);
-            }
+            player.controls.play();
         }
 
         private void btnPause_Click(object sender, EventArgs e)
