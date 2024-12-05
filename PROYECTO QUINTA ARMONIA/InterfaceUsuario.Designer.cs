@@ -49,6 +49,7 @@
             buttonCalpico = new Button();
             buttonMochi = new Button();
             buttonRamune = new Button();
+            richTextBoxInfo = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)patch).BeginInit();
             SuspendLayout();
             // 
@@ -146,6 +147,7 @@
             buttonLogout.Size = new Size(89, 27);
             buttonLogout.TabIndex = 32;
             buttonLogout.UseVisualStyleBackColor = false;
+            buttonLogout.Click += buttonLogout_Click;
             // 
             // buttonComprar
             // 
@@ -172,6 +174,7 @@
             buttonPagar.Size = new Size(138, 27);
             buttonPagar.TabIndex = 34;
             buttonPagar.UseVisualStyleBackColor = false;
+            buttonPagar.Click += buttonPagar_Click;
             // 
             // buttonRamen
             // 
@@ -211,6 +214,7 @@
             buttonYakult.Size = new Size(138, 91);
             buttonYakult.TabIndex = 37;
             buttonYakult.UseVisualStyleBackColor = false;
+            buttonYakult.Click += buttonYakult_Click;
             // 
             // buttonTakoyaki
             // 
@@ -303,6 +307,16 @@
             buttonRamune.TabIndex = 44;
             buttonRamune.UseVisualStyleBackColor = false;
             // 
+            // richTextBoxInfo
+            // 
+            richTextBoxInfo.BorderStyle = BorderStyle.None;
+            richTextBoxInfo.Font = new Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richTextBoxInfo.Location = new Point(726, 149);
+            richTextBoxInfo.Name = "richTextBoxInfo";
+            richTextBoxInfo.Size = new Size(173, 176);
+            richTextBoxInfo.TabIndex = 45;
+            richTextBoxInfo.Text = "";
+            // 
             // InterfaceUsuario
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -310,6 +324,7 @@
             BackgroundImage = Properties.Resources.rszFondo1_2;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(960, 540);
+            Controls.Add(richTextBoxInfo);
             Controls.Add(buttonRamune);
             Controls.Add(buttonMochi);
             Controls.Add(buttonCalpico);
@@ -329,7 +344,7 @@
             Controls.Add(lblHora);
             Controls.Add(lblFecha);
             Controls.Add(patch);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "InterfaceUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceUsuario";
@@ -361,5 +376,6 @@
         private Button buttonCalpico;
         private Button buttonMochi;
         private Button buttonRamune;
+        private RichTextBox richTextBoxInfo;
     }
 }

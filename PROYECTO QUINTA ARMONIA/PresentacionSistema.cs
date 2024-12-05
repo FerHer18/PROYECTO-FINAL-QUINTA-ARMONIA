@@ -51,9 +51,9 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         }
 
-        public void login(string id, string contraseña)
+        public void login(string cuenta, string contraseña)
         {
-            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(contraseña)) //verifica que haya algo en los textBox
+            if (string.IsNullOrWhiteSpace(cuenta) || string.IsNullOrWhiteSpace(contraseña)) //verifica que haya algo en los textBox
             {
                 MessageBox.Show("Complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); //mensaje de error si es null
                 return;
@@ -63,11 +63,11 @@ namespace PROYECTO_QUINTA_ARMONIA
             try
             {
                 //consulta en la tabla de usuarios 
-                string query = "SELECT * FROM usuarios WHERE Id = @Id AND Contraseña = @Contraseña;";
+                string query = "SELECT * FROM usuarios WHERE Cuenta = @Cuenta AND Contraseña = @Contraseña;";
                 MySqlCommand command = new MySqlCommand(query, bd.Connection);
 
                 //parametros para la consulta
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@Cuenta", cuenta);
                 command.Parameters.AddWithValue("@Contraseña", contraseña);
 
                 using (MySqlDataReader reader = command.ExecuteReader())
