@@ -43,7 +43,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public void guardar(int codigo, string nombre, string descripcion, int precio, int existencias, string imagen)
+        public void guardar(int codigo, string nombre, string descripcion, float precio, int existencias, string imagen)
         {
             string query = "";
             try
@@ -83,6 +83,30 @@ namespace PROYECTO_QUINTA_ARMONIA
                 MessageBox.Show(query + "\nError: " + ex.Message);
                 this.Disconnect();
             }
+        }
+
+        public List<string> NombreImagenes()
+        {
+            List<string> nombres = new List<string>();
+
+            try
+            {
+                string query = "SELECT imagen FROM inventario";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    nombres.Add(reader["imagen"].ToString() ?? "");
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+
+            return nombres;
         }
     }
 }

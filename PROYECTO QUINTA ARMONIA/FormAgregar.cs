@@ -13,6 +13,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class FormAgregar : Form
     {
+        private string nomImagen = "";
         public FormAgregar()
         {
             InitializeComponent();
@@ -33,18 +34,18 @@ namespace PROYECTO_QUINTA_ARMONIA
             int id;
             string nombre;
             string descripcion;
-            int precio;
+            float precio;
             int existencias;
             string imagen;    //aun no esta, sera que a las imagenes les asigamos un id diferente o igual al codigo
-                                //en base a ese id poner la imagen en el picture box, ya no se ocuparia
-                                //string imagen, si no una lista, o un vector o un enum
+                              //en base a ese id poner la imagen en el picture box, ya no se ocuparia
+                              //string imagen, si no una lista, o un vector o un enum
 
             id = Convert.ToInt32(this.textBoxCodigo.Text);
             nombre = this.textBoxNombre.Text;
             descripcion = this.textBoxDescrip.Text;
-            precio = Convert.ToInt32(this.textBoxPrecio.Text);
+            precio = Convert.ToSingle(this.textBoxPrecio.Text);
             existencias = Convert.ToInt32(this.textBoxExistencias.Text);
-            imagen = this.textBoxImagen.Text;
+            imagen = this.nomImagen;
 
             BaseDatos obj = new BaseDatos();
             obj.guardar(id, nombre, descripcion, precio, existencias, imagen);
@@ -65,8 +66,20 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.textBoxPrecio.PlaceholderText = "Precio";
             this.textBoxExistencias.Text = "";
             this.textBoxExistencias.PlaceholderText = "Existencias";
-            this.textBoxImagen.Text = "";
-            this.textBoxImagen.PlaceholderText = "Dirreccion de imagen";
+            this.picBoxImagen.Image = null;
+        }
+
+        private void btnCargarImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+
+            //abrimos el explorador de archivos de windowa
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                picBoxImagen.ImageLocation = abrirImagen.FileName;
+                picBoxImagen.SizeMode = PictureBoxSizeMode.StretchImage; //adaptar la imagen al tamaño del picture box
+                this.nomImagen = Path.GetFileName(abrirImagen.FileName);
+            }
         }
     }
 }

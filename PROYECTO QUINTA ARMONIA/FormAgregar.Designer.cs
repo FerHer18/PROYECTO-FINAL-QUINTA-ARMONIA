@@ -40,9 +40,10 @@
             textBoxExistencias = new TextBox();
             labelNombre = new Label();
             textBoxNombre = new TextBox();
-            labelDirImg = new Label();
-            textBoxImagen = new TextBox();
             labelAgregar = new Label();
+            btnCargarImagen = new WinFormsAppKhee.ButtonRedondo();
+            picBoxImagen = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picBoxImagen).BeginInit();
             SuspendLayout();
             // 
             // buttonRedondoCancelar
@@ -86,7 +87,7 @@
             // labelCodigo
             // 
             labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(98, 116);
+            labelCodigo.Location = new Point(103, 149);
             labelCodigo.Name = "labelCodigo";
             labelCodigo.Size = new Size(148, 20);
             labelCodigo.TabIndex = 2;
@@ -95,7 +96,7 @@
             // labelDescrip
             // 
             labelDescrip.AutoSize = true;
-            labelDescrip.Location = new Point(103, 199);
+            labelDescrip.Location = new Point(103, 228);
             labelDescrip.Name = "labelDescrip";
             labelDescrip.Size = new Size(177, 20);
             labelDescrip.TabIndex = 3;
@@ -104,7 +105,7 @@
             // labelPrecio
             // 
             labelPrecio.AutoSize = true;
-            labelPrecio.Location = new Point(103, 253);
+            labelPrecio.Location = new Point(105, 271);
             labelPrecio.Name = "labelPrecio";
             labelPrecio.Size = new Size(140, 20);
             labelPrecio.TabIndex = 4;
@@ -113,7 +114,7 @@
             // labelCantidad
             // 
             labelCantidad.AutoSize = true;
-            labelCantidad.Location = new Point(103, 302);
+            labelCantidad.Location = new Point(103, 318);
             labelCantidad.Name = "labelCantidad";
             labelCantidad.Size = new Size(159, 20);
             labelCantidad.TabIndex = 5;
@@ -121,7 +122,7 @@
             // 
             // textBoxCodigo
             // 
-            textBoxCodigo.Location = new Point(282, 116);
+            textBoxCodigo.Location = new Point(293, 133);
             textBoxCodigo.Name = "textBoxCodigo";
             textBoxCodigo.PlaceholderText = "Codigo";
             textBoxCodigo.Size = new Size(167, 27);
@@ -130,7 +131,7 @@
             // 
             // textBoxDescrip
             // 
-            textBoxDescrip.Location = new Point(293, 199);
+            textBoxDescrip.Location = new Point(293, 221);
             textBoxDescrip.Name = "textBoxDescrip";
             textBoxDescrip.PlaceholderText = "Descripcion";
             textBoxDescrip.Size = new Size(167, 27);
@@ -139,7 +140,7 @@
             // 
             // textBoxPrecio
             // 
-            textBoxPrecio.Location = new Point(293, 250);
+            textBoxPrecio.Location = new Point(293, 268);
             textBoxPrecio.Name = "textBoxPrecio";
             textBoxPrecio.PlaceholderText = "Precio";
             textBoxPrecio.Size = new Size(167, 27);
@@ -148,7 +149,7 @@
             // 
             // textBoxExistencias
             // 
-            textBoxExistencias.Location = new Point(293, 295);
+            textBoxExistencias.Location = new Point(293, 311);
             textBoxExistencias.Name = "textBoxExistencias";
             textBoxExistencias.PlaceholderText = "Cantidad";
             textBoxExistencias.Size = new Size(167, 27);
@@ -158,7 +159,7 @@
             // labelNombre
             // 
             labelNombre.AutoSize = true;
-            labelNombre.Location = new Point(105, 159);
+            labelNombre.Location = new Point(103, 183);
             labelNombre.Name = "labelNombre";
             labelNombre.Size = new Size(154, 20);
             labelNombre.TabIndex = 10;
@@ -166,30 +167,12 @@
             // 
             // textBoxNombre
             // 
-            textBoxNombre.Location = new Point(293, 166);
+            textBoxNombre.Location = new Point(293, 176);
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.PlaceholderText = "Nombre";
             textBoxNombre.Size = new Size(167, 27);
             textBoxNombre.TabIndex = 11;
             textBoxNombre.TextAlign = HorizontalAlignment.Center;
-            // 
-            // labelDirImg
-            // 
-            labelDirImg.AutoSize = true;
-            labelDirImg.Location = new Point(115, 342);
-            labelDirImg.Name = "labelDirImg";
-            labelDirImg.Size = new Size(147, 20);
-            labelDirImg.TabIndex = 12;
-            labelDirImg.Text = "Direccion de imagen";
-            // 
-            // textBoxImagen
-            // 
-            textBoxImagen.Location = new Point(293, 342);
-            textBoxImagen.Name = "textBoxImagen";
-            textBoxImagen.PlaceholderText = "Direccion de imagen";
-            textBoxImagen.Size = new Size(162, 27);
-            textBoxImagen.TabIndex = 13;
-            textBoxImagen.TextAlign = HorizontalAlignment.Center;
             // 
             // labelAgregar
             // 
@@ -200,6 +183,35 @@
             labelAgregar.TabIndex = 14;
             labelAgregar.Text = "Agregar producto";
             // 
+            // btnCargarImagen
+            // 
+            btnCargarImagen.BackColor = Color.FromArgb(151, 172, 221);
+            btnCargarImagen.BackgroundColor = Color.FromArgb(151, 172, 221);
+            btnCargarImagen.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCargarImagen.BorderColor = Color.Transparent;
+            btnCargarImagen.BorderRadius = 30;
+            btnCargarImagen.BorderSize = 0;
+            btnCargarImagen.FlatAppearance.BorderSize = 0;
+            btnCargarImagen.FlatStyle = FlatStyle.Flat;
+            btnCargarImagen.ForeColor = Color.Black;
+            btnCargarImagen.Location = new Point(502, 115);
+            btnCargarImagen.Name = "btnCargarImagen";
+            btnCargarImagen.Size = new Size(155, 45);
+            btnCargarImagen.TabIndex = 15;
+            btnCargarImagen.Text = "CARGAR IMAGEN";
+            btnCargarImagen.TextColor = Color.Black;
+            btnCargarImagen.UseVisualStyleBackColor = false;
+            btnCargarImagen.Click += btnCargarImagen_Click;
+            // 
+            // picBoxImagen
+            // 
+            picBoxImagen.Location = new Point(491, 171);
+            picBoxImagen.Name = "picBoxImagen";
+            picBoxImagen.Size = new Size(170, 154);
+            picBoxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            picBoxImagen.TabIndex = 16;
+            picBoxImagen.TabStop = false;
+            // 
             // FormAgregar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -207,9 +219,9 @@
             BackgroundImage = Properties.Resources.fondoAgregar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(picBoxImagen);
+            Controls.Add(btnCargarImagen);
             Controls.Add(labelAgregar);
-            Controls.Add(textBoxImagen);
-            Controls.Add(labelDirImg);
             Controls.Add(textBoxNombre);
             Controls.Add(labelNombre);
             Controls.Add(textBoxExistencias);
@@ -227,6 +239,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAgregar";
             Load += FormAgregar_Load;
+            ((System.ComponentModel.ISupportInitialize)picBoxImagen).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -245,8 +258,8 @@
         private TextBox textBoxExistencias;
         private Label labelNombre;
         private TextBox textBoxNombre;
-        private Label labelDirImg;
-        private TextBox textBoxImagen;
         private Label labelAgregar;
+        private WinFormsAppKhee.ButtonRedondo btnCargarImagen;
+        private PictureBox picBoxImagen;
     }
 }
