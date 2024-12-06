@@ -127,5 +127,13 @@ namespace PROYECTO_QUINTA_ARMONIA
                 }
             }
         }
+
+        private void buttonRedondoListaProd_Click(object sender, EventArgs e)
+        {
+            listadoProductos obj = new listadoProductos();
+            this.Hide();
+            obj.ShowDialog();
+            this.Show();
+        }
     }
 }

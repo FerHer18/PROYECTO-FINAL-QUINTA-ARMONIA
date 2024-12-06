@@ -90,7 +90,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                             else if (tipo == "usuario1" || tipo == "guest" || tipo == "usuario2" || tipo == "usuario3" || tipo == "usuario4") //si es usuario o invitado
                             {
                                 string nombreUs = reader["Nombre"].ToString();
-                                InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUs);
+                                botonPlay interfaceUsu = new botonPlay(nombreUs);
                                 this.Hide();
                                 interfaceUsu.ShowDialog();
                                 this.Show();
@@ -130,12 +130,12 @@ namespace PROYECTO_QUINTA_ARMONIA
             lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             player.controls.play();
         }
 
-        private void btnPause_Click(object sender, EventArgs e)
+        public void btnPause_Click(object sender, EventArgs e)
         {
             player.controls.pause();
         }

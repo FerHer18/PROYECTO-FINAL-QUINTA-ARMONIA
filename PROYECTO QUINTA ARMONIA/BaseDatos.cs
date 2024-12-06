@@ -107,5 +107,42 @@ namespace PROYECTO_QUINTA_ARMONIA
 
             return nombres;
         }
+
+        public List<ClassProductos> Consulta()
+        {
+            List<ClassProductos> info = new List<ClassProductos> ();
+            int id;
+            string name = "";
+            string desc = "";
+            float precio;
+            int existencias;
+            ClassProductos item;
+
+            try
+            {
+                string query = "SELECT * FROM inventario";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    id = Convert.ToInt32(reader["codigo"]);
+                    name = Convert.ToString(reader["nombre"]) ?? "";
+                    desc = Convert.ToString(reader["descripcion"]) ?? "";
+                    precio = Convert.ToSingle(reader["precio"]);
+                    existencias = Convert.ToInt32(reader["existencias"]);
+
+                    item = new ClassProductos(id,name,desc,precio,existencias);
+                    info.Add(item);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+
+            return info;
+        }
     }
 }
