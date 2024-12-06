@@ -12,15 +12,15 @@ using MySql.Data.MySqlClient;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
-    public partial class InterfaceUsuario : Form
+    public partial class botonPlay : Form
     {
         private string Nombre; //atributo necesario para mensaje de bienvenida en inicio de sesion
-        public InterfaceUsuario()
+        public botonPlay()
         {
             InitializeComponent();
         }
 
-        public InterfaceUsuario(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
+        public botonPlay(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
         {
             InitializeComponent();
             this.Nombre = nombre;
@@ -77,7 +77,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                     string nombre = reader["nombre"].ToString();
                     string descripcion = reader["descripcion"].ToString();
                     string precio = reader["precio"].ToString();
-                    string existencias= reader["existencias"].ToString();
+                    string existencias = reader["existencias"].ToString();
                     //mostrar 
                     richTextBoxInfo.Rtf = @"{\rtf1\ansi 
                     \b Nombre:\b0  " + nombre + @"\line
@@ -106,5 +106,11 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             mostrarInfoProducto(1);
         }
+
+        private void patch_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

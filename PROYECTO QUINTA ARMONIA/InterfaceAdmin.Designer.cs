@@ -136,6 +136,7 @@
             buttonRedondoListaProd.Text = "LISTADO DE PRODUCTOS";
             buttonRedondoListaProd.TextColor = Color.Black;
             buttonRedondoListaProd.UseVisualStyleBackColor = false;
+            buttonRedondoListaProd.Click += buttonRedondoListaProd_Click;
             // 
             // buttonRedondoEliminar
             // 

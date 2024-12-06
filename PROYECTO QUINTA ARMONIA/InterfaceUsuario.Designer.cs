@@ -1,6 +1,6 @@
 ﻿namespace PROYECTO_QUINTA_ARMONIA
 {
-    partial class InterfaceUsuario
+    partial class botonPlay
     {
         /// <summary>
         /// Required designer variable.
@@ -58,22 +58,23 @@
             patch.BackColor = Color.Transparent;
             patch.BackgroundImage = Properties.Resources.backgroundPatch224x164;
             patch.BackgroundImageLayout = ImageLayout.None;
-            patch.Location = new Point(368, 405);
-            patch.Margin = new Padding(4, 5, 4, 5);
+            patch.Location = new Point(355, 367);
+            patch.Margin = new Padding(3, 4, 3, 4);
             patch.Name = "patch";
-            patch.Size = new Size(264, 270);
+            patch.Size = new Size(211, 216);
             patch.TabIndex = 0;
             patch.TabStop = false;
+            patch.Click += patch_Click;
             // 
             // lblHora
             // 
             lblHora.AutoSize = true;
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Segoe UI", 10F);
-            lblHora.Location = new Point(599, 92);
+            lblHora.Location = new Point(630, 74);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(55, 28);
+            lblHora.Size = new Size(47, 23);
             lblHora.TabIndex = 28;
             lblHora.Text = "Hora";
             lblHora.Click += lblHora_Click;
@@ -83,10 +84,10 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(385, 92);
+            lblFecha.Location = new Point(403, 74);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(62, 28);
+            lblFecha.Size = new Size(54, 23);
             lblFecha.TabIndex = 27;
             lblFecha.Text = "Fecha";
             lblFecha.Click += lblFecha_Click;
@@ -103,9 +104,10 @@
             buttonDown.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonDown.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonDown.FlatStyle = FlatStyle.Flat;
-            buttonDown.Location = new Point(835, 331);
+            buttonDown.Location = new Point(668, 265);
+            buttonDown.Margin = new Padding(2);
             buttonDown.Name = "buttonDown";
-            buttonDown.Size = new Size(39, 32);
+            buttonDown.Size = new Size(31, 26);
             buttonDown.TabIndex = 29;
             buttonDown.UseVisualStyleBackColor = false;
             // 
@@ -116,9 +118,10 @@
             buttonUp.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonUp.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonUp.FlatStyle = FlatStyle.Flat;
-            buttonUp.Location = new Point(787, 331);
+            buttonUp.Location = new Point(630, 265);
+            buttonUp.Margin = new Padding(2);
             buttonUp.Name = "buttonUp";
-            buttonUp.Size = new Size(39, 32);
+            buttonUp.Size = new Size(31, 26);
             buttonUp.TabIndex = 30;
             buttonUp.UseVisualStyleBackColor = false;
             // 
@@ -129,9 +132,10 @@
             buttonBorrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonBorrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonBorrar.FlatStyle = FlatStyle.Flat;
-            buttonBorrar.Location = new Point(717, 405);
+            buttonBorrar.Location = new Point(574, 324);
+            buttonBorrar.Margin = new Padding(2);
             buttonBorrar.Name = "buttonBorrar";
-            buttonBorrar.Size = new Size(191, 32);
+            buttonBorrar.Size = new Size(153, 26);
             buttonBorrar.TabIndex = 31;
             buttonBorrar.UseVisualStyleBackColor = false;
             // 
@@ -142,9 +146,10 @@
             buttonLogout.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonLogout.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLogout.FlatStyle = FlatStyle.Flat;
-            buttonLogout.Location = new Point(824, 498);
+            buttonLogout.Location = new Point(659, 398);
+            buttonLogout.Margin = new Padding(2);
             buttonLogout.Name = "buttonLogout";
-            buttonLogout.Size = new Size(89, 27);
+            buttonLogout.Size = new Size(71, 22);
             buttonLogout.TabIndex = 32;
             buttonLogout.UseVisualStyleBackColor = false;
             buttonLogout.Click += buttonLogout_Click;
@@ -156,9 +161,10 @@
             buttonComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonComprar.FlatStyle = FlatStyle.Flat;
-            buttonComprar.Location = new Point(395, 53);
+            buttonComprar.Location = new Point(316, 42);
+            buttonComprar.Margin = new Padding(2);
             buttonComprar.Name = "buttonComprar";
-            buttonComprar.Size = new Size(138, 27);
+            buttonComprar.Size = new Size(110, 22);
             buttonComprar.TabIndex = 33;
             buttonComprar.UseVisualStyleBackColor = false;
             // 
@@ -169,9 +175,10 @@
             buttonPagar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonPagar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonPagar.FlatStyle = FlatStyle.Flat;
-            buttonPagar.Location = new Point(552, 53);
+            buttonPagar.Location = new Point(442, 42);
+            buttonPagar.Margin = new Padding(2);
             buttonPagar.Name = "buttonPagar";
-            buttonPagar.Size = new Size(138, 27);
+            buttonPagar.Size = new Size(110, 22);
             buttonPagar.TabIndex = 34;
             buttonPagar.UseVisualStyleBackColor = false;
             buttonPagar.Click += buttonPagar_Click;
@@ -183,9 +190,10 @@
             buttonRamen.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRamen.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRamen.FlatStyle = FlatStyle.Flat;
-            buttonRamen.Location = new Point(79, 343);
+            buttonRamen.Location = new Point(63, 274);
+            buttonRamen.Margin = new Padding(2);
             buttonRamen.Name = "buttonRamen";
-            buttonRamen.Size = new Size(138, 91);
+            buttonRamen.Size = new Size(110, 73);
             buttonRamen.TabIndex = 35;
             buttonRamen.UseVisualStyleBackColor = false;
             // 
@@ -196,9 +204,10 @@
             buttonCoffee.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonCoffee.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonCoffee.FlatStyle = FlatStyle.Flat;
-            buttonCoffee.Location = new Point(79, 237);
+            buttonCoffee.Location = new Point(63, 190);
+            buttonCoffee.Margin = new Padding(2);
             buttonCoffee.Name = "buttonCoffee";
-            buttonCoffee.Size = new Size(138, 91);
+            buttonCoffee.Size = new Size(110, 73);
             buttonCoffee.TabIndex = 36;
             buttonCoffee.UseVisualStyleBackColor = false;
             // 
@@ -209,9 +218,10 @@
             buttonYakult.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonYakult.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonYakult.FlatStyle = FlatStyle.Flat;
-            buttonYakult.Location = new Point(79, 135);
+            buttonYakult.Location = new Point(63, 108);
+            buttonYakult.Margin = new Padding(2);
             buttonYakult.Name = "buttonYakult";
-            buttonYakult.Size = new Size(138, 91);
+            buttonYakult.Size = new Size(110, 73);
             buttonYakult.TabIndex = 37;
             buttonYakult.UseVisualStyleBackColor = false;
             buttonYakult.Click += buttonYakult_Click;
@@ -223,9 +233,10 @@
             buttonTakoyaki.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonTakoyaki.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonTakoyaki.FlatStyle = FlatStyle.Flat;
-            buttonTakoyaki.Location = new Point(223, 135);
+            buttonTakoyaki.Location = new Point(178, 108);
+            buttonTakoyaki.Margin = new Padding(2);
             buttonTakoyaki.Name = "buttonTakoyaki";
-            buttonTakoyaki.Size = new Size(138, 91);
+            buttonTakoyaki.Size = new Size(110, 73);
             buttonTakoyaki.TabIndex = 38;
             buttonTakoyaki.UseVisualStyleBackColor = false;
             // 
@@ -236,9 +247,10 @@
             buttonTiramisu.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonTiramisu.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonTiramisu.FlatStyle = FlatStyle.Flat;
-            buttonTiramisu.Location = new Point(223, 237);
+            buttonTiramisu.Location = new Point(178, 190);
+            buttonTiramisu.Margin = new Padding(2);
             buttonTiramisu.Name = "buttonTiramisu";
-            buttonTiramisu.Size = new Size(138, 91);
+            buttonTiramisu.Size = new Size(110, 73);
             buttonTiramisu.TabIndex = 39;
             buttonTiramisu.UseVisualStyleBackColor = false;
             // 
@@ -249,9 +261,10 @@
             buttonWater.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonWater.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonWater.FlatStyle = FlatStyle.Flat;
-            buttonWater.Location = new Point(223, 341);
+            buttonWater.Location = new Point(178, 273);
+            buttonWater.Margin = new Padding(2);
             buttonWater.Name = "buttonWater";
-            buttonWater.Size = new Size(138, 91);
+            buttonWater.Size = new Size(110, 73);
             buttonWater.TabIndex = 40;
             buttonWater.UseVisualStyleBackColor = false;
             // 
@@ -262,9 +275,10 @@
             buttonLotus.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonLotus.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLotus.FlatStyle = FlatStyle.Flat;
-            buttonLotus.Location = new Point(395, 135);
+            buttonLotus.Location = new Point(316, 108);
+            buttonLotus.Margin = new Padding(2);
             buttonLotus.Name = "buttonLotus";
-            buttonLotus.Size = new Size(138, 91);
+            buttonLotus.Size = new Size(110, 73);
             buttonLotus.TabIndex = 41;
             buttonLotus.UseVisualStyleBackColor = false;
             // 
@@ -275,9 +289,10 @@
             buttonCalpico.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonCalpico.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonCalpico.FlatStyle = FlatStyle.Flat;
-            buttonCalpico.Location = new Point(395, 237);
+            buttonCalpico.Location = new Point(316, 190);
+            buttonCalpico.Margin = new Padding(2);
             buttonCalpico.Name = "buttonCalpico";
-            buttonCalpico.Size = new Size(138, 91);
+            buttonCalpico.Size = new Size(110, 73);
             buttonCalpico.TabIndex = 42;
             buttonCalpico.UseVisualStyleBackColor = false;
             // 
@@ -288,9 +303,10 @@
             buttonMochi.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonMochi.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonMochi.FlatStyle = FlatStyle.Flat;
-            buttonMochi.Location = new Point(552, 135);
+            buttonMochi.Location = new Point(442, 108);
+            buttonMochi.Margin = new Padding(2);
             buttonMochi.Name = "buttonMochi";
-            buttonMochi.Size = new Size(138, 91);
+            buttonMochi.Size = new Size(110, 73);
             buttonMochi.TabIndex = 43;
             buttonMochi.UseVisualStyleBackColor = false;
             // 
@@ -301,9 +317,10 @@
             buttonRamune.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRamune.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRamune.FlatStyle = FlatStyle.Flat;
-            buttonRamune.Location = new Point(552, 237);
+            buttonRamune.Location = new Point(442, 190);
+            buttonRamune.Margin = new Padding(2);
             buttonRamune.Name = "buttonRamune";
-            buttonRamune.Size = new Size(138, 91);
+            buttonRamune.Size = new Size(110, 73);
             buttonRamune.TabIndex = 44;
             buttonRamune.UseVisualStyleBackColor = false;
             // 
@@ -311,19 +328,20 @@
             // 
             richTextBoxInfo.BorderStyle = BorderStyle.None;
             richTextBoxInfo.Font = new Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBoxInfo.Location = new Point(726, 149);
+            richTextBoxInfo.Location = new Point(581, 119);
+            richTextBoxInfo.Margin = new Padding(2);
             richTextBoxInfo.Name = "richTextBoxInfo";
-            richTextBoxInfo.Size = new Size(173, 176);
+            richTextBoxInfo.Size = new Size(138, 141);
             richTextBoxInfo.TabIndex = 45;
             richTextBoxInfo.Text = "";
             // 
-            // InterfaceUsuario
+            // botonPlay
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.rszFondo1_2;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(960, 540);
+            ClientSize = new Size(1037, 634);
             Controls.Add(richTextBoxInfo);
             Controls.Add(buttonRamune);
             Controls.Add(buttonMochi);
@@ -344,8 +362,7 @@
             Controls.Add(lblHora);
             Controls.Add(lblFecha);
             Controls.Add(patch);
-            Margin = new Padding(4);
-            Name = "InterfaceUsuario";
+            Name = "botonPlay";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceUsuario";
             Load += InterfaceUsuario_Load;
