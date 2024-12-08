@@ -12,32 +12,22 @@ using MySql.Data.MySqlClient;
 using System.Collections;
 using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography;
-using System.Media;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class PresentacionSistema : Form
     {
-        private WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+        
         public PresentacionSistema()
         {
             InitializeComponent();
+            string rutaArchivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "musica-fondo.mp3");
+            ClaseMusica.Load(rutaArchivo);
         }
 
         private void PresentacionSistema_Load(object sender, EventArgs e)
         {
-
-            var rutaArchivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "musica-fondo.mp3");
-            try
-            {
-                player.URL = rutaArchivo;
-                player.settings.volume = 100;
-                player.controls.play();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al reproducir el archivo: " + ex.Message);
-            }
+            
         }
 
         private void textBoxusuario_TextChanged(object sender, EventArgs e)
@@ -134,12 +124,12 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         public void button1_Click(object sender, EventArgs e)
         {
-            player.controls.play();
+            ClaseMusica.Play();
         }
 
         public void btnPause_Click(object sender, EventArgs e)
         {
-            player.controls.pause();
+            ClaseMusica.Pause();
         }
     }
 }

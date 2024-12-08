@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         public InterfaceAdmin()
         {
             InitializeComponent();
+
         }
 
         public InterfaceAdmin(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en admin
@@ -142,6 +144,17 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Hide();
             obj.ShowDialog();
             this.Show();
+        }
+        
+
+        private void btnPlay_Click_1(object sender, EventArgs e)
+        {
+            ClaseMusica.Play();
+        }
+
+        private void btnPause_Click_1(object sender, EventArgs e)
+        {
+            ClaseMusica.Pause();
         }
     }
 }

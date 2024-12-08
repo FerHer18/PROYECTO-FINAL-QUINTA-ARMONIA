@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,11 +32,13 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Nombre = nombre;
             MessageBox.Show($"Bienvenido {this.Nombre}", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
             imagenes = new List<string>();
+
         }
 
         private void InterfaceUsuario_Load(object sender, EventArgs e)
         {
             MostrarImagenes();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -268,6 +271,16 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            ClaseMusica.Play();
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            ClaseMusica.Pause();
         }
     }
 }

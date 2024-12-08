@@ -50,6 +50,8 @@
             lblHora = new Label();
             lblFecha = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            btnPlay = new Button();
+            btnPause = new Button();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox3).BeginInit();
@@ -352,6 +354,42 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // btnPlay
+            // 
+            btnPlay.BackColor = Color.Transparent;
+            btnPlay.BackgroundImage = Properties.Resources.play2;
+            btnPlay.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPlay.FlatAppearance.BorderSize = 0;
+            btnPlay.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPlay.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPlay.FlatStyle = FlatStyle.Flat;
+            btnPlay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPlay.Location = new Point(1200, 6);
+            btnPlay.Margin = new Padding(2);
+            btnPlay.Name = "btnPlay";
+            btnPlay.Size = new Size(46, 53);
+            btnPlay.TabIndex = 27;
+            btnPlay.UseVisualStyleBackColor = false;
+            btnPlay.Click += btnPlay_Click_1;
+            // 
+            // btnPause
+            // 
+            btnPause.BackColor = Color.Transparent;
+            btnPause.BackgroundImage = Properties.Resources.pause2;
+            btnPause.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPause.FlatAppearance.BorderSize = 0;
+            btnPause.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPause.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPause.FlatStyle = FlatStyle.Flat;
+            btnPause.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPause.Location = new Point(1250, 11);
+            btnPause.Margin = new Padding(2);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(59, 48);
+            btnPause.TabIndex = 28;
+            btnPause.UseVisualStyleBackColor = false;
+            btnPause.Click += btnPause_Click_1;
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -359,6 +397,8 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(btnPlay);
+            Controls.Add(btnPause);
             Controls.Add(lblHora);
             Controls.Add(lblFecha);
             Controls.Add(picBox10);
@@ -420,5 +460,7 @@
         private Label lblHora;
         private Label lblFecha;
         private System.Windows.Forms.Timer timer1;
+        private Button btnPlay;
+        private Button btnPause;
     }
 }

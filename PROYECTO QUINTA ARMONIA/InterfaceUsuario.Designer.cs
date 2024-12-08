@@ -50,6 +50,8 @@
             richTextBoxInfo = new RichTextBox();
             button1 = new Button();
             buttonRedondoRegresar = new WinFormsAppKhee.ButtonRedondo();
+            btnPlay = new Button();
+            btnPause = new Button();
             SuspendLayout();
             // 
             // lblHora
@@ -357,6 +359,42 @@
             buttonRedondoRegresar.UseVisualStyleBackColor = false;
             buttonRedondoRegresar.Click += buttonRedondoRegresar_Click;
             // 
+            // btnPlay
+            // 
+            btnPlay.BackColor = Color.Transparent;
+            btnPlay.BackgroundImage = Properties.Resources.play;
+            btnPlay.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPlay.FlatAppearance.BorderSize = 0;
+            btnPlay.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPlay.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPlay.FlatStyle = FlatStyle.Flat;
+            btnPlay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPlay.Location = new Point(1132, 61);
+            btnPlay.Margin = new Padding(2);
+            btnPlay.Name = "btnPlay";
+            btnPlay.Size = new Size(60, 67);
+            btnPlay.TabIndex = 48;
+            btnPlay.UseVisualStyleBackColor = false;
+            btnPlay.Click += btnPlay_Click;
+            // 
+            // btnPause
+            // 
+            btnPause.BackColor = Color.Transparent;
+            btnPause.BackgroundImage = Properties.Resources.pause;
+            btnPause.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPause.FlatAppearance.BorderSize = 0;
+            btnPause.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnPause.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnPause.FlatStyle = FlatStyle.Flat;
+            btnPause.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPause.Location = new Point(1196, 61);
+            btnPause.Margin = new Padding(2);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(53, 67);
+            btnPause.TabIndex = 49;
+            btnPause.UseVisualStyleBackColor = false;
+            btnPause.Click += btnPause_Click;
+            // 
             // InterfaceUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -364,6 +402,8 @@
             BackgroundImage = Properties.Resources.UIbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1260, 696);
+            Controls.Add(btnPlay);
+            Controls.Add(btnPause);
             Controls.Add(buttonRedondoRegresar);
             Controls.Add(button1);
             Controls.Add(richTextBoxInfo);
@@ -414,5 +454,7 @@
         private RichTextBox richTextBoxInfo;
         private Button button1;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoRegresar;
+        private Button btnPlay;
+        private Button btnPause;
     }
 }
