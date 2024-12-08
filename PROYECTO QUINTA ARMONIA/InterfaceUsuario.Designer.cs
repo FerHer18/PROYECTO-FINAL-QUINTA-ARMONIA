@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            patch = new PictureBox();
             lblHora = new Label();
             lblFecha = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -50,28 +49,14 @@
             buttonMochi = new Button();
             buttonRamune = new Button();
             richTextBoxInfo = new RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)patch).BeginInit();
             SuspendLayout();
-            // 
-            // patch
-            // 
-            patch.BackColor = Color.Transparent;
-            patch.BackgroundImage = Properties.Resources.backgroundPatch224x164;
-            patch.BackgroundImageLayout = ImageLayout.None;
-            patch.Location = new Point(577, 587);
-            patch.Margin = new Padding(5, 6, 5, 6);
-            patch.Name = "patch";
-            patch.Size = new Size(343, 346);
-            patch.TabIndex = 0;
-            patch.TabStop = false;
-            patch.Click += patch_Click;
             // 
             // lblHora
             // 
             lblHora.AutoSize = true;
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Segoe UI", 10F);
-            lblHora.Location = new Point(1024, 118);
+            lblHora.Location = new Point(1618, 9);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(75, 37);
             lblHora.TabIndex = 28;
@@ -83,7 +68,7 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(655, 118);
+            lblFecha.Location = new Point(24, 9);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(85, 37);
             lblFecha.TabIndex = 27;
@@ -102,7 +87,7 @@
             buttonDown.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonDown.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonDown.FlatStyle = FlatStyle.Flat;
-            buttonDown.Location = new Point(1086, 424);
+            buttonDown.Location = new Point(1642, 660);
             buttonDown.Name = "buttonDown";
             buttonDown.Size = new Size(50, 42);
             buttonDown.TabIndex = 29;
@@ -115,7 +100,7 @@
             buttonUp.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonUp.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonUp.FlatStyle = FlatStyle.Flat;
-            buttonUp.Location = new Point(1024, 424);
+            buttonUp.Location = new Point(1580, 660);
             buttonUp.Name = "buttonUp";
             buttonUp.Size = new Size(50, 42);
             buttonUp.TabIndex = 30;
@@ -128,7 +113,7 @@
             buttonBorrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonBorrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonBorrar.FlatStyle = FlatStyle.Flat;
-            buttonBorrar.Location = new Point(933, 518);
+            buttonBorrar.Location = new Point(1395, 820);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(249, 42);
             buttonBorrar.TabIndex = 31;
@@ -141,7 +126,7 @@
             buttonLogout.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonLogout.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLogout.FlatStyle = FlatStyle.Flat;
-            buttonLogout.Location = new Point(1071, 637);
+            buttonLogout.Location = new Point(1669, 1007);
             buttonLogout.Name = "buttonLogout";
             buttonLogout.Size = new Size(115, 35);
             buttonLogout.TabIndex = 32;
@@ -155,7 +140,7 @@
             buttonComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonComprar.FlatStyle = FlatStyle.Flat;
-            buttonComprar.Location = new Point(514, 67);
+            buttonComprar.Location = new Point(834, 120);
             buttonComprar.Name = "buttonComprar";
             buttonComprar.Size = new Size(179, 35);
             buttonComprar.TabIndex = 33;
@@ -168,7 +153,7 @@
             buttonPagar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonPagar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonPagar.FlatStyle = FlatStyle.Flat;
-            buttonPagar.Location = new Point(718, 67);
+            buttonPagar.Location = new Point(1173, 110);
             buttonPagar.Name = "buttonPagar";
             buttonPagar.Size = new Size(179, 35);
             buttonPagar.TabIndex = 34;
@@ -182,7 +167,7 @@
             buttonRamen.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRamen.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRamen.FlatStyle = FlatStyle.Flat;
-            buttonRamen.Location = new Point(102, 438);
+            buttonRamen.Location = new Point(196, 711);
             buttonRamen.Name = "buttonRamen";
             buttonRamen.Size = new Size(179, 117);
             buttonRamen.TabIndex = 35;
@@ -195,7 +180,7 @@
             buttonCoffee.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonCoffee.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonCoffee.FlatStyle = FlatStyle.Flat;
-            buttonCoffee.Location = new Point(102, 304);
+            buttonCoffee.Location = new Point(196, 507);
             buttonCoffee.Name = "buttonCoffee";
             buttonCoffee.Size = new Size(179, 117);
             buttonCoffee.TabIndex = 36;
@@ -208,7 +193,7 @@
             buttonYakult.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonYakult.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonYakult.FlatStyle = FlatStyle.Flat;
-            buttonYakult.Location = new Point(102, 173);
+            buttonYakult.Location = new Point(196, 311);
             buttonYakult.Name = "buttonYakult";
             buttonYakult.Size = new Size(179, 117);
             buttonYakult.TabIndex = 37;
@@ -222,7 +207,7 @@
             buttonTakoyaki.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonTakoyaki.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonTakoyaki.FlatStyle = FlatStyle.Flat;
-            buttonTakoyaki.Location = new Point(289, 173);
+            buttonTakoyaki.Location = new Point(383, 311);
             buttonTakoyaki.Name = "buttonTakoyaki";
             buttonTakoyaki.Size = new Size(179, 117);
             buttonTakoyaki.TabIndex = 38;
@@ -235,7 +220,7 @@
             buttonTiramisu.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonTiramisu.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonTiramisu.FlatStyle = FlatStyle.Flat;
-            buttonTiramisu.Location = new Point(289, 304);
+            buttonTiramisu.Location = new Point(383, 507);
             buttonTiramisu.Name = "buttonTiramisu";
             buttonTiramisu.Size = new Size(179, 117);
             buttonTiramisu.TabIndex = 39;
@@ -248,7 +233,7 @@
             buttonWater.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonWater.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonWater.FlatStyle = FlatStyle.Flat;
-            buttonWater.Location = new Point(289, 437);
+            buttonWater.Location = new Point(383, 710);
             buttonWater.Name = "buttonWater";
             buttonWater.Size = new Size(179, 117);
             buttonWater.TabIndex = 40;
@@ -261,7 +246,7 @@
             buttonLotus.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonLotus.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonLotus.FlatStyle = FlatStyle.Flat;
-            buttonLotus.Location = new Point(514, 173);
+            buttonLotus.Location = new Point(608, 311);
             buttonLotus.Name = "buttonLotus";
             buttonLotus.Size = new Size(179, 117);
             buttonLotus.TabIndex = 41;
@@ -274,7 +259,7 @@
             buttonCalpico.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonCalpico.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonCalpico.FlatStyle = FlatStyle.Flat;
-            buttonCalpico.Location = new Point(514, 304);
+            buttonCalpico.Location = new Point(608, 507);
             buttonCalpico.Name = "buttonCalpico";
             buttonCalpico.Size = new Size(179, 117);
             buttonCalpico.TabIndex = 42;
@@ -287,7 +272,7 @@
             buttonMochi.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonMochi.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonMochi.FlatStyle = FlatStyle.Flat;
-            buttonMochi.Location = new Point(718, 173);
+            buttonMochi.Location = new Point(812, 311);
             buttonMochi.Name = "buttonMochi";
             buttonMochi.Size = new Size(179, 117);
             buttonMochi.TabIndex = 43;
@@ -300,7 +285,7 @@
             buttonRamune.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRamune.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRamune.FlatStyle = FlatStyle.Flat;
-            buttonRamune.Location = new Point(718, 304);
+            buttonRamune.Location = new Point(812, 507);
             buttonRamune.Name = "buttonRamune";
             buttonRamune.Size = new Size(179, 117);
             buttonRamune.TabIndex = 44;
@@ -310,7 +295,7 @@
             // 
             richTextBoxInfo.BorderStyle = BorderStyle.None;
             richTextBoxInfo.Font = new Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBoxInfo.Location = new Point(944, 190);
+            richTextBoxInfo.Location = new Point(1504, 369);
             richTextBoxInfo.Name = "richTextBoxInfo";
             richTextBoxInfo.Size = new Size(224, 226);
             richTextBoxInfo.TabIndex = 45;
@@ -342,20 +327,16 @@
             Controls.Add(buttonDown);
             Controls.Add(lblHora);
             Controls.Add(lblFecha);
-            Controls.Add(patch);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "botonPlay";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceUsuario";
             Load += InterfaceUsuario_Load;
-            ((System.ComponentModel.ISupportInitialize)patch).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox patch;
         private Label lblHora;
         private Label lblFecha;
         private System.Windows.Forms.Timer timer1;
