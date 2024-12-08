@@ -36,9 +36,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string descripcion;
             float precio;
             int existencias;
-            string imagen;    //aun no esta, sera que a las imagenes les asigamos un id diferente o igual al codigo
-                              //en base a ese id poner la imagen en el picture box, ya no se ocuparia
-                              //string imagen, si no una lista, o un vector o un enum
+            string imagen;
 
             id = Convert.ToInt32(this.textBoxCodigo.Text);
             nombre = this.textBoxNombre.Text;
@@ -55,7 +53,6 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         public void limpiarGuardar()
         {
-            MessageBox.Show("Entre a limpiar");
             this.textBoxCodigo.Text = "";
             this.textBoxCodigo.PlaceholderText = "Codigo";
             this.textBoxNombre.Text = "";

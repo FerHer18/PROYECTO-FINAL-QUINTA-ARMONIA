@@ -26,12 +26,6 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void PresentacionSistema_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(1318, 848); //Tamaño fijo del formulario
-            this.AutoSize = false; //Evita redimensionamiento automático
-            this.AutoScaleMode = AutoScaleMode.None; //Desactiva escalado automático
-            this.MaximumSize = this.Size; //Establece un tamaño máximo igual al tamaño fijo
-            this.MinimumSize = this.Size; //Establece un tamaño mínimo igual al tamaño fijo
-            this.AutoScroll = true;
 
             var rutaArchivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "musica-fondo.mp3");
             try
@@ -85,6 +79,10 @@ namespace PROYECTO_QUINTA_ARMONIA
                                 this.Hide(); //se esconde el form de presentación 
                                 InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreAdm); //se le manda el nombre de la persona que se logeo
                                 interfaceAdm.ShowDialog(); //se ejecuta el form admin y regresa a la siguiente instruccion
+                                this.textBoxusuario.Text = "";
+                                this.textBoxusuario.PlaceholderText = "usuario";
+                                this.textBox2contraseña.Text = "";
+                                this.textBox2contraseña.PlaceholderText = "contraseña";
                                 this.Show(); //regresa a la presentación
                             }
                             else if (tipo == "usuario1" || tipo == "guest" || tipo == "usuario2" || tipo == "usuario3" || tipo == "usuario4") //si es usuario o invitado
@@ -93,6 +91,10 @@ namespace PROYECTO_QUINTA_ARMONIA
                                 InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUs);
                                 this.Hide();
                                 interfaceUsu.ShowDialog();
+                                this.textBoxusuario.Text = "";
+                                this.textBoxusuario.PlaceholderText = "usuario";
+                                this.textBox2contraseña.Text = "";
+                                this.textBox2contraseña.PlaceholderText = "contraseña";
                                 this.Show();
                             }
                         }

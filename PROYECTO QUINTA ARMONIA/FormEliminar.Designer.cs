@@ -32,6 +32,7 @@
             label1 = new Label();
             textBoxBuscarCodigo = new TextBox();
             buttonRedondoEliminar = new WinFormsAppKhee.ButtonRedondo();
+            label2 = new Label();
             SuspendLayout();
             // 
             // buttonRedondoCancelar
@@ -39,7 +40,7 @@
             buttonRedondoCancelar.BackColor = Color.Transparent;
             buttonRedondoCancelar.BackgroundColor = Color.Transparent;
             buttonRedondoCancelar.BorderColor = Color.Transparent;
-            buttonRedondoCancelar.BorderRadius = 30;
+            buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
@@ -55,7 +56,7 @@
             // 
             // label1
             // 
-            label1.Location = new Point(243, 175);
+            label1.Location = new Point(217, 184);
             label1.Name = "label1";
             label1.Size = new Size(162, 45);
             label1.TabIndex = 1;
@@ -70,13 +71,14 @@
             textBoxBuscarCodigo.Size = new Size(162, 27);
             textBoxBuscarCodigo.TabIndex = 2;
             textBoxBuscarCodigo.TextAlign = HorizontalAlignment.Center;
+            textBoxBuscarCodigo.TextChanged += textBoxBuscarCodigo_TextChanged;
             // 
             // buttonRedondoEliminar
             // 
             buttonRedondoEliminar.BackColor = Color.Transparent;
             buttonRedondoEliminar.BackgroundColor = Color.Transparent;
             buttonRedondoEliminar.BorderColor = Color.Transparent;
-            buttonRedondoEliminar.BorderRadius = 30;
+            buttonRedondoEliminar.BorderRadius = 0;
             buttonRedondoEliminar.BorderSize = 0;
             buttonRedondoEliminar.FlatAppearance.BorderSize = 0;
             buttonRedondoEliminar.FlatStyle = FlatStyle.Flat;
@@ -90,6 +92,18 @@
             buttonRedondoEliminar.UseVisualStyleBackColor = false;
             buttonRedondoEliminar.Click += buttonRedondoEliminar_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(280, 52);
+            label2.Name = "label2";
+            label2.Size = new Size(187, 23);
+            label2.TabIndex = 18;
+            label2.Text = "ELIMINAR PRODUCTO";
+            // 
             // FormEliminar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -97,6 +111,7 @@
             BackgroundImage = Properties.Resources.fondoEliminar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(label2);
             Controls.Add(buttonRedondoEliminar);
             Controls.Add(textBoxBuscarCodigo);
             Controls.Add(label1);
@@ -105,6 +120,7 @@
             Name = "FormEliminar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormEliminar";
+            Load += FormEliminar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -115,5 +131,6 @@
         private Label label1;
         private TextBox textBoxBuscarCodigo;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoEliminar;
+        private Label label2;
     }
 }

@@ -64,8 +64,8 @@
             // 
             // buttonRedondoVentaTot
             // 
-            buttonRedondoVentaTot.BackColor = Color.Transparent;
-            buttonRedondoVentaTot.BackgroundColor = Color.Transparent;
+            buttonRedondoVentaTot.BackColor = Color.FromArgb(177, 196, 243);
+            buttonRedondoVentaTot.BackgroundColor = Color.FromArgb(177, 196, 243);
             buttonRedondoVentaTot.BorderColor = Color.Black;
             buttonRedondoVentaTot.BorderRadius = 30;
             buttonRedondoVentaTot.BorderSize = 0;
@@ -83,8 +83,8 @@
             // 
             // buttonRedondoGrafica
             // 
-            buttonRedondoGrafica.BackColor = Color.Transparent;
-            buttonRedondoGrafica.BackgroundColor = Color.Transparent;
+            buttonRedondoGrafica.BackColor = Color.FromArgb(177, 196, 243);
+            buttonRedondoGrafica.BackgroundColor = Color.FromArgb(177, 196, 243);
             buttonRedondoGrafica.BorderColor = Color.Black;
             buttonRedondoGrafica.BorderRadius = 30;
             buttonRedondoGrafica.BorderSize = 0;
@@ -105,7 +105,7 @@
             buttonRedondoRegresar.BackColor = Color.Transparent;
             buttonRedondoRegresar.BackgroundColor = Color.Transparent;
             buttonRedondoRegresar.BorderColor = Color.Black;
-            buttonRedondoRegresar.BorderRadius = 30;
+            buttonRedondoRegresar.BorderRadius = 0;
             buttonRedondoRegresar.BorderSize = 0;
             buttonRedondoRegresar.FlatAppearance.BorderSize = 0;
             buttonRedondoRegresar.FlatStyle = FlatStyle.Flat;
@@ -124,7 +124,7 @@
             buttonRedondoListaProd.BackColor = Color.Transparent;
             buttonRedondoListaProd.BackgroundColor = Color.Transparent;
             buttonRedondoListaProd.BorderColor = Color.Black;
-            buttonRedondoListaProd.BorderRadius = 30;
+            buttonRedondoListaProd.BorderRadius = 0;
             buttonRedondoListaProd.BorderSize = 0;
             buttonRedondoListaProd.FlatAppearance.BorderSize = 0;
             buttonRedondoListaProd.FlatStyle = FlatStyle.Flat;
@@ -143,7 +143,7 @@
             buttonRedondoEliminar.BackColor = Color.Transparent;
             buttonRedondoEliminar.BackgroundColor = Color.Transparent;
             buttonRedondoEliminar.BorderColor = Color.Black;
-            buttonRedondoEliminar.BorderRadius = 30;
+            buttonRedondoEliminar.BorderRadius = 0;
             buttonRedondoEliminar.BorderSize = 0;
             buttonRedondoEliminar.FlatAppearance.BorderSize = 0;
             buttonRedondoEliminar.FlatStyle = FlatStyle.Flat;
@@ -162,7 +162,7 @@
             buttonRedondoAgregar.BackColor = Color.Transparent;
             buttonRedondoAgregar.BackgroundColor = Color.Transparent;
             buttonRedondoAgregar.BorderColor = Color.Black;
-            buttonRedondoAgregar.BorderRadius = 30;
+            buttonRedondoAgregar.BorderRadius = 0;
             buttonRedondoAgregar.BorderSize = 0;
             buttonRedondoAgregar.FlatAppearance.BorderSize = 0;
             buttonRedondoAgregar.FlatStyle = FlatStyle.Flat;
@@ -181,7 +181,7 @@
             buttonRedondoGrafica2.BackColor = Color.Transparent;
             buttonRedondoGrafica2.BackgroundColor = Color.Transparent;
             buttonRedondoGrafica2.BorderColor = Color.Black;
-            buttonRedondoGrafica2.BorderRadius = 30;
+            buttonRedondoGrafica2.BorderRadius = 0;
             buttonRedondoGrafica2.BorderSize = 0;
             buttonRedondoGrafica2.FlatAppearance.BorderSize = 0;
             buttonRedondoGrafica2.FlatStyle = FlatStyle.Flat;
@@ -199,7 +199,7 @@
             buttonRedondoVentTot2.BackColor = Color.Transparent;
             buttonRedondoVentTot2.BackgroundColor = Color.Transparent;
             buttonRedondoVentTot2.BorderColor = Color.Black;
-            buttonRedondoVentTot2.BorderRadius = 30;
+            buttonRedondoVentTot2.BorderRadius = 0;
             buttonRedondoVentTot2.BorderSize = 0;
             buttonRedondoVentTot2.FlatAppearance.BorderSize = 0;
             buttonRedondoVentTot2.FlatStyle = FlatStyle.Flat;

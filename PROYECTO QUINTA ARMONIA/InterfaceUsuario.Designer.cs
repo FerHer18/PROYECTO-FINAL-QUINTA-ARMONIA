@@ -49,6 +49,7 @@
             btn8 = new Button();
             richTextBoxInfo = new RichTextBox();
             button1 = new Button();
+            buttonRedondoRegresar = new WinFormsAppKhee.ButtonRedondo();
             SuspendLayout();
             // 
             // lblHora
@@ -338,6 +339,24 @@
             button1.TabIndex = 46;
             button1.UseVisualStyleBackColor = false;
             // 
+            // buttonRedondoRegresar
+            // 
+            buttonRedondoRegresar.BackColor = Color.Transparent;
+            buttonRedondoRegresar.BackgroundColor = Color.Transparent;
+            buttonRedondoRegresar.BorderColor = Color.Black;
+            buttonRedondoRegresar.BorderRadius = 0;
+            buttonRedondoRegresar.BorderSize = 0;
+            buttonRedondoRegresar.FlatAppearance.BorderSize = 0;
+            buttonRedondoRegresar.FlatStyle = FlatStyle.Flat;
+            buttonRedondoRegresar.ForeColor = Color.Black;
+            buttonRedondoRegresar.Location = new Point(1082, 641);
+            buttonRedondoRegresar.Name = "buttonRedondoRegresar";
+            buttonRedondoRegresar.Size = new Size(125, 43);
+            buttonRedondoRegresar.TabIndex = 47;
+            buttonRedondoRegresar.TextColor = Color.Black;
+            buttonRedondoRegresar.UseVisualStyleBackColor = false;
+            buttonRedondoRegresar.Click += buttonRedondoRegresar_Click;
+            // 
             // InterfaceUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -345,6 +364,7 @@
             BackgroundImage = Properties.Resources.UIbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1260, 696);
+            Controls.Add(buttonRedondoRegresar);
             Controls.Add(button1);
             Controls.Add(richTextBoxInfo);
             Controls.Add(btn8);
@@ -393,5 +413,6 @@
         private Button btn8;
         private RichTextBox richTextBoxInfo;
         private Button button1;
+        private WinFormsAppKhee.ButtonRedondo buttonRedondoRegresar;
     }
 }

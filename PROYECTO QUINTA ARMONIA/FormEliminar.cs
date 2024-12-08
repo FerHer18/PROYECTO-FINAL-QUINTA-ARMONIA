@@ -26,8 +26,19 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             BaseDatos obj = new BaseDatos();
             obj.eliminar(Convert.ToInt32(this.textBoxBuscarCodigo.Text));
+            this.textBoxBuscarCodigo.Text = "";
             this.textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
             obj.Disconnect();
+        }
+
+        private void FormEliminar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxBuscarCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
