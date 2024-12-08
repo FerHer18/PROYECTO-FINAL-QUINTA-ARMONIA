@@ -12,15 +12,15 @@ using MySql.Data.MySqlClient;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
-    public partial class botonPlay : Form
+    public partial class InterfaceUsuario : Form
     {
         private string Nombre; //atributo necesario para mensaje de bienvenida en inicio de sesion
-        public botonPlay()
+        public InterfaceUsuario()
         {
             InitializeComponent();
         }
 
-        public botonPlay(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
+        public InterfaceUsuario(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
         {
             InitializeComponent();
             this.Nombre = nombre;

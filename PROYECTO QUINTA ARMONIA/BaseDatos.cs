@@ -144,5 +144,45 @@ namespace PROYECTO_QUINTA_ARMONIA
 
             return info;
         }
+
+        public List<ClaseUsuarios> ConsultaUsuarios()
+        {
+            List<ClaseUsuarios> info = new List<ClaseUsuarios>();
+            int id;
+            string name = "";
+            string cuenta = "";
+            string contra = "";
+            float monto;
+            ClaseUsuarios item;
+
+            try
+            {
+                string query = "SELECT * FROM usuarios";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    id = Convert.ToInt32(reader["id"]);
+                    name = Convert.ToString(reader["nombre"]) ?? "";
+                    cuenta = Convert.ToString(reader["cuenta"]) ?? "";
+                    contra = Convert.ToString(reader["contraseña"]) ?? "";
+                    monto = Convert.ToSingle(reader["monto"]);
+
+                    if(cuenta != "admin")
+                    {
+                        item = new ClaseUsuarios(id, name, cuenta, contra, monto);
+                        info.Add(item);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+
+            return info;
+        }
     }
 }
