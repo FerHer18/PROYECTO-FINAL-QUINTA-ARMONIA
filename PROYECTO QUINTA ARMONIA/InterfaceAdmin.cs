@@ -135,5 +135,13 @@ namespace PROYECTO_QUINTA_ARMONIA
             obj.ShowDialog();
             this.Show();
         }
+
+        private void buttonRedondoVentTot2_Click(object sender, EventArgs e)
+        {
+            ventasTotales obj = new ventasTotales();
+            this.Hide();
+            obj.ShowDialog();
+            this.Show();
+        }
     }
 }

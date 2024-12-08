@@ -90,7 +90,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                             else if (tipo == "usuario1" || tipo == "guest" || tipo == "usuario2" || tipo == "usuario3" || tipo == "usuario4") //si es usuario o invitado
                             {
                                 string nombreUs = reader["Nombre"].ToString();
-                                botonPlay interfaceUsu = new botonPlay(nombreUs);
+                                InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUs);
                                 this.Hide();
                                 interfaceUsu.ShowDialog();
                                 this.Show();

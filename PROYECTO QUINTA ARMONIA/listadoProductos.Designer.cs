@@ -48,7 +48,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(204, 47);
+            label1.Location = new Point(342, 60);
             label1.Name = "label1";
             label1.Size = new Size(215, 23);
             label1.TabIndex = 0;
@@ -60,10 +60,10 @@
             dataGridView1.BackgroundColor = Color.FromArgb(201, 221, 243);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { codigo, nombre, descripcion, precio, existencias });
-            dataGridView1.Location = new Point(12, 104);
+            dataGridView1.Location = new Point(90, 125);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(652, 255);
+            dataGridView1.Size = new Size(723, 339);
             dataGridView1.TabIndex = 1;
             // 
             // codigo
@@ -88,7 +88,7 @@
             descripcion.MinimumWidth = 6;
             descripcion.Name = "descripcion";
             descripcion.ReadOnly = true;
-            descripcion.Width = 250;
+            descripcion.Width = 300;
             // 
             // precio
             // 
@@ -115,13 +115,13 @@
             buttonRedondoCancelar.BackColor = Color.Transparent;
             buttonRedondoCancelar.BackgroundColor = Color.Transparent;
             buttonRedondoCancelar.BorderColor = Color.Transparent;
-            buttonRedondoCancelar.BorderRadius = 30;
+            buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
             buttonRedondoCancelar.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonRedondoCancelar.ForeColor = Color.White;
-            buttonRedondoCancelar.Location = new Point(234, 377);
+            buttonRedondoCancelar.Location = new Point(364, 470);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
             buttonRedondoCancelar.Size = new Size(162, 45);
             buttonRedondoCancelar.TabIndex = 2;
@@ -135,10 +135,12 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondo_listado;
-            ClientSize = new Size(676, 489);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(957, 608);
             Controls.Add(buttonRedondoCancelar);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "listadoProductos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "listadoProductos";
@@ -154,11 +156,11 @@
         private Label label1;
         private DataGridView dataGridView1;
         private BindingSource baseDatosBindingSource;
+        private WinFormsAppKhee.ButtonRedondo buttonRedondoCancelar;
         private DataGridViewTextBoxColumn codigo;
         private DataGridViewTextBoxColumn nombre;
         private DataGridViewTextBoxColumn descripcion;
         private DataGridViewTextBoxColumn precio;
         private DataGridViewTextBoxColumn existencias;
-        private WinFormsAppKhee.ButtonRedondo buttonRedondoCancelar;
     }
 }

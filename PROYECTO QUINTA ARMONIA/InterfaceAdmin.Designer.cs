@@ -211,6 +211,7 @@
             buttonRedondoVentTot2.Text = "VENTAS TOTALES";
             buttonRedondoVentTot2.TextColor = Color.Black;
             buttonRedondoVentTot2.UseVisualStyleBackColor = false;
+            buttonRedondoVentTot2.Click += buttonRedondoVentTot2_Click;
             // 
             // picBox1
             // 

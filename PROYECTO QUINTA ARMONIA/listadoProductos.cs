@@ -31,6 +31,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             dataGridView1.Columns["existencias"].DataPropertyName = "Existencias";
 
             dataGridView1.DataSource = ordenado;
+            obj.Disconnect();
         }
 
         private void listadoProductos_Load(object sender, EventArgs e)
