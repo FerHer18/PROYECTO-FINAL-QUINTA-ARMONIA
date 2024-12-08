@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
+    "C:\\Users\\valer\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {
+    "C:\\Users\\valer\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "projectUniqueName": "C:\\Users\\valer\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
         "projectName": "PROYECTO QUINTA ARMONIA",
-        "projectPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
-        "packagesPath": "C:\\Users\\Rosa Lizeth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
+        "projectPath": "C:\\Users\\valer\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\valer\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rosa Lizeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\valer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
