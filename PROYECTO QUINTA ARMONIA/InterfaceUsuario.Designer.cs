@@ -167,6 +167,7 @@
             btn9.Size = new Size(126, 89);
             btn9.TabIndex = 35;
             btn9.UseVisualStyleBackColor = false;
+            btn9.Click += btn9_Click;
             // 
             // btn5
             // 
@@ -182,6 +183,7 @@
             btn5.Size = new Size(126, 92);
             btn5.TabIndex = 36;
             btn5.UseVisualStyleBackColor = false;
+            btn5.Click += btn5_Click;
             // 
             // btn1
             // 
@@ -213,6 +215,7 @@
             btn2.Size = new Size(126, 97);
             btn2.TabIndex = 38;
             btn2.UseVisualStyleBackColor = false;
+            btn2.Click += btn2_Click;
             // 
             // btn6
             // 
@@ -228,6 +231,7 @@
             btn6.Size = new Size(126, 93);
             btn6.TabIndex = 39;
             btn6.UseVisualStyleBackColor = false;
+            btn6.Click += btn6_Click;
             // 
             // btn10
             // 
@@ -243,6 +247,7 @@
             btn10.Size = new Size(126, 89);
             btn10.TabIndex = 40;
             btn10.UseVisualStyleBackColor = false;
+            btn10.Click += btn10_Click;
             // 
             // btn3
             // 
@@ -274,6 +279,7 @@
             btn7.Size = new Size(119, 93);
             btn7.TabIndex = 42;
             btn7.UseVisualStyleBackColor = false;
+            btn7.Click += btn7_Click;
             // 
             // btn4
             // 
@@ -289,6 +295,7 @@
             btn4.Size = new Size(119, 97);
             btn4.TabIndex = 43;
             btn4.UseVisualStyleBackColor = false;
+            btn4.Click += btn4_Click;
             // 
             // btn8
             // 
@@ -304,6 +311,7 @@
             btn8.Size = new Size(119, 93);
             btn8.TabIndex = 44;
             btn8.UseVisualStyleBackColor = false;
+            btn8.Click += btn8_Click;
             // 
             // richTextBoxInfo
             // 
