@@ -63,18 +63,23 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
         }
 
-        private void mostrarInfoProducto(int codigo)
+        private void mostrarInfoProducto(string imagen)
         {
+            if (string.IsNullOrEmpty(imagen))
+            {
+                MessageBox.Show("El código de la imagen es inválido.");
+                return;
+            }
+            richTextBoxInfo.Text = "";
             BaseDatos bd = new BaseDatos(); //instancia necesaria para concetar con la base de datos
             try
             {
-                bd.Connect(); //abre conexión
 
                 //obtien la info 
-                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE codigo= @codigo;";
+                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
                 MySqlCommand command = new MySqlCommand(query, bd.Connection);
 
-                command.Parameters.AddWithValue("@codigo", codigo); //se añade el codigo del producto
+                command.Parameters.AddWithValue("@imagen", imagen); //se añade el codigo del producto
                 MySqlDataReader reader = command.ExecuteReader(); //lee
 
                 if (reader.Read())
@@ -110,7 +115,8 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonYakult_Click(object sender, EventArgs e)
         {
-            mostrarInfoProducto(1);
+            string cod = btn1.Tag?.ToString();
+            mostrarInfoProducto(cod);
         }
 
         private void patch_Click(object sender, EventArgs e)
@@ -120,7 +126,8 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonLotus_Click(object sender, EventArgs e)
         {
-
+            string cod = btn3.Tag?.ToString();
+            mostrarInfoProducto(cod);
         }
 
         public void MostrarImagenes()
@@ -148,36 +155,104 @@ namespace PROYECTO_QUINTA_ARMONIA
                 {
                     case 0:
                         this.btn1.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0]));
+                        btn1.Tag = imagenes[0];
+                        break;
                     case 1:
                         this.btn2.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1]));
+                        btn2.Tag = imagenes[1];
+                        break;
                     case 2:
                         this.btn3.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2]));
+                        btn3.Tag = imagenes[2];
+                        break;
                     case 3:
                         this.btn4.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3]));
+                        btn4.Tag = imagenes[3];
+                        break;
                     case 4:
                         this.btn5.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4]));
+                        btn5.Tag = imagenes[4];
+                        break;
                     case 5:
                         this.btn6.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5]));
+                        btn6.Tag = imagenes[5];
+                        break;
                     case 6:
                         this.btn7.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6]));
+                        btn7.Tag = imagenes[6];
+                        break;
                     case 7:
                         this.btn8.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7]));
+                        btn8.Tag = imagenes[7];
+                        break;
                     case 8:
                         this.btn9.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8]));
+                        btn9.Tag = imagenes[8];
+                        break;
                     case 9:
                         this.btn10.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9])); break;
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9]));
+                        btn10.Tag = imagenes[9];
+                        break;
                 }
             }
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            string cod = btn2.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            string cod = btn4.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            string cod = btn5.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            string cod = btn6.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            string cod = btn7.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            string cod = btn8.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            string cod = btn9.Tag?.ToString();
+            mostrarInfoProducto(cod);
+        }
+
+        private void btn10_Click(object sender, EventArgs e)
+        {
+            string cod = btn10.Tag?.ToString();
+            mostrarInfoProducto(cod);
         }
     }
 }
