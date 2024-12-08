@@ -184,5 +184,28 @@ namespace PROYECTO_QUINTA_ARMONIA
 
             return info;
         }
+        public ClassProductos mostrarExistencias(int cod)
+        {
+            ClassProductos item = null;
+            int codigo;
+            try
+            {
+                string query = "SELECT * FROM inventario where id = " + cod + ";";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    codigo = Convert.ToInt32(reader["cod"]);
+                    item = new ClassProductos(codigo);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message );
+                this.Disconnect();
+            }
+            return item;
+        }
     }
 }
