@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROYECTO QUINTA ARMONIA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30674ae35a0710f3152a8a5ff981945f8bfb7e8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec3520095be7a2ad438002749372d5613663cb88")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROYECTO QUINTA ARMONIA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROYECTO QUINTA ARMONIA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
