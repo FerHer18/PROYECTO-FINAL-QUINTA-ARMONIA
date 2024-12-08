@@ -116,7 +116,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonYakult_Click(object sender, EventArgs e)
         {
             string cod = btn1.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void patch_Click(object sender, EventArgs e)
@@ -127,7 +128,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonLotus_Click(object sender, EventArgs e)
         {
             string cod = btn3.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         public void MostrarImagenes()
@@ -210,49 +212,62 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void btn2_Click(object sender, EventArgs e)
         {
             string cod = btn2.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
             string cod = btn4.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
             string cod = btn5.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
             string cod = btn6.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
             string cod = btn7.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
             string cod = btn8.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
             string cod = btn9.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
         }
 
         private void btn10_Click(object sender, EventArgs e)
         {
             string cod = btn10.Tag?.ToString();
-            mostrarInfoProducto(cod);
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
+        }
+
+        private void buttonRedondoRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

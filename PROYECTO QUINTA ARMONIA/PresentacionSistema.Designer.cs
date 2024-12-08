@@ -51,7 +51,7 @@
             labelIniciarSesion.AutoSize = true;
             labelIniciarSesion.BackColor = Color.Transparent;
             labelIniciarSesion.Font = new Font("Cooper Black", 22F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelIniciarSesion.Location = new Point(576, 118);
+            labelIniciarSesion.Location = new Point(605, 169);
             labelIniciarSesion.Margin = new Padding(2, 0, 2, 0);
             labelIniciarSesion.Name = "labelIniciarSesion";
             labelIniciarSesion.Size = new Size(272, 42);
@@ -88,8 +88,10 @@
             textBoxusuario.Location = new Point(731, 271);
             textBoxusuario.Margin = new Padding(2);
             textBoxusuario.Name = "textBoxusuario";
+            textBoxusuario.PlaceholderText = "usuario";
             textBoxusuario.Size = new Size(174, 27);
             textBoxusuario.TabIndex = 3;
+            textBoxusuario.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2contraseña
             // 
@@ -98,8 +100,10 @@
             textBox2contraseña.Margin = new Padding(2);
             textBox2contraseña.Name = "textBox2contraseña";
             textBox2contraseña.PasswordChar = '*';
+            textBox2contraseña.PlaceholderText = "contraseña";
             textBox2contraseña.Size = new Size(174, 27);
             textBox2contraseña.TabIndex = 4;
+            textBox2contraseña.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonLogin
             // 

@@ -40,9 +40,9 @@
             textBoxExistencias = new TextBox();
             labelNombre = new Label();
             textBoxNombre = new TextBox();
-            labelAgregar = new Label();
             btnCargarImagen = new WinFormsAppKhee.ButtonRedondo();
             picBoxImagen = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)picBoxImagen).BeginInit();
             SuspendLayout();
             // 
@@ -51,17 +51,17 @@
             buttonRedondoCancelar.BackColor = Color.Transparent;
             buttonRedondoCancelar.BackgroundColor = Color.Transparent;
             buttonRedondoCancelar.BorderColor = Color.Transparent;
-            buttonRedondoCancelar.BorderRadius = 30;
+            buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
-            buttonRedondoCancelar.ForeColor = Color.Black;
-            buttonRedondoCancelar.Location = new Point(457, 379);
+            buttonRedondoCancelar.ForeColor = Color.White;
+            buttonRedondoCancelar.Location = new Point(448, 379);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
             buttonRedondoCancelar.Size = new Size(129, 45);
             buttonRedondoCancelar.TabIndex = 0;
             buttonRedondoCancelar.Text = "CANCELAR";
-            buttonRedondoCancelar.TextColor = Color.Black;
+            buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
             buttonRedondoCancelar.Click += buttonRedondoCancelar_Click;
             // 
@@ -70,55 +70,59 @@
             buttonRedondoConfirmar.BackColor = Color.Transparent;
             buttonRedondoConfirmar.BackgroundColor = Color.Transparent;
             buttonRedondoConfirmar.BorderColor = Color.Transparent;
-            buttonRedondoConfirmar.BorderRadius = 30;
+            buttonRedondoConfirmar.BorderRadius = 0;
             buttonRedondoConfirmar.BorderSize = 0;
             buttonRedondoConfirmar.FlatAppearance.BorderSize = 0;
             buttonRedondoConfirmar.FlatStyle = FlatStyle.Flat;
-            buttonRedondoConfirmar.ForeColor = Color.Black;
-            buttonRedondoConfirmar.Location = new Point(223, 375);
+            buttonRedondoConfirmar.ForeColor = Color.White;
+            buttonRedondoConfirmar.Location = new Point(216, 375);
             buttonRedondoConfirmar.Name = "buttonRedondoConfirmar";
             buttonRedondoConfirmar.Size = new Size(118, 53);
             buttonRedondoConfirmar.TabIndex = 1;
             buttonRedondoConfirmar.Text = "CONFIRMAR MOVIMIENTO";
-            buttonRedondoConfirmar.TextColor = Color.Black;
+            buttonRedondoConfirmar.TextColor = Color.White;
             buttonRedondoConfirmar.UseVisualStyleBackColor = false;
             buttonRedondoConfirmar.Click += buttonRedondoConfirmar_Click;
             // 
             // labelCodigo
             // 
             labelCodigo.AutoSize = true;
-            labelCodigo.Location = new Point(103, 149);
+            labelCodigo.BackColor = Color.Transparent;
+            labelCodigo.Location = new Point(109, 136);
             labelCodigo.Name = "labelCodigo";
-            labelCodigo.Size = new Size(148, 20);
+            labelCodigo.Size = new Size(155, 20);
             labelCodigo.TabIndex = 2;
-            labelCodigo.Text = "Codigo del producto";
+            labelCodigo.Text = "Codigo del producto: ";
             // 
             // labelDescrip
             // 
             labelDescrip.AutoSize = true;
+            labelDescrip.BackColor = Color.Transparent;
             labelDescrip.Location = new Point(103, 228);
             labelDescrip.Name = "labelDescrip";
-            labelDescrip.Size = new Size(177, 20);
+            labelDescrip.Size = new Size(180, 20);
             labelDescrip.TabIndex = 3;
-            labelDescrip.Text = "Descripción del producto";
+            labelDescrip.Text = "Descripción del producto:";
             // 
             // labelPrecio
             // 
             labelPrecio.AutoSize = true;
+            labelPrecio.BackColor = Color.Transparent;
             labelPrecio.Location = new Point(105, 271);
             labelPrecio.Name = "labelPrecio";
-            labelPrecio.Size = new Size(140, 20);
+            labelPrecio.Size = new Size(143, 20);
             labelPrecio.TabIndex = 4;
-            labelPrecio.Text = "Precio del producto";
+            labelPrecio.Text = "Precio del producto:";
             // 
             // labelCantidad
             // 
             labelCantidad.AutoSize = true;
+            labelCantidad.BackColor = Color.Transparent;
             labelCantidad.Location = new Point(103, 318);
             labelCantidad.Name = "labelCantidad";
-            labelCantidad.Size = new Size(159, 20);
+            labelCantidad.Size = new Size(162, 20);
             labelCantidad.TabIndex = 5;
-            labelCantidad.Text = "Cantidad del producto";
+            labelCantidad.Text = "Cantidad del producto:";
             // 
             // textBoxCodigo
             // 
@@ -159,11 +163,12 @@
             // labelNombre
             // 
             labelNombre.AutoSize = true;
+            labelNombre.BackColor = Color.Transparent;
             labelNombre.Location = new Point(103, 183);
             labelNombre.Name = "labelNombre";
-            labelNombre.Size = new Size(154, 20);
+            labelNombre.Size = new Size(157, 20);
             labelNombre.TabIndex = 10;
-            labelNombre.Text = "Nombre del producto";
+            labelNombre.Text = "Nombre del producto:";
             // 
             // textBoxNombre
             // 
@@ -173,15 +178,6 @@
             textBoxNombre.Size = new Size(167, 27);
             textBoxNombre.TabIndex = 11;
             textBoxNombre.TextAlign = HorizontalAlignment.Center;
-            // 
-            // labelAgregar
-            // 
-            labelAgregar.AutoSize = true;
-            labelAgregar.Location = new Point(297, 49);
-            labelAgregar.Name = "labelAgregar";
-            labelAgregar.Size = new Size(128, 20);
-            labelAgregar.TabIndex = 14;
-            labelAgregar.Text = "Agregar producto";
             // 
             // btnCargarImagen
             // 
@@ -193,13 +189,13 @@
             btnCargarImagen.BorderSize = 0;
             btnCargarImagen.FlatAppearance.BorderSize = 0;
             btnCargarImagen.FlatStyle = FlatStyle.Flat;
-            btnCargarImagen.ForeColor = Color.Black;
+            btnCargarImagen.ForeColor = Color.White;
             btnCargarImagen.Location = new Point(502, 115);
             btnCargarImagen.Name = "btnCargarImagen";
             btnCargarImagen.Size = new Size(155, 45);
             btnCargarImagen.TabIndex = 15;
             btnCargarImagen.Text = "CARGAR IMAGEN";
-            btnCargarImagen.TextColor = Color.Black;
+            btnCargarImagen.TextColor = Color.White;
             btnCargarImagen.UseVisualStyleBackColor = false;
             btnCargarImagen.Click += btnCargarImagen_Click;
             // 
@@ -212,6 +208,18 @@
             picBoxImagen.TabIndex = 16;
             picBoxImagen.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(263, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(186, 23);
+            label1.TabIndex = 17;
+            label1.Text = "AGREGAR PRODUCTO";
+            // 
             // FormAgregar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -219,9 +227,9 @@
             BackgroundImage = Properties.Resources.fondoAgregar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(label1);
             Controls.Add(picBoxImagen);
             Controls.Add(btnCargarImagen);
-            Controls.Add(labelAgregar);
             Controls.Add(textBoxNombre);
             Controls.Add(labelNombre);
             Controls.Add(textBoxExistencias);
@@ -258,8 +266,8 @@
         private TextBox textBoxExistencias;
         private Label labelNombre;
         private TextBox textBoxNombre;
-        private Label labelAgregar;
         private WinFormsAppKhee.ButtonRedondo btnCargarImagen;
         private PictureBox picBoxImagen;
+        private Label label1;
     }
 }
