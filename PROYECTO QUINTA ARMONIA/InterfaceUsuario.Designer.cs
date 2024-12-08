@@ -37,16 +37,16 @@
             buttonBorrar = new Button();
             buttonLogout = new Button();
             buttonComprar = new Button();
-            buttonRamen = new Button();
-            buttonCoffee = new Button();
-            buttonYakult = new Button();
-            buttonTakoyaki = new Button();
-            buttonTiramisu = new Button();
-            buttonWater = new Button();
-            buttonLotus = new Button();
-            buttonCalpico = new Button();
-            buttonMochi = new Button();
-            buttonRamune = new Button();
+            btn9 = new Button();
+            btn5 = new Button();
+            btn1 = new Button();
+            btn2 = new Button();
+            btn6 = new Button();
+            btn10 = new Button();
+            btn3 = new Button();
+            btn7 = new Button();
+            btn4 = new Button();
+            btn8 = new Button();
             richTextBoxInfo = new RichTextBox();
             button1 = new Button();
             SuspendLayout();
@@ -153,146 +153,157 @@
             buttonComprar.TabIndex = 33;
             buttonComprar.UseVisualStyleBackColor = false;
             // 
-            // buttonRamen
+            // btn9
             // 
-            buttonRamen.BackColor = Color.Transparent;
-            buttonRamen.FlatAppearance.BorderSize = 0;
-            buttonRamen.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonRamen.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonRamen.FlatStyle = FlatStyle.Flat;
-            buttonRamen.Location = new Point(113, 450);
-            buttonRamen.Margin = new Padding(2);
-            buttonRamen.Name = "buttonRamen";
-            buttonRamen.Size = new Size(110, 73);
-            buttonRamen.TabIndex = 35;
-            buttonRamen.UseVisualStyleBackColor = false;
+            btn9.BackColor = Color.Transparent;
+            btn9.BackgroundImageLayout = ImageLayout.Stretch;
+            btn9.FlatAppearance.BorderSize = 0;
+            btn9.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn9.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn9.FlatStyle = FlatStyle.Flat;
+            btn9.Location = new Point(113, 434);
+            btn9.Margin = new Padding(2);
+            btn9.Name = "btn9";
+            btn9.Size = new Size(126, 89);
+            btn9.TabIndex = 35;
+            btn9.UseVisualStyleBackColor = false;
             // 
-            // buttonCoffee
+            // btn5
             // 
-            buttonCoffee.BackColor = Color.Transparent;
-            buttonCoffee.FlatAppearance.BorderSize = 0;
-            buttonCoffee.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonCoffee.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonCoffee.FlatStyle = FlatStyle.Flat;
-            buttonCoffee.Location = new Point(113, 322);
-            buttonCoffee.Margin = new Padding(2);
-            buttonCoffee.Name = "buttonCoffee";
-            buttonCoffee.Size = new Size(110, 73);
-            buttonCoffee.TabIndex = 36;
-            buttonCoffee.UseVisualStyleBackColor = false;
+            btn5.BackColor = Color.Transparent;
+            btn5.BackgroundImageLayout = ImageLayout.Stretch;
+            btn5.FlatAppearance.BorderSize = 0;
+            btn5.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn5.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn5.FlatStyle = FlatStyle.Flat;
+            btn5.Location = new Point(113, 303);
+            btn5.Margin = new Padding(2);
+            btn5.Name = "btn5";
+            btn5.Size = new Size(126, 92);
+            btn5.TabIndex = 36;
+            btn5.UseVisualStyleBackColor = false;
             // 
-            // buttonYakult
+            // btn1
             // 
-            buttonYakult.BackColor = Color.Transparent;
-            buttonYakult.FlatAppearance.BorderSize = 0;
-            buttonYakult.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonYakult.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonYakult.FlatStyle = FlatStyle.Flat;
-            buttonYakult.Location = new Point(113, 194);
-            buttonYakult.Margin = new Padding(2);
-            buttonYakult.Name = "buttonYakult";
-            buttonYakult.Size = new Size(110, 73);
-            buttonYakult.TabIndex = 37;
-            buttonYakult.UseVisualStyleBackColor = false;
-            buttonYakult.Click += buttonYakult_Click;
+            btn1.BackColor = Color.Transparent;
+            btn1.BackgroundImageLayout = ImageLayout.Stretch;
+            btn1.FlatAppearance.BorderSize = 0;
+            btn1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn1.FlatStyle = FlatStyle.Flat;
+            btn1.Location = new Point(113, 179);
+            btn1.Margin = new Padding(2);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(110, 88);
+            btn1.TabIndex = 37;
+            btn1.UseVisualStyleBackColor = false;
+            btn1.Click += buttonYakult_Click;
             // 
-            // buttonTakoyaki
+            // btn2
             // 
-            buttonTakoyaki.BackColor = Color.Transparent;
-            buttonTakoyaki.FlatAppearance.BorderSize = 0;
-            buttonTakoyaki.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonTakoyaki.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonTakoyaki.FlatStyle = FlatStyle.Flat;
-            buttonTakoyaki.Location = new Point(311, 194);
-            buttonTakoyaki.Margin = new Padding(2);
-            buttonTakoyaki.Name = "buttonTakoyaki";
-            buttonTakoyaki.Size = new Size(110, 73);
-            buttonTakoyaki.TabIndex = 38;
-            buttonTakoyaki.UseVisualStyleBackColor = false;
+            btn2.BackColor = Color.Transparent;
+            btn2.BackgroundImageLayout = ImageLayout.Stretch;
+            btn2.FlatAppearance.BorderSize = 0;
+            btn2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn2.FlatStyle = FlatStyle.Flat;
+            btn2.Location = new Point(311, 170);
+            btn2.Margin = new Padding(2);
+            btn2.Name = "btn2";
+            btn2.Size = new Size(126, 97);
+            btn2.TabIndex = 38;
+            btn2.UseVisualStyleBackColor = false;
             // 
-            // buttonTiramisu
+            // btn6
             // 
-            buttonTiramisu.BackColor = Color.Transparent;
-            buttonTiramisu.FlatAppearance.BorderSize = 0;
-            buttonTiramisu.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonTiramisu.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonTiramisu.FlatStyle = FlatStyle.Flat;
-            buttonTiramisu.Location = new Point(311, 323);
-            buttonTiramisu.Margin = new Padding(2);
-            buttonTiramisu.Name = "buttonTiramisu";
-            buttonTiramisu.Size = new Size(110, 73);
-            buttonTiramisu.TabIndex = 39;
-            buttonTiramisu.UseVisualStyleBackColor = false;
+            btn6.BackColor = Color.Transparent;
+            btn6.BackgroundImageLayout = ImageLayout.Stretch;
+            btn6.FlatAppearance.BorderSize = 0;
+            btn6.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn6.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn6.FlatStyle = FlatStyle.Flat;
+            btn6.Location = new Point(311, 303);
+            btn6.Margin = new Padding(2);
+            btn6.Name = "btn6";
+            btn6.Size = new Size(126, 93);
+            btn6.TabIndex = 39;
+            btn6.UseVisualStyleBackColor = false;
             // 
-            // buttonWater
+            // btn10
             // 
-            buttonWater.BackColor = Color.Transparent;
-            buttonWater.FlatAppearance.BorderSize = 0;
-            buttonWater.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonWater.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonWater.FlatStyle = FlatStyle.Flat;
-            buttonWater.Location = new Point(311, 450);
-            buttonWater.Margin = new Padding(2);
-            buttonWater.Name = "buttonWater";
-            buttonWater.Size = new Size(110, 73);
-            buttonWater.TabIndex = 40;
-            buttonWater.UseVisualStyleBackColor = false;
+            btn10.BackColor = Color.Transparent;
+            btn10.BackgroundImageLayout = ImageLayout.Stretch;
+            btn10.FlatAppearance.BorderSize = 0;
+            btn10.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn10.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn10.FlatStyle = FlatStyle.Flat;
+            btn10.Location = new Point(311, 434);
+            btn10.Margin = new Padding(2);
+            btn10.Name = "btn10";
+            btn10.Size = new Size(126, 89);
+            btn10.TabIndex = 40;
+            btn10.UseVisualStyleBackColor = false;
             // 
-            // buttonLotus
+            // btn3
             // 
-            buttonLotus.BackColor = Color.Transparent;
-            buttonLotus.FlatAppearance.BorderSize = 0;
-            buttonLotus.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonLotus.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonLotus.FlatStyle = FlatStyle.Flat;
-            buttonLotus.Location = new Point(509, 194);
-            buttonLotus.Margin = new Padding(2);
-            buttonLotus.Name = "buttonLotus";
-            buttonLotus.Size = new Size(110, 73);
-            buttonLotus.TabIndex = 41;
-            buttonLotus.UseVisualStyleBackColor = false;
+            btn3.BackColor = Color.Transparent;
+            btn3.BackgroundImageLayout = ImageLayout.Stretch;
+            btn3.FlatAppearance.BorderSize = 0;
+            btn3.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn3.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn3.FlatStyle = FlatStyle.Flat;
+            btn3.Location = new Point(509, 170);
+            btn3.Margin = new Padding(2);
+            btn3.Name = "btn3";
+            btn3.Size = new Size(110, 97);
+            btn3.TabIndex = 41;
+            btn3.UseVisualStyleBackColor = false;
+            btn3.Click += buttonLotus_Click;
             // 
-            // buttonCalpico
+            // btn7
             // 
-            buttonCalpico.BackColor = Color.Transparent;
-            buttonCalpico.FlatAppearance.BorderSize = 0;
-            buttonCalpico.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonCalpico.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonCalpico.FlatStyle = FlatStyle.Flat;
-            buttonCalpico.Location = new Point(509, 323);
-            buttonCalpico.Margin = new Padding(2);
-            buttonCalpico.Name = "buttonCalpico";
-            buttonCalpico.Size = new Size(110, 73);
-            buttonCalpico.TabIndex = 42;
-            buttonCalpico.UseVisualStyleBackColor = false;
+            btn7.BackColor = Color.Transparent;
+            btn7.BackgroundImageLayout = ImageLayout.Stretch;
+            btn7.FlatAppearance.BorderSize = 0;
+            btn7.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn7.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn7.FlatStyle = FlatStyle.Flat;
+            btn7.Location = new Point(509, 303);
+            btn7.Margin = new Padding(2);
+            btn7.Name = "btn7";
+            btn7.Size = new Size(119, 93);
+            btn7.TabIndex = 42;
+            btn7.UseVisualStyleBackColor = false;
             // 
-            // buttonMochi
+            // btn4
             // 
-            buttonMochi.BackColor = Color.Transparent;
-            buttonMochi.FlatAppearance.BorderSize = 0;
-            buttonMochi.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonMochi.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonMochi.FlatStyle = FlatStyle.Flat;
-            buttonMochi.Location = new Point(704, 194);
-            buttonMochi.Margin = new Padding(2);
-            buttonMochi.Name = "buttonMochi";
-            buttonMochi.Size = new Size(110, 73);
-            buttonMochi.TabIndex = 43;
-            buttonMochi.UseVisualStyleBackColor = false;
+            btn4.BackColor = Color.Transparent;
+            btn4.BackgroundImageLayout = ImageLayout.Stretch;
+            btn4.FlatAppearance.BorderSize = 0;
+            btn4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn4.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn4.FlatStyle = FlatStyle.Flat;
+            btn4.Location = new Point(704, 170);
+            btn4.Margin = new Padding(2);
+            btn4.Name = "btn4";
+            btn4.Size = new Size(119, 97);
+            btn4.TabIndex = 43;
+            btn4.UseVisualStyleBackColor = false;
             // 
-            // buttonRamune
+            // btn8
             // 
-            buttonRamune.BackColor = Color.Transparent;
-            buttonRamune.FlatAppearance.BorderSize = 0;
-            buttonRamune.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            buttonRamune.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            buttonRamune.FlatStyle = FlatStyle.Flat;
-            buttonRamune.Location = new Point(704, 323);
-            buttonRamune.Margin = new Padding(2);
-            buttonRamune.Name = "buttonRamune";
-            buttonRamune.Size = new Size(110, 73);
-            buttonRamune.TabIndex = 44;
-            buttonRamune.UseVisualStyleBackColor = false;
+            btn8.BackColor = Color.Transparent;
+            btn8.BackgroundImageLayout = ImageLayout.Stretch;
+            btn8.FlatAppearance.BorderSize = 0;
+            btn8.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn8.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn8.FlatStyle = FlatStyle.Flat;
+            btn8.Location = new Point(704, 303);
+            btn8.Margin = new Padding(2);
+            btn8.Name = "btn8";
+            btn8.Size = new Size(119, 93);
+            btn8.TabIndex = 44;
+            btn8.UseVisualStyleBackColor = false;
             // 
             // richTextBoxInfo
             // 
@@ -328,16 +339,16 @@
             ClientSize = new Size(1260, 696);
             Controls.Add(button1);
             Controls.Add(richTextBoxInfo);
-            Controls.Add(buttonRamune);
-            Controls.Add(buttonMochi);
-            Controls.Add(buttonCalpico);
-            Controls.Add(buttonLotus);
-            Controls.Add(buttonWater);
-            Controls.Add(buttonTiramisu);
-            Controls.Add(buttonTakoyaki);
-            Controls.Add(buttonYakult);
-            Controls.Add(buttonCoffee);
-            Controls.Add(buttonRamen);
+            Controls.Add(btn8);
+            Controls.Add(btn4);
+            Controls.Add(btn7);
+            Controls.Add(btn3);
+            Controls.Add(btn10);
+            Controls.Add(btn6);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
+            Controls.Add(btn5);
+            Controls.Add(btn9);
             Controls.Add(buttonComprar);
             Controls.Add(buttonLogout);
             Controls.Add(buttonBorrar);
@@ -362,16 +373,16 @@
         private Button buttonBorrar;
         private Button buttonLogout;
         private Button buttonComprar;
-        private Button buttonRamen;
-        private Button buttonCoffee;
-        private Button buttonYakult;
-        private Button buttonTakoyaki;
-        private Button buttonTiramisu;
-        private Button buttonWater;
-        private Button buttonLotus;
-        private Button buttonCalpico;
-        private Button buttonMochi;
-        private Button buttonRamune;
+        private Button btn9;
+        private Button btn5;
+        private Button btn1;
+        private Button btn2;
+        private Button btn6;
+        private Button btn10;
+        private Button btn3;
+        private Button btn7;
+        private Button btn4;
+        private Button btn8;
         private RichTextBox richTextBoxInfo;
         private Button button1;
     }

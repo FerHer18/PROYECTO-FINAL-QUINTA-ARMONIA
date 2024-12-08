@@ -172,7 +172,7 @@
             btnPlay.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnPlay.FlatStyle = FlatStyle.Flat;
             btnPlay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPlay.Image = (Image)resources.GetObject("btnPlay.Image");
+            btnPlay.Image = Properties.Resources.play_music;
             btnPlay.Location = new Point(824, 18);
             btnPlay.Margin = new Padding(2);
             btnPlay.Name = "btnPlay";
@@ -184,7 +184,7 @@
             // btnPause
             // 
             btnPause.BackColor = Color.Transparent;
-            btnPause.BackgroundImage = (Image)resources.GetObject("btnPause.BackgroundImage");
+            btnPause.BackgroundImage = Properties.Resources.pause_music;
             btnPause.FlatAppearance.BorderSize = 0;
             btnPause.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnPause.FlatAppearance.MouseOverBackColor = Color.Transparent;
