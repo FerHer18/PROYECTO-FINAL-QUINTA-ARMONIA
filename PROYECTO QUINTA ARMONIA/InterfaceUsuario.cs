@@ -17,6 +17,7 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class InterfaceUsuario : Form
     {
         private string Nombre; //atributo necesario para mensaje de bienvenida en inicio de sesion
+        List<ClassProductos> listCompra = new List<ClassProductos>();
         private List<string> imagenes;
         private int cantProductos;
 
@@ -66,73 +67,9 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
         }
 
-        private void mostrarInfoProducto(string imagen)
-        {
-            if (string.IsNullOrEmpty(imagen))
-            {
-                MessageBox.Show("El código de la imagen es inválido.");
-                return;
-            }
-            richTextBoxInfo.Text = "";
-            BaseDatos bd = new BaseDatos(); //instancia necesaria para concetar con la base de datos
-            try
-            {
-
-                //obtien la info 
-                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
-                MySqlCommand command = new MySqlCommand(query, bd.Connection);
-
-                command.Parameters.AddWithValue("@imagen", imagen); //se añade el codigo del producto
-                MySqlDataReader reader = command.ExecuteReader(); //lee
-
-                if (reader.Read())
-                {
-                    //extraer datos
-                    string nombre = reader["nombre"].ToString() ?? "";
-                    string descripcion = reader["descripcion"].ToString() ?? "";
-                    string precio = reader["precio"].ToString() ?? "";
-                    string existencias = reader["existencias"].ToString() ?? "";
-                    //mostrar 
-                    richTextBoxInfo.Rtf = @"{\rtf1\ansi 
-                    \b Nombre:\b0  " + nombre + @"\line
-                    \b Descripción:\b0  " + descripcion + @"\line
-                    \b Precio:\b0  " + precio + @"\line
-                    \b Existencias:\b0  " + existencias + @"}";
-
-                }
-                else
-                {
-                    richTextBoxInfo.Text = "No encontrado.";
-                }
-                reader.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: {ex.Message}");
-            }
-            finally
-            {
-                bd.Disconnect();
-            }
-        }
-
-        private void buttonYakult_Click(object sender, EventArgs e)
-        {
-            string cod = btn1.Tag?.ToString();
-            if (!string.IsNullOrEmpty(cod))
-                mostrarInfoProducto(cod);
-        }
-
         private void patch_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void buttonLotus_Click(object sender, EventArgs e)
-        {
-            string cod = btn3.Tag?.ToString();
-            if (!string.IsNullOrEmpty(cod))
-                mostrarInfoProducto(cod);
         }
 
         public void MostrarImagenes()
@@ -212,6 +149,73 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
+        private void mostrarInfoProducto(string imagen)
+        {
+            if (string.IsNullOrEmpty(imagen))
+            {
+                MessageBox.Show("El código de la imagen es inválido.");
+                return;
+            }
+            richTextBoxInfo.Text = "";
+            BaseDatos bd = new BaseDatos(); //instancia necesaria para concetar con la base de datos
+            try
+            {
+
+                //obtien la info 
+                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
+                MySqlCommand command = new MySqlCommand(query, bd.Connection);
+
+                command.Parameters.AddWithValue("@imagen", imagen); //se añade el codigo del producto
+                MySqlDataReader reader = command.ExecuteReader(); //lee
+
+                if (reader.Read())
+                {
+                    //extraer datos
+                    string nombre = reader["nombre"].ToString() ?? "";
+                    string descripcion = reader["descripcion"].ToString() ?? "";
+                    string precio = reader["precio"].ToString() ?? "";
+                    string existencias = reader["existencias"].ToString() ?? "";
+                    //mostrar 
+                    richTextBoxInfo.Rtf = @"{\rtf1\ansi 
+\pard\ql\sl360\slmult1\li0\b Nombre:\b0 " + nombre + @"\line
+\pard\ql\sl360\slmult1\li0\b Descripción:\b0 " + descripcion + @"\line
+\pard\ql\sl360\slmult1\li0\b Precio:\b0 " + precio + @"\line
+\pard\ql\sl360\slmult1\li0\b Existencias:\b0 " + existencias + @"}";
+
+                    //dejar esta lineas fuera de la sangria para que funcionen
+
+
+                }
+                else
+                {
+                    richTextBoxInfo.Text = "No encontrado.";
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: {ex.Message}");
+            }
+            finally
+            {
+                bd.Disconnect();
+            }
+        }
+
+        private void buttonYakult_Click(object sender, EventArgs e)
+        {
+            string cod = btn1.Tag?.ToString();
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
+        }
+
+        private void buttonLotus_Click(object sender, EventArgs e)
+        {
+            string cod = btn3.Tag?.ToString();
+            if (!string.IsNullOrEmpty(cod))
+                mostrarInfoProducto(cod);
+        }
+
         private void btn2_Click(object sender, EventArgs e)
         {
             string cod = btn2.Tag?.ToString();
@@ -268,6 +272,72 @@ namespace PROYECTO_QUINTA_ARMONIA
                 mostrarInfoProducto(cod);
         }
 
+        private void EjecutarCompra(string nombre, int contador) //falta contador
+        {
+            //Mensaje de confirmación con un ícono
+            MessageBox.Show(
+                $"Se agregó al carrito: {nombre} x {contador}", //Mensaje
+                "Producto agregado",                           //Título de la ventana
+                MessageBoxButtons.OK,                         //Botón de confirmación
+                MessageBoxIcon.Exclamation                    //Icono de exclamación
+            );
+        }
+
+        private void buttonComprar_Click(object sender, EventArgs e)
+        {
+            //Identificar qué botón fue presionado usando "sender"
+            Button botonPresionado = sender as Button;
+
+            if (botonPresionado != null)
+            {
+                //Obtener el código almacenado en el Tag del botón
+                string cod = botonPresionado.Tag?.ToString();
+                string nombre = "";
+
+                if (string.IsNullOrEmpty(cod))
+                {
+                    BaseDatos bd = new BaseDatos();
+                    try
+                    {
+                        string query = "SELECT nombre FROM inventario WHERE imagen= @imagen;";
+                        MySqlCommand command = new MySqlCommand(query, bd.Connection);
+
+                        command.Parameters.AddWithValue("@imagen", cod);
+                        MySqlDataReader reader = command.ExecuteReader(); //lee
+
+                        if (reader.Read())
+                        {
+                            //extraer datos
+                            nombre = reader["nombre"].ToString() ?? "";
+                        }
+                        else
+                        {
+                            richTextBoxInfo.Text = "No se encontro el nombre del producto.";
+                        }
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: {ex.Message}");
+                    }
+                    finally
+                    {
+                        bd.Disconnect();
+                    }
+
+                }
+                //Obtener el contador dinámico
+                //int contador = ObtenerContador();
+
+                //EjecutarCompra(nombre, contador);
+
+                //Agregar a la lista
+                //string productoConCantidad = $"{nombre} x{contador}";
+                //listCompra.Add(productoConCantidad);
+            }
+        }
+
+
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -288,6 +358,11 @@ namespace PROYECTO_QUINTA_ARMONIA
             FormVerCarrito f1 = new FormVerCarrito();
             this.Hide();
             f1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
