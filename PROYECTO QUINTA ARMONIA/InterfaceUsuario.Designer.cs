@@ -51,6 +51,10 @@
             buttonRedondoRegresar = new WinFormsAppKhee.ButtonRedondo();
             btnPlay = new Button();
             btnPause = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
             SuspendLayout();
             // 
             // lblHora
@@ -320,7 +324,7 @@
             buttonRedondoRegresar.FlatStyle = FlatStyle.Flat;
             buttonRedondoRegresar.ForeColor = Color.Black;
             buttonRedondoRegresar.Location = new Point(1758, 1026);
-            buttonRedondoRegresar.Margin = new Padding(5, 5, 5, 5);
+            buttonRedondoRegresar.Margin = new Padding(5);
             buttonRedondoRegresar.Name = "buttonRedondoRegresar";
             buttonRedondoRegresar.Size = new Size(203, 69);
             buttonRedondoRegresar.TabIndex = 47;
@@ -362,6 +366,34 @@
             btnPause.UseVisualStyleBackColor = false;
             btnPause.Click += btnPause_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(437, 518);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 39);
+            textBox1.TabIndex = 50;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(924, 538);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(200, 39);
+            textBox2.TabIndex = 51;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(932, 546);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(200, 39);
+            textBox3.TabIndex = 52;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(940, 554);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(200, 39);
+            textBox4.TabIndex = 53;
+            // 
             // InterfaceUsuario
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -369,6 +401,10 @@
             BackgroundImage = Properties.Resources.UIbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(2048, 1114);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(btnPlay);
             Controls.Add(btnPause);
             Controls.Add(buttonRedondoRegresar);
@@ -390,7 +426,7 @@
             Controls.Add(buttonDown);
             Controls.Add(lblHora);
             Controls.Add(lblFecha);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "InterfaceUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "InterfaceUsuario";
@@ -422,5 +458,9 @@
         private WinFormsAppKhee.ButtonRedondo buttonRedondoRegresar;
         private Button btnPlay;
         private Button btnPause;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
     }
 }
