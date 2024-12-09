@@ -16,5 +16,10 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             InitializeComponent();
         }
+
+        private void FormVerCarrito_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

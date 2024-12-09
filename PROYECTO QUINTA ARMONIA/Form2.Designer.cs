@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            buttonComprar = new Button();
             SuspendLayout();
+            // 
+            // buttonComprar
+            // 
+            buttonComprar.BackColor = Color.Transparent;
+            buttonComprar.FlatAppearance.BorderSize = 0;
+            buttonComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            buttonComprar.FlatStyle = FlatStyle.Flat;
+            buttonComprar.Location = new Point(795, 107);
+            buttonComprar.Name = "buttonComprar";
+            buttonComprar.Size = new Size(271, 51);
+            buttonComprar.TabIndex = 34;
+            buttonComprar.UseVisualStyleBackColor = false;
             // 
             // FormVerCarrito
             // 
@@ -36,11 +50,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.UIcarritoBackground;
             ClientSize = new Size(1484, 1080);
+            Controls.Add(buttonComprar);
             Name = "FormVerCarrito";
             Text = "Form2";
+            Load += FormVerCarrito_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonComprar;
     }
 }

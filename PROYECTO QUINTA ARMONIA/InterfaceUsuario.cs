@@ -38,7 +38,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void InterfaceUsuario_Load(object sender, EventArgs e)
         {
             MostrarImagenes();
-            
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -281,6 +281,11 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void btnPause_Click(object sender, EventArgs e)
         {
             ClaseMusica.Pause();
+        }
+
+        private void buttonVerCarrito_Click(object sender, EventArgs e)
+        {
+            FormVerCarrito f1 = new FormVerCarrito();
         }
     }
 }
