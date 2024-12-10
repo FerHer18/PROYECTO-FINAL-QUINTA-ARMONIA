@@ -20,6 +20,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         List<ClassProductos> listCompra = new List<ClassProductos>();
         private List<string> imagenes;
         private int cantProductos;
+        private int cantidad = 0;
 
         public InterfaceUsuario()
         {
@@ -363,6 +364,21 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonUp_Click(object sender, EventArgs e)
+        {
+            cantidad++;
+            labelCantidad.Text = cantidad.ToString();
+        }
+
+        private void buttonDown_Click(object sender, EventArgs e)
+        {
+            if (cantidad > 0)
+            {
+                cantidad--;
+                labelCantidad.Text = cantidad.ToString();
+            }
         }
     }
 }
