@@ -38,19 +38,22 @@
             buttonComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonComprar.FlatStyle = FlatStyle.Flat;
-            buttonComprar.Location = new Point(795, 107);
+            buttonComprar.Location = new Point(489, 67);
+            buttonComprar.Margin = new Padding(2);
             buttonComprar.Name = "buttonComprar";
-            buttonComprar.Size = new Size(271, 51);
+            buttonComprar.Size = new Size(167, 32);
             buttonComprar.TabIndex = 34;
             buttonComprar.UseVisualStyleBackColor = false;
             // 
             // FormVerCarrito
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.UIcarritoBackground;
-            ClientSize = new Size(1484, 1080);
+            BackgroundImage = Properties.Resources.UIcarritoBackground1;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(959, 656);
             Controls.Add(buttonComprar);
+            Margin = new Padding(2);
             Name = "FormVerCarrito";
             Text = "Form2";
             Load += FormVerCarrito_Load;

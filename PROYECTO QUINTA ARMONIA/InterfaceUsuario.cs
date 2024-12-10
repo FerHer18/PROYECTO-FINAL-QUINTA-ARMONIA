@@ -358,7 +358,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             FormVerCarrito f1 = new FormVerCarrito();
             this.Hide();
-            f1.Show();
+            f1.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
