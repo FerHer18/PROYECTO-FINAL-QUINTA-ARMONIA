@@ -43,6 +43,51 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
+        public bool Login(string cuenta, string contraseña, out string tipoUsuario, out string nombreUsuario)   //el out sirve para declarar paramteros de salida, es el return
+        {
+            tipoUsuario = string.Empty;
+            nombreUsuario = string.Empty;
+
+            if (string.IsNullOrWhiteSpace(cuenta) || string.IsNullOrWhiteSpace(contraseña))
+            {
+                MessageBox.Show("Complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            try
+            {
+                string query = "SELECT * FROM usuarios WHERE Cuenta = @Cuenta AND Contraseña = @Contraseña;";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                command.Parameters.AddWithValue("@Cuenta", cuenta);
+                command.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            tipoUsuario = reader["Cuenta"].ToString();
+                            nombreUsuario = reader["Nombre"].ToString();
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Datos incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return false;
+            }
+        }
+
+
         public void guardar(int codigo, string nombre, string descripcion, float precio, int existencias, string imagen)
         {
             string query = "";

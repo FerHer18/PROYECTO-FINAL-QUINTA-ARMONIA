@@ -35,75 +35,50 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         }
 
+       
         public void login(string cuenta, string contraseña)
         {
-            if (string.IsNullOrWhiteSpace(cuenta) || string.IsNullOrWhiteSpace(contraseña)) //verifica que haya algo en los textBox
-            {
-                MessageBox.Show("Complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); //mensaje de error si es null
-                return;
-            }
-
-            BaseDatos bd = new BaseDatos(); //instancia necesaria para concetar con la base de datos 
+            BaseDatos bd = new BaseDatos(); // Crear la instancia manualmente
             try
             {
-                //consulta en la tabla de usuarios 
-                string query = "SELECT * FROM usuarios WHERE Cuenta = @Cuenta AND Contraseña = @Contraseña;";
-                MySqlCommand command = new MySqlCommand(query, bd.Connection);
-
-                //parametros para la consulta
-                command.Parameters.AddWithValue("@Cuenta", cuenta);
-                command.Parameters.AddWithValue("@Contraseña", contraseña);
-
-                using (MySqlDataReader reader = command.ExecuteReader())
+                if (bd.Login(cuenta, contraseña, out string tipoUsuario, out string nombreUsuario)) //lo de out es que la funcion va a regresar
+                                                                                                    //dos cosas y con la palabra out
+                                                                                                    //no es necesario uso de cosas extra, y es mas facil
                 {
-                    if (reader.HasRows) //verifica si se devolvio algo después de la consulta 
-                    {
-                        MessageBox.Show("---> BIENVENIDO A QUINTA ARMONIA <---"); //en caso de que los datos sean correctos 
-                        while (reader.Read())
-                        {
-                            string tipo = reader["Cuenta"].ToString();
+                    MessageBox.Show("---> BIENVENIDO A QUINTA ARMONIA <---");
 
-                            if (tipo == "admin" || tipo == "admin1") //si es admin
-                            {
-                                string nombreAdm = reader["Nombre"].ToString();
-                                this.Hide(); //se esconde el form de presentación 
-                                InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreAdm); //se le manda el nombre de la persona que se logeo
-                                interfaceAdm.ShowDialog(); //se ejecuta el form admin y regresa a la siguiente instruccion
-                                this.textBoxusuario.Text = "";
-                                this.textBoxusuario.PlaceholderText = "usuario";
-                                this.textBox2contraseña.Text = "";
-                                this.textBox2contraseña.PlaceholderText = "contraseña";
-                                this.Show(); //regresa a la presentación
-                            }
-                            else if (tipo == "usuario1" || tipo == "guest" || tipo == "usuario2" || tipo == "usuario3" || tipo == "usuario4") //si es usuario o invitado
-                            {
-                                string nombreUs = reader["Nombre"].ToString();
-                                InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUs);
-                                this.Hide();
-                                interfaceUsu.ShowDialog();
-                                this.textBoxusuario.Text = "";
-                                this.textBoxusuario.PlaceholderText = "usuario";
-                                this.textBox2contraseña.Text = "";
-                                this.textBox2contraseña.PlaceholderText = "contraseña";
-                                this.Show();
-                            }
-                        }
-                    }
-                    else
+                    if (tipoUsuario == "admin" || tipoUsuario == "admin1")
                     {
-                        MessageBox.Show("Datos incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Hide();
+                        InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreUsuario);
+                        interfaceAdm.ShowDialog();
+                        //ResetForm();
+                        this.textBoxusuario.Text = "";
+                        this.textBoxusuario.PlaceholderText = "usuario";
+                        this.textBox2contraseña.Text = "";
+                        this.textBox2contraseña.PlaceholderText = "contraseña";
+                        this.Show();
+                    }
+                    else if (tipoUsuario == "usuario1" || tipoUsuario == "guest" || tipoUsuario == "usuario2" || tipoUsuario == "usuario3" || tipoUsuario == "usuario4")
+                    {
+                        this.Hide();
+                        InterfaceUsuario interfaceUsu = new InterfaceUsuario(nombreUsuario);
+                        interfaceUsu.ShowDialog();
+                        //ResetForm();
+                        this.textBoxusuario.Text = "";
+                        this.textBoxusuario.PlaceholderText = "usuario";
+                        this.textBox2contraseña.Text = "";
+                        this.textBox2contraseña.PlaceholderText = "contraseña";
+                        this.Show();
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}");
             }
             finally
             {
                 bd.Disconnect();
             }
         }
+
 
         private void buttonLogin_Click_1(object sender, EventArgs e)
         {
