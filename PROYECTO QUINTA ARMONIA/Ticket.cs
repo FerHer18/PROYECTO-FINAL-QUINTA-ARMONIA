@@ -19,6 +19,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         public Ticket()
         {
             InitializeComponent();
+
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)
@@ -36,14 +37,12 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         }
 
-        private void buttonContinuar_Click(object sender, EventArgs e)
-        {
-            MetodoPago metodoPago = new MetodoPago();
-        }
-
         private void buttonContinuar_Click_1(object sender, EventArgs e)
         {
-
+            generarTicket();
+            this.Close();
+            InterfaceUsuario comprardeNuevo = new InterfaceUsuario();
+            comprardeNuevo.ShowDialog();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -62,6 +61,78 @@ namespace PROYECTO_QUINTA_ARMONIA
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            InterfaceUsuario ProductosComprados = new InterfaceUsuario();
+            List<Compra> compra = ProductosComprados.getCompra();
+            dataGridViewCompras.DataSource = compra;
+        }
+
+        private void buttonRegresar_Click_1(object sender, EventArgs e)
+        {
+            MetodoPago regresar = new MetodoPago();
+            this.Hide();
+            regresar.ShowDialog();
+        }
+        private void generarTicket()
+        {
+            int formWidth = 642;
+            int formHeight = 837;
+            int ticketWidth = formWidth;
+            int ticketHeight = formHeight -120;
+            int x = 0;
+            int y = 0;
+
+            Bitmap bitmap = new Bitmap(ticketWidth, ticketHeight);
+
+            using (Graphics g = Graphics.FromImage(bitmap))
+            {
+                g.CopyFromScreen(this.PointToScreen(new Point(x, y)), Point.Empty, new Size(ticketWidth, ticketHeight));
+            }
+            PdfDocument document = new PdfDocument();
+            document.Info.Title = "Tu ticket será exportado en Formato PDF";
+
+            PdfPage page = document.AddPage();
+            XGraphics gfx = XGraphics.FromPdfPage(page);
+
+            using (MemoryStream stream = new MemoryStream())
+            {
+                bitmap.Save(stream, ImageFormat.Png);
+                XImage image = XImage.FromStream(stream);
+                gfx.DrawImage(image, 0, 0, page.Width, page.Height);
+            }
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+            saveFileDialog.Title = "Guardar PDF";
+            saveFileDialog.DefaultExt = "pdf";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+                document.Save(filePath);
+                MessageBox.Show($"Tu ticket será guardado en: {filePath}");
+
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            gfx.Dispose();
+            document.Close();
+            bitmap.Dispose();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelResumen_Click(object sender, EventArgs e)
         {
 
         }

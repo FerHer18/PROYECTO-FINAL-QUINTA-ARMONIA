@@ -25,6 +25,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonTarjeta_Click(object sender, EventArgs e)
         {
             PagoConTarjeta pagoConTarjeta = new PagoConTarjeta();
+            this.Hide();
+            pagoConTarjeta.ShowDialog();
         }
 
         private void MetodoPago_Load(object sender, EventArgs e)

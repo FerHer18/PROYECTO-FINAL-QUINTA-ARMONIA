@@ -329,7 +329,9 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public List<Compra> getCompra() { return listaCompra; }
+        public List<Compra> getCompra() { 
+            return listaCompra; 
+        }
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -390,6 +392,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                 listaCompra.Clear();
                 MessageBox.Show($"Se eliminaron todos los productos", "Carrito vacio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void richTextBoxInfo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
