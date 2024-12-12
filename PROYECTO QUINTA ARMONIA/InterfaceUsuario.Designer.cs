@@ -124,7 +124,7 @@
             buttonBorrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonBorrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonBorrar.FlatStyle = FlatStyle.Flat;
-            buttonBorrar.Location = new Point(884, 505);
+            buttonBorrar.Location = new Point(901, 490);
             buttonBorrar.Margin = new Padding(2);
             buttonBorrar.Name = "buttonBorrar";
             buttonBorrar.Size = new Size(102, 48);
@@ -393,7 +393,7 @@
             buttonComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonComprar.FlatStyle = FlatStyle.Flat;
-            buttonComprar.Location = new Point(1018, 494);
+            buttonComprar.Location = new Point(1053, 493);
             buttonComprar.Margin = new Padding(2);
             buttonComprar.Name = "buttonComprar";
             buttonComprar.Size = new Size(94, 43);

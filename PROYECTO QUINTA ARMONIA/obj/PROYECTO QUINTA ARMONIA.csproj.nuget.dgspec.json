@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vanes\\Desktop\\aat\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
+    "C:\\Users\\vanes\\Desktop\\aav\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vanes\\Desktop\\aat\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {
+    "C:\\Users\\vanes\\Desktop\\aav\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vanes\\Desktop\\aat\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "projectUniqueName": "C:\\Users\\vanes\\Desktop\\aav\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
         "projectName": "PROYECTO QUINTA ARMONIA",
-        "projectPath": "C:\\Users\\vanes\\Desktop\\aat\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
+        "projectPath": "C:\\Users\\vanes\\Desktop\\aav\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj",
         "packagesPath": "C:\\Users\\vanes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vanes\\Desktop\\aat\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
+        "outputPath": "C:\\Users\\vanes\\Desktop\\aav\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vanes\\AppData\\Roaming\\NuGet\\NuGet.Config",

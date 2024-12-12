@@ -190,6 +190,42 @@ namespace PROYECTO_QUINTA_ARMONIA
             return info;
         }
 
+        public List<ClassProductos> obtenerInfoProducto(string imagen)
+        {
+            List<ClassProductos> info = new List<ClassProductos>();
+            string name;
+            string desc;
+            float precio;
+            int existencias;
+            ClassProductos item;
+
+            try
+            {
+                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@imagen", imagen);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    //id = Convert.ToInt32(reader["codigo"]);
+                    name = Convert.ToString(reader["nombre"]) ?? "";
+                    desc = Convert.ToString(reader["descripcion"]) ?? "";
+                    precio = Convert.ToSingle(reader["precio"]);
+                    existencias = Convert.ToInt32(reader["existencias"]);
+                    item = new ClassProductos(name, desc, precio, existencias);
+                    info.Add(item);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+            return info;
+        }
+
         public List<ClaseUsuarios> ConsultaUsuarios()
         {
             List<ClaseUsuarios> info = new List<ClaseUsuarios>();
@@ -253,5 +289,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
             return item;
         }
+
+
     }
 }
