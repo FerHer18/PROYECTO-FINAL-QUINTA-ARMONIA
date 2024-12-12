@@ -19,14 +19,12 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
         {
-            //this.Close();
+  
         }
 
         private void buttonRegresarComprar_Click(object sender, EventArgs e)
         {
-            //this.Close();
-            this.Hide();
-            //cuando se le apachurra a este boton se sale del sistema
+            this.Close();
         }
     }
 }
