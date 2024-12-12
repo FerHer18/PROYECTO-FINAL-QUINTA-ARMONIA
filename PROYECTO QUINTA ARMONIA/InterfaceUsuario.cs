@@ -188,7 +188,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         //la utiliza el metodo mostrarInfoProducto
         private void buttonYakult_Click(object sender, EventArgs e)
         {
-            string cod = btn1.Tag.ToString() ?? "";
+            string cod = btn1.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -200,7 +200,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonLotus_Click(object sender, EventArgs e)
         {
-            string cod = btn3.Tag.ToString() ?? "";
+            string cod = btn3.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -211,7 +211,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            string cod = btn2.Tag.ToString() ?? "";
+            string cod = btn2.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -222,7 +222,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            string cod = btn4.Tag.ToString() ?? "";
+            string cod = btn4.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -233,7 +233,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            string cod = btn5.Tag.ToString() ?? "";
+            string cod = btn5.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -244,7 +244,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            string cod = btn6.Tag.ToString() ?? "";
+            string cod = btn6.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -255,7 +255,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            string cod = btn7.Tag.ToString() ?? "";
+            string cod = btn7.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -266,7 +266,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            string cod = btn8.Tag.ToString() ?? "";
+            string cod = btn8.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -277,7 +277,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            string cod = btn9.Tag.ToString() ?? "";
+            string cod = btn9.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -288,7 +288,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            string cod = btn10.Tag.ToString();
+            string cod = btn10.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -303,14 +303,14 @@ namespace PROYECTO_QUINTA_ARMONIA
             MessageBox.Show(
                 $"Se agregó al carrito: {this.nomProd} x {this.cantidad}", //Mensaje
                 "Producto agregado",                           //Título de la ventana
-                MessageBoxButtons.OK,                         //Botón de confirmación
+                MessageBoxButtons.OK,                        //Botón de confirmación
                 MessageBoxIcon.Exclamation                    //Icono de exclamación
             );
         }
 
         private void buttonComprar_Click(object sender, EventArgs e)
         {
-            if (this.prodSelect != 0)
+            if (this.prodSelect != 0 && this.cantidad!=0)
             {
                 EjecutarCompra();
                 //Agregar a la lista
