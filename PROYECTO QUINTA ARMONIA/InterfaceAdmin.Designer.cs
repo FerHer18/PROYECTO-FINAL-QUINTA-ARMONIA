@@ -116,7 +116,6 @@
             buttonRedondoRegresar.Name = "buttonRedondoRegresar";
             buttonRedondoRegresar.Size = new Size(125, 43);
             buttonRedondoRegresar.TabIndex = 9;
-            buttonRedondoRegresar.Text = "LOGOUT";
             buttonRedondoRegresar.TextColor = Color.Black;
             buttonRedondoRegresar.UseVisualStyleBackColor = false;
             buttonRedondoRegresar.Click += buttonRedondoRegresar_Click;
@@ -131,11 +130,10 @@
             buttonRedondoListaProd.FlatAppearance.BorderSize = 0;
             buttonRedondoListaProd.FlatStyle = FlatStyle.Flat;
             buttonRedondoListaProd.ForeColor = Color.Black;
-            buttonRedondoListaProd.Location = new Point(1075, 448);
+            buttonRedondoListaProd.Location = new Point(1075, 462);
             buttonRedondoListaProd.Name = "buttonRedondoListaProd";
             buttonRedondoListaProd.Size = new Size(125, 48);
             buttonRedondoListaProd.TabIndex = 10;
-            buttonRedondoListaProd.Text = "LISTADO DE PRODUCTOS";
             buttonRedondoListaProd.TextColor = Color.Black;
             buttonRedondoListaProd.UseVisualStyleBackColor = false;
             buttonRedondoListaProd.Click += buttonRedondoListaProd_Click;
@@ -150,11 +148,10 @@
             buttonRedondoEliminar.FlatAppearance.BorderSize = 0;
             buttonRedondoEliminar.FlatStyle = FlatStyle.Flat;
             buttonRedondoEliminar.ForeColor = Color.Black;
-            buttonRedondoEliminar.Location = new Point(1075, 316);
+            buttonRedondoEliminar.Location = new Point(1066, 252);
             buttonRedondoEliminar.Name = "buttonRedondoEliminar";
             buttonRedondoEliminar.Size = new Size(125, 41);
             buttonRedondoEliminar.TabIndex = 11;
-            buttonRedondoEliminar.Text = "ELIMINAR";
             buttonRedondoEliminar.TextColor = Color.Black;
             buttonRedondoEliminar.UseVisualStyleBackColor = false;
             buttonRedondoEliminar.Click += buttonRedondoEliminar_Click;
@@ -169,11 +166,10 @@
             buttonRedondoAgregar.FlatAppearance.BorderSize = 0;
             buttonRedondoAgregar.FlatStyle = FlatStyle.Flat;
             buttonRedondoAgregar.ForeColor = Color.Black;
-            buttonRedondoAgregar.Location = new Point(1075, 248);
+            buttonRedondoAgregar.Location = new Point(1075, 205);
             buttonRedondoAgregar.Name = "buttonRedondoAgregar";
             buttonRedondoAgregar.Size = new Size(125, 41);
             buttonRedondoAgregar.TabIndex = 12;
-            buttonRedondoAgregar.Text = "AGREGAR";
             buttonRedondoAgregar.TextColor = Color.Black;
             buttonRedondoAgregar.UseVisualStyleBackColor = false;
             buttonRedondoAgregar.Click += buttonRedondoAgregar_Click;
@@ -188,11 +184,10 @@
             buttonRedondoGrafica2.FlatAppearance.BorderSize = 0;
             buttonRedondoGrafica2.FlatStyle = FlatStyle.Flat;
             buttonRedondoGrafica2.ForeColor = Color.Black;
-            buttonRedondoGrafica2.Location = new Point(1075, 584);
+            buttonRedondoGrafica2.Location = new Point(1075, 595);
             buttonRedondoGrafica2.Name = "buttonRedondoGrafica2";
             buttonRedondoGrafica2.Size = new Size(125, 41);
             buttonRedondoGrafica2.TabIndex = 13;
-            buttonRedondoGrafica2.Text = "GRAFICA";
             buttonRedondoGrafica2.TextColor = Color.Black;
             buttonRedondoGrafica2.UseVisualStyleBackColor = false;
             // 
@@ -210,7 +205,6 @@
             buttonRedondoVentTot2.Name = "buttonRedondoVentTot2";
             buttonRedondoVentTot2.Size = new Size(125, 50);
             buttonRedondoVentTot2.TabIndex = 14;
-            buttonRedondoVentTot2.Text = "VENTAS TOTALES";
             buttonRedondoVentTot2.TextColor = Color.Black;
             buttonRedondoVentTot2.UseVisualStyleBackColor = false;
             buttonRedondoVentTot2.Click += buttonRedondoVentTot2_Click;

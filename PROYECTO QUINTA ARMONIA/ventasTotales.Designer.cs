@@ -45,7 +45,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(284, 64);
+            label1.Location = new Point(290, 71);
             label1.Name = "label1";
             label1.Size = new Size(245, 38);
             label1.TabIndex = 1;
@@ -67,7 +67,6 @@
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
             buttonRedondoCancelar.Size = new Size(166, 45);
             buttonRedondoCancelar.TabIndex = 3;
-            buttonRedondoCancelar.Text = "REGRESAR";
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
             buttonRedondoCancelar.Click += buttonRedondoCancelar_Click;
@@ -123,7 +122,7 @@
             // 
             txtTotal.Enabled = false;
             txtTotal.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTotal.Location = new Point(430, 441);
+            txtTotal.Location = new Point(429, 454);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(238, 40);
             txtTotal.TabIndex = 6;
@@ -133,7 +132,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.fondo_listado;
+            BackgroundImage = Properties.Resources.fondoVentas;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(886, 663);
             Controls.Add(txtTotal);

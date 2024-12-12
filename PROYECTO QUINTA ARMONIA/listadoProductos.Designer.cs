@@ -125,7 +125,6 @@
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
             buttonRedondoCancelar.Size = new Size(162, 45);
             buttonRedondoCancelar.TabIndex = 2;
-            buttonRedondoCancelar.Text = "REGRESAR";
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
             buttonRedondoCancelar.Click += buttonRedondoCancelar_Click;

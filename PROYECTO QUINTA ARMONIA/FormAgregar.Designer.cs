@@ -56,11 +56,10 @@
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
             buttonRedondoCancelar.ForeColor = Color.White;
-            buttonRedondoCancelar.Location = new Point(448, 379);
+            buttonRedondoCancelar.Location = new Point(492, 379);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
             buttonRedondoCancelar.Size = new Size(129, 45);
             buttonRedondoCancelar.TabIndex = 0;
-            buttonRedondoCancelar.Text = "CANCELAR";
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
             buttonRedondoCancelar.Click += buttonRedondoCancelar_Click;
@@ -79,7 +78,6 @@
             buttonRedondoConfirmar.Name = "buttonRedondoConfirmar";
             buttonRedondoConfirmar.Size = new Size(118, 53);
             buttonRedondoConfirmar.TabIndex = 1;
-            buttonRedondoConfirmar.Text = "CONFIRMAR MOVIMIENTO";
             buttonRedondoConfirmar.TextColor = Color.White;
             buttonRedondoConfirmar.UseVisualStyleBackColor = false;
             buttonRedondoConfirmar.Click += buttonRedondoConfirmar_Click;
@@ -181,8 +179,8 @@
             // 
             // btnCargarImagen
             // 
-            btnCargarImagen.BackColor = Color.FromArgb(151, 172, 221);
-            btnCargarImagen.BackgroundColor = Color.FromArgb(151, 172, 221);
+            btnCargarImagen.BackColor = Color.Transparent;
+            btnCargarImagen.BackgroundColor = Color.Transparent;
             btnCargarImagen.BackgroundImageLayout = ImageLayout.Stretch;
             btnCargarImagen.BorderColor = Color.Transparent;
             btnCargarImagen.BorderRadius = 30;
@@ -190,18 +188,18 @@
             btnCargarImagen.FlatAppearance.BorderSize = 0;
             btnCargarImagen.FlatStyle = FlatStyle.Flat;
             btnCargarImagen.ForeColor = Color.White;
-            btnCargarImagen.Location = new Point(502, 115);
+            btnCargarImagen.Location = new Point(523, 128);
             btnCargarImagen.Name = "btnCargarImagen";
-            btnCargarImagen.Size = new Size(155, 45);
+            btnCargarImagen.Size = new Size(108, 36);
             btnCargarImagen.TabIndex = 15;
-            btnCargarImagen.Text = "CARGAR IMAGEN";
             btnCargarImagen.TextColor = Color.White;
             btnCargarImagen.UseVisualStyleBackColor = false;
             btnCargarImagen.Click += btnCargarImagen_Click;
             // 
             // picBoxImagen
             // 
-            picBoxImagen.Location = new Point(491, 171);
+            picBoxImagen.BackColor = Color.Transparent;
+            picBoxImagen.Location = new Point(492, 184);
             picBoxImagen.Name = "picBoxImagen";
             picBoxImagen.Size = new Size(170, 154);
             picBoxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -214,7 +212,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(263, 52);
+            label1.Location = new Point(274, 63);
             label1.Name = "label1";
             label1.Size = new Size(186, 23);
             label1.TabIndex = 17;
