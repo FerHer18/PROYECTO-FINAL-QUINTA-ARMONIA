@@ -155,7 +155,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         public List<ClassProductos> Consulta()
         {
-            List<ClassProductos> info = new List<ClassProductos> ();
+            List<ClassProductos> info = new List<ClassProductos>();
             int id;
             string name = "";
             string desc = "";
@@ -176,7 +176,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                     precio = Convert.ToSingle(reader["precio"]);
                     existencias = Convert.ToInt32(reader["existencias"]);
 
-                    item = new ClassProductos(id,name,desc,precio,existencias);
+                    item = new ClassProductos(id, name, desc, precio, existencias);
                     info.Add(item);
                 }
                 reader.Close();
@@ -249,7 +249,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                     contra = Convert.ToString(reader["contraseña"]) ?? "";
                     monto = Convert.ToSingle(reader["monto"]);
 
-                    if(cuenta != "admin")
+                    if (cuenta != "admin")
                     {
                         item = new ClaseUsuarios(id, name, cuenta, contra, monto);
                         info.Add(item);
@@ -288,6 +288,43 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.Disconnect();
             }
             return item;
+        }
+
+        public ClassProductos consultarIndividual(int cod)
+        {
+            ClassProductos item = null;
+            int id;
+            string name;
+            string desc;
+            float precio;
+            int existencias;
+            string imagen;
+            try
+            {
+                string query = "SELECT * FROM inventario where id = " + cod + ";";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    id = Convert.ToInt32(reader["codigo"]);
+                    name = Convert.ToString(reader["nombre"]) ?? "";
+                    desc = Convert.ToString(reader["descripcion"]) ?? "";
+                    precio = Convert.ToInt32(reader["precio"]);
+                    existencias = Convert.ToInt32(reader["existencias"]);
+                    imagen = Convert.ToString(reader["imagen"]) ?? "";
+
+                    item = new ClassProductos(id, name, desc, precio, existencias);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+            return item;
+
         }
 
 
