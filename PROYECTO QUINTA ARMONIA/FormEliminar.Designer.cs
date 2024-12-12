@@ -35,6 +35,9 @@
             label2 = new Label();
             buttonDatAct = new Button();
             textBoxElimName = new TextBox();
+            textBoxElimDesc = new TextBox();
+            textBoxElimPrecio = new TextBox();
+            textBoxElimExist = new TextBox();
             SuspendLayout();
             // 
             // buttonRedondoCancelar
@@ -122,6 +125,30 @@
             textBoxElimName.Size = new Size(175, 27);
             textBoxElimName.TabIndex = 21;
             // 
+            // textBoxElimDesc
+            // 
+            textBoxElimDesc.Enabled = false;
+            textBoxElimDesc.Location = new Point(393, 243);
+            textBoxElimDesc.Name = "textBoxElimDesc";
+            textBoxElimDesc.Size = new Size(175, 27);
+            textBoxElimDesc.TabIndex = 22;
+            // 
+            // textBoxElimPrecio
+            // 
+            textBoxElimPrecio.Enabled = false;
+            textBoxElimPrecio.Location = new Point(393, 287);
+            textBoxElimPrecio.Name = "textBoxElimPrecio";
+            textBoxElimPrecio.Size = new Size(175, 27);
+            textBoxElimPrecio.TabIndex = 23;
+            // 
+            // textBoxElimExist
+            // 
+            textBoxElimExist.Enabled = false;
+            textBoxElimExist.Location = new Point(393, 333);
+            textBoxElimExist.Name = "textBoxElimExist";
+            textBoxElimExist.Size = new Size(175, 27);
+            textBoxElimExist.TabIndex = 24;
+            // 
             // FormEliminar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -129,6 +156,9 @@
             BackgroundImage = Properties.Resources.fondoEliminar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(textBoxElimExist);
+            Controls.Add(textBoxElimPrecio);
+            Controls.Add(textBoxElimDesc);
             Controls.Add(textBoxElimName);
             Controls.Add(buttonDatAct);
             Controls.Add(label2);
@@ -154,5 +184,8 @@
         private Label label2;
         private Button buttonDatAct;
         private TextBox textBoxElimName;
+        private TextBox textBoxElimDesc;
+        private TextBox textBoxElimPrecio;
+        private TextBox textBoxElimExist;
     }
 }

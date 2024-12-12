@@ -52,6 +52,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             btnPlay = new Button();
             btnPause = new Button();
+            buttonRedondoModif = new WinFormsAppKhee.ButtonRedondo();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox3).BeginInit();
@@ -384,6 +385,24 @@
             btnPause.UseVisualStyleBackColor = false;
             btnPause.Click += btnPause_Click_1;
             // 
+            // buttonRedondoModif
+            // 
+            buttonRedondoModif.BackColor = Color.Transparent;
+            buttonRedondoModif.BackgroundColor = Color.Transparent;
+            buttonRedondoModif.BorderColor = Color.Black;
+            buttonRedondoModif.BorderRadius = 0;
+            buttonRedondoModif.BorderSize = 0;
+            buttonRedondoModif.FlatAppearance.BorderSize = 0;
+            buttonRedondoModif.FlatStyle = FlatStyle.Flat;
+            buttonRedondoModif.ForeColor = Color.Black;
+            buttonRedondoModif.Location = new Point(1075, 320);
+            buttonRedondoModif.Name = "buttonRedondoModif";
+            buttonRedondoModif.Size = new Size(125, 41);
+            buttonRedondoModif.TabIndex = 29;
+            buttonRedondoModif.TextColor = Color.Black;
+            buttonRedondoModif.UseVisualStyleBackColor = false;
+            buttonRedondoModif.Click += buttonRedondoModif_Click;
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -391,6 +410,7 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(buttonRedondoModif);
             Controls.Add(btnPlay);
             Controls.Add(btnPause);
             Controls.Add(lblHora);
@@ -456,5 +476,6 @@
         private System.Windows.Forms.Timer timer1;
         private Button btnPlay;
         private Button btnPause;
+        private WinFormsAppKhee.ButtonRedondo buttonRedondoModif;
     }
 }

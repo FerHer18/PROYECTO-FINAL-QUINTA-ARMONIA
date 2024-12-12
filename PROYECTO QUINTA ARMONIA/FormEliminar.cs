@@ -57,7 +57,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             ClassProductos aux = obj.obtenerIndividual(Convert.ToInt32(this.textBoxBuscarCodigo.Text));
            // this.textBoxElimName.Text = Convert.ToString(aux.Nombre);
            // limpiar();
-           this.textBoxElimName.Text = aux.Nombre;
+            this.textBoxElimName.Text = aux.Nombre;
+            this.textBoxElimDesc.Text = aux.Descripcion;
+            this.textBoxElimPrecio.Text = Convert.ToString(aux.Precio);
+            this.textBoxElimExist.Text = Convert.ToString(aux.Existencias);
             obj.Disconnect();
         }
 

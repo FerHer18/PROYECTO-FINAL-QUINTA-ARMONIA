@@ -145,7 +145,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             obj.ShowDialog();
             this.Show();
         }
-        
+
 
         private void btnPlay_Click_1(object sender, EventArgs e)
         {
@@ -155,6 +155,14 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void btnPause_Click_1(object sender, EventArgs e)
         {
             ClaseMusica.Pause();
+        }
+
+        private void buttonRedondoModif_Click(object sender, EventArgs e)
+        {
+            FormModificar obj = new FormModificar();
+            this.Hide();
+            obj.ShowDialog();
+            this.Show();
         }
     }
 }
