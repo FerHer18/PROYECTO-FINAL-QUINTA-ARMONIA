@@ -270,7 +270,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             if (botonPresionado != null)
             {
                 //Obtener el código almacenado en el Tag del botón
-                string cod = botonPresionado.Tag.ToString();
+                string cod = botonPresionado.Tag.ToString();    //no corre cuando se le apachurra a este boton
                 string nombre = "";
 
                 if (string.IsNullOrEmpty(cod))
@@ -337,7 +337,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             FormVerCarrito f1 = new FormVerCarrito();
             this.Hide();
             f1.ShowDialog();
-            this.Close();
+            //this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

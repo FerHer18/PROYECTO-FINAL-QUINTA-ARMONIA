@@ -33,6 +33,10 @@
             textBoxBuscarCodigo = new TextBox();
             buttonRedondoEliminar = new WinFormsAppKhee.ButtonRedondo();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
+            buttonDatAct = new Button();
+            textBoxElimCod = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonRedondoCancelar
@@ -56,7 +60,7 @@
             // 
             // label1
             // 
-            label1.Location = new Point(217, 184);
+            label1.Location = new Point(30, 105);
             label1.Name = "label1";
             label1.Size = new Size(162, 45);
             label1.TabIndex = 1;
@@ -65,7 +69,7 @@
             // 
             // textBoxBuscarCodigo
             // 
-            textBoxBuscarCodigo.Location = new Point(217, 260);
+            textBoxBuscarCodigo.Location = new Point(264, 114);
             textBoxBuscarCodigo.Name = "textBoxBuscarCodigo";
             textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
             textBoxBuscarCodigo.Size = new Size(162, 27);
@@ -104,6 +108,32 @@
             label2.TabIndex = 18;
             label2.Text = "ELIMINAR PRODUCTO";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Location = new Point(434, 184);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(152, 142);
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            // 
+            // buttonDatAct
+            // 
+            buttonDatAct.Location = new Point(457, 106);
+            buttonDatAct.Name = "buttonDatAct";
+            buttonDatAct.Size = new Size(129, 44);
+            buttonDatAct.TabIndex = 20;
+            buttonDatAct.Text = "Ver datos";
+            buttonDatAct.UseVisualStyleBackColor = true;
+            buttonDatAct.Click += buttonDatAct_Click;
+            // 
+            // textBoxElimCod
+            // 
+            textBoxElimCod.Location = new Point(217, 261);
+            textBoxElimCod.Name = "textBoxElimCod";
+            textBoxElimCod.Size = new Size(175, 27);
+            textBoxElimCod.TabIndex = 21;
+            // 
             // FormEliminar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -111,6 +141,9 @@
             BackgroundImage = Properties.Resources.fondoEliminar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(textBoxElimCod);
+            Controls.Add(buttonDatAct);
+            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(buttonRedondoEliminar);
             Controls.Add(textBoxBuscarCodigo);
@@ -121,6 +154,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormEliminar";
             Load += FormEliminar_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,5 +166,8 @@
         private TextBox textBoxBuscarCodigo;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoEliminar;
         private Label label2;
+        private PictureBox pictureBox1;
+        private Button buttonDatAct;
+        private TextBox textBoxElimCod;
     }
 }
