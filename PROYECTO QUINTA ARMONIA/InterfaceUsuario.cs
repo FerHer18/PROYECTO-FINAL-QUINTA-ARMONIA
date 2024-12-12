@@ -164,7 +164,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
             richTextBoxInfo.Text = "";
             BaseDatos obj = new BaseDatos(); //instancia necesaria para concetar con la base de datos
-            datos = obj.obtenerInfoProducto(imagen);
+            datos = obj.obtenerInfoImagen(imagen);
             if (datos != null && datos.Count > 0)   //el .Count es para checar si una lista tiene elementos o es diferente de null
             {
                 foreach (var prod in datos)

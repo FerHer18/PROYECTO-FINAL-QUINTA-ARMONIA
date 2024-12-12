@@ -190,7 +190,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             return info;
         }
 
-        public List<ClassProductos> obtenerInfoProducto(string imagen)
+        public List<ClassProductos> obtenerInfoImagen(string imagen)
         {
             List<ClassProductos> info = new List<ClassProductos>();
             string name;
@@ -209,7 +209,6 @@ namespace PROYECTO_QUINTA_ARMONIA
 
                 while (reader.Read())
                 {
-                    //id = Convert.ToInt32(reader["codigo"]);
                     name = Convert.ToString(reader["nombre"]) ?? "";
                     desc = Convert.ToString(reader["descripcion"]) ?? "";
                     precio = Convert.ToSingle(reader["precio"]);
@@ -292,31 +291,30 @@ namespace PROYECTO_QUINTA_ARMONIA
             return item;
         }
 
-        public ClassProductos consultarIndividual(int cod)
+        public ClassProductos obtenerIndividual(int cod)
         {
             ClassProductos item = null;
-            int id;
+            //int codigo;
             string name;
             string desc;
             float precio;
             int existencias;
-            string imagen;
+            //string imagen;
             try
             {
-                string query = "SELECT * FROM inventario where id = " + cod + ";";
+                string query = "SELECT * FROM inventario where codigo = " + cod + ";";
                 MySqlCommand command = new MySqlCommand(query, this.connection);
 
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    id = Convert.ToInt32(reader["codigo"]);
+                    //codigo = Convert.ToInt32(reader["codigo"]);
                     name = Convert.ToString(reader["nombre"]) ?? "";
                     desc = Convert.ToString(reader["descripcion"]) ?? "";
                     precio = Convert.ToInt32(reader["precio"]);
                     existencias = Convert.ToInt32(reader["existencias"]);
-                    imagen = Convert.ToString(reader["imagen"]) ?? "";
 
-                    item = new ClassProductos(id, name, desc, precio, existencias);
+                    item = new ClassProductos(name, desc, precio, existencias);
                 }
                 reader.Close();
             }

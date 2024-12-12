@@ -217,6 +217,9 @@
   <data name="depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondoVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoVentas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Recursos__1_-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos__1_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,14 +283,17 @@
   <data name="pngegg (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pngegg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="datos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\datos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="takoyaki-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\takoyaki-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngegg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UIcarritoBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UIcarritoBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\depositphotos_119273698-stock-illustration-emoticon-with-happy-face-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +307,8 @@
   <data name="ramune" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ramune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngegg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pngegg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yakult-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yakult-HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,7 +328,7 @@
   <data name="Recursos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UIcarritoBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UIcarritoBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondoModificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoModificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
