@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Pqc.Crypto.Lms;
 using static PdfSharp.Capabilities.Features;
 
 namespace PROYECTO_QUINTA_ARMONIA
@@ -17,17 +18,19 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class InterfaceUsuario : Form
     {
         private string Nombre; //atributo necesario para mensaje de bienvenida en inicio de sesion
-        List<ClassProductos> listCompra = new List<ClassProductos>();
-        private List<string> imagenes;
+        List<Compra> listaCompra = new List<Compra>();
+        private List<string> imagenes = new List<string>();
         private int cantProductos;
         private int cantidad = 0;
         List<ClassProductos> datos;
-
+        
+        private int prodSelect = 0;
+        private int existencias = 0;
+        private string nomProd;
 
         public InterfaceUsuario()
         {
             InitializeComponent();
-            imagenes = new List<string>();
         }
 
         public InterfaceUsuario(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
@@ -162,11 +165,13 @@ namespace PROYECTO_QUINTA_ARMONIA
             richTextBoxInfo.Text = "";
             BaseDatos obj = new BaseDatos(); //instancia necesaria para concetar con la base de datos
             datos = obj.obtenerInfoProducto(imagen);
-
             if (datos != null && datos.Count > 0)   //el .Count es para checar si una lista tiene elementos o es diferente de null
             {
                 foreach (var prod in datos)
                 {
+                    this.prodSelect = prod.Codigo;
+                    this.existencias = prod.Existencias;
+                    this.nomProd = prod.Nombre;
                     this.richTextBoxInfo.AppendText("Nombre: " + prod.Nombre + "\n");
                     this.richTextBoxInfo.AppendText("Descripción: " + prod.Descripcion + "\n");
                     this.richTextBoxInfo.AppendText("Precio: " + prod.Precio + "\n");
@@ -183,79 +188,120 @@ namespace PROYECTO_QUINTA_ARMONIA
         //la utiliza el metodo mostrarInfoProducto
         private void buttonYakult_Click(object sender, EventArgs e)
         {
-            string cod = btn1.Tag.ToString();
+            string cod = btn1.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
+                
         }
 
         private void buttonLotus_Click(object sender, EventArgs e)
         {
-            string cod = btn3.Tag.ToString();
+            string cod = btn3.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            string cod = btn2.Tag.ToString();
+            string cod = btn2.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            string cod = btn4.Tag.ToString();
+            string cod = btn4.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            string cod = btn5.Tag.ToString();
+            string cod = btn5.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            string cod = btn6.Tag.ToString();
+            string cod = btn6.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            string cod = btn7.Tag.ToString();
+            string cod = btn7.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            string cod = btn8.Tag.ToString();
+            string cod = btn8.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            string cod = btn9.Tag.ToString();
+            string cod = btn9.Tag.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
         private void btn10_Click(object sender, EventArgs e)
         {
             string cod = btn10.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
+            {
+                cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
+            }
         }
 
-        private void EjecutarCompra(string nombre, int contador) //falta contador
+        private void EjecutarCompra() 
         {
             //Mensaje de confirmación con un ícono
             MessageBox.Show(
-                $"Se agregó al carrito: {nombre} x {contador}", //Mensaje
+                $"Se agregó al carrito: {this.nomProd} x {this.cantidad}", //Mensaje
                 "Producto agregado",                           //Título de la ventana
                 MessageBoxButtons.OK,                         //Botón de confirmación
                 MessageBoxIcon.Exclamation                    //Icono de exclamación
@@ -264,59 +310,18 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonComprar_Click(object sender, EventArgs e)
         {
-            //Identificar qué botón fue presionado usando "sender"
-            Button botonPresionado = sender as Button;
-
-            if (botonPresionado != null)
+            if (this.prodSelect != 0)
             {
-                //Obtener el código almacenado en el Tag del botón
-                string cod = botonPresionado.Tag.ToString();    //no corre cuando se le apachurra a este boton
-                string nombre = "";
-
-                if (string.IsNullOrEmpty(cod))
-                {
-                    BaseDatos bd = new BaseDatos();
-                    try
-                    {
-                        string query = "SELECT nombre FROM inventario WHERE imagen= @imagen;";
-                        MySqlCommand command = new MySqlCommand(query, bd.Connection);
-
-                        command.Parameters.AddWithValue("@imagen", cod);
-                        MySqlDataReader reader = command.ExecuteReader(); //lee
-
-                        if (reader.Read())
-                        {
-                            //extraer datos
-                            nombre = reader["nombre"].ToString() ?? "";
-                        }
-                        else
-                        {
-                            richTextBoxInfo.Text = "No se encontro el nombre del producto.";
-                        }
-                        reader.Close();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: {ex.Message}");
-                    }
-                    finally
-                    {
-                        bd.Disconnect();
-                    }
-
-                }
-                //Obtener el contador dinámico
-                //int contador = ObtenerContador();
-
-                //EjecutarCompra(nombre, contador);
-
+                EjecutarCompra();
                 //Agregar a la lista
-                //string productoConCantidad = $"{nombre} x{contador}";
-                //listCompra.Add(productoConCantidad);
+                Compra item=new Compra(this.cantidad,this.nomProd, this.prodSelect);
+                listaCompra.Add(item);
+                this.cantidad = 0;
+                labelCantidad.Text = cantidad.ToString();
             }
         }
 
-
+        public List<Compra> getCompra() { return listaCompra; }
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -337,7 +342,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             FormVerCarrito f1 = new FormVerCarrito();
             this.Hide();
             f1.ShowDialog();
-            //this.Close();
+            this.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -347,8 +352,16 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonUp_Click(object sender, EventArgs e)
         {
-            cantidad++;
-            labelCantidad.Text = cantidad.ToString();
+            if (cantidad < this.existencias)
+            {
+                cantidad++;
+                labelCantidad.Text = cantidad.ToString();
+            }
+            else
+            {
+                MessageBox.Show("NO HAY MAS EXISTENCIAS");
+            }
+            
         }
 
         private void buttonDown_Click(object sender, EventArgs e)

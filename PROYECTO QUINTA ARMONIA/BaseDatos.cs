@@ -197,11 +197,12 @@ namespace PROYECTO_QUINTA_ARMONIA
             string desc;
             float precio;
             int existencias;
+            int codigo;
             ClassProductos item;
 
             try
             {
-                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
+                string query = "SELECT codigo, nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@imagen", imagen);
                 MySqlDataReader reader = command.ExecuteReader();
@@ -213,7 +214,8 @@ namespace PROYECTO_QUINTA_ARMONIA
                     desc = Convert.ToString(reader["descripcion"]) ?? "";
                     precio = Convert.ToSingle(reader["precio"]);
                     existencias = Convert.ToInt32(reader["existencias"]);
-                    item = new ClassProductos(name, desc, precio, existencias);
+                    codigo = Convert.ToInt32(reader["codigo"]);
+                    item = new ClassProductos(codigo, name, desc, precio, existencias);
                     info.Add(item);
                 }
                 reader.Close();

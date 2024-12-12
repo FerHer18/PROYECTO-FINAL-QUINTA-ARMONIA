@@ -57,6 +57,7 @@
             DoubleBuffered = true;
             Margin = new Padding(2);
             Name = "FormVerCarrito";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVerCarrito";
             Load += FormVerCarrito_Load;
             ResumeLayout(false);
