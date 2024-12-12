@@ -38,7 +38,6 @@ namespace PROYECTO_QUINTA_ARMONIA
             MetodoPago pagar = new MetodoPago();
             this.Hide();
             pagar.ShowDialog();
-            //no se a donde se va despues 
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

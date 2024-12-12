@@ -1,4 +1,5 @@
 ﻿using PdfSharp.Drawing;
+using PdfSharp.Internal;
 using PdfSharp.Pdf;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,9 +18,21 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class PagoConTarjeta : Form
     {
+        private Panel panelTicket;
+ 
+        // Ejemplo de inicialización del panel en el constructor del formulario
         public PagoConTarjeta()
         {
             InitializeComponent();
+
+            panelTicket = new Panel();
+            panelTicket.Size = new Size(400, 600);
+            panelTicket.Location = new Point(50, 50); // Ajusta la ubicación según sea necesario
+
+            // Añadir controles al panelTicket
+            // Ejemplo: panelTicket.Controls.Add(new Label { Text = "Ejemplo" });
+
+            this.Controls.Add(panelTicket);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -28,152 +42,83 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonPagar_Click(object sender, EventArgs e)
         {
-            ExportToPdf();
-        }
-        private void ExportToPdf()
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
-            saveFileDialog.Title = "Guardar PDF";
-            saveFileDialog.DefaultExt = "pdf";
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (camposValidos())
             {
-                FormBorderStyle originalStyle = this.FormBorderStyle;
-
-                this.FormBorderStyle = FormBorderStyle.None;
-
-                this.Refresh();
-
-                Bitmap bitmap = new Bitmap(this.ClientSize.Width, this.ClientSize.Height);
-                this.DrawToBitmap(bitmap, new Rectangle(Point.Empty, this.ClientSize));
-
-                this.FormBorderStyle = originalStyle;
-
-                PdfDocument document = new PdfDocument();
-                document.Info.Title = "Tu ticket será exportado en Formato PDF";
-
-                PdfPage page = document.AddPage();
-                XGraphics gfx = XGraphics.FromPdfPage(page);
-
-                MemoryStream stream = new MemoryStream();
-                bitmap.Save(stream, ImageFormat.Png);
-                XImage image = XImage.FromStream(stream);
-                gfx.DrawImage(image, 0, 0, page.Width, page.Height);
-
-                string filePath = saveFileDialog.FileName;
-                document.Save(filePath);
-                MessageBox.Show($"Tu ticket será guardado en: {filePath}");
-
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
-                {
-                    FileName = filePath,
-                    UseShellExecute = true
-                });
-
-                // Limpiar recursos
-                gfx.Dispose();
-                document.Close();
-                bitmap.Dispose();
-                image.Dispose();
-                stream.Dispose();
+                Ticket pagar = new Ticket();
+                this.Hide();
+                pagar.ShowDialog();
             }
+            else
+            {
+                MessageBox.Show("Lo siento, por favor completa los campos de manera correcta :)");
+            }
+           
         }
-
+        
         private void textBoxNumContacto_TextChanged(object sender, EventArgs e)
         {
-            numeroContacto(textBoxNumContacto.Text);
-        }
-        void numeroContacto(string numeroContacto)
-        {
-            if (numeroContacto.Length != 10)
+            if (textBoxNumContacto.Text.Length>10||!long.TryParse(textBoxNumContacto.Text,out _) && textBoxNumContacto.Text.Length > 0) 
             {
-                MessageBox.Show("Recuerda que el numero de Telefono es a 10 digitos :) ");
-            }
-            else
-            {
-                int[] vector4 = new int[10];
-                for (int i = 0; i <= numeroContacto.Length; i++)
-                {
-                    vector4[i] = int.Parse(numeroContacto[i].ToString());
-                }
+                MessageBox.Show("Hola, te recuerdo que el numero de telefono es 10 digitos :)"); 
+                textBoxNumContacto.Text = string.Empty; 
             }
         }
-
         private void textBoxNombre_TextChanged(object sender, EventArgs e)
         {
-            nombre(textBoxNombre.Text);
         }
-        void nombre(string nombre)
-        {
-            int[] vector3 = new int[100];
-            for (int i = 0; i < vector3.Length; i++)
-            {
-                vector3[i] = int.Parse(nombre[i].ToString());
-            }
-        }
-
         private void textBoxCorreo_TextChanged(object sender, EventArgs e)
         {
-            correo(textBoxCorreo.Text);
         }
-        void correo(string correo)
-        {
-
-        }
-
         private void textBoxCVV_TextChanged(object sender, EventArgs e)
         {
-            cvv(textBoxCVV.Text);
-        }
-        void cvv(string cvv)
-        {
-            if (cvv.Length != 3)
+            if (textBoxCVV.Text.Length>3||!int.TryParse(textBoxCVV.Text, out _) && textBoxCVV.Text.Length > 0) 
             {
-                MessageBox.Show("Recuerda que el numero CVV es de maximo 3 digitos :) ");
-            }
-            else
-            {
-                int[] vector2 = new int[3];
-                for (int i = 0; i < cvv.Length; i++)
-                {
-                    vector2[i] = int.Parse(cvv[i].ToString());
-                }
-
-                /*for (int i = 0; i < vector2.Length; i++)
-                {
-                    Console.WriteLine($"Dígito {i + 1}: {vector2[i]}");
-                }*/
+                MessageBox.Show("Hola, te recuerdo que el CVV es de 3 digitos :)"); 
+                textBoxCVV.Text = string.Empty; 
             }
         }
 
         private void textBoxExpira_TextChanged(object sender, EventArgs e)
         {
-            expiracion(textBoxExpira.Text);
-        }
-        void expiracion(string expira)
-        {
-
         }
 
         private void textBoxNumero_TextChanged(object sender, EventArgs e)
         {
-            numeroTarjeta(textBoxNumero.Text);
+            if (textBoxNumero.Text.Length>16||!long.TryParse(textBoxNumero.Text, out _) && textBoxNumero.Text.Length>0)
+            {
+                MessageBox.Show("Hola, te recuerdo que el numero de tarjeta es de 16 digitos :)"); 
+                textBoxNumero.Text = string.Empty;
+            }
         }
-        void numeroTarjeta(string numero)
+        private bool camposValidos()
         {
-            if (numero.Length != 16)
+            bool validar = true;
+            if (textBoxNumero.Text.Length!= 16||!long.TryParse(textBoxNumero.Text,out _))
             {
-                MessageBox.Show("Recuerda que el numero de Tarjeta debe de teenr 16 digitos :)");
+                MessageBox.Show("ERROR :( ,recuerda que el numero de tarjeta es de 16 Digitos por favor");
+                validar = false;
             }
-            else
+            if (!DateTime.TryParseExact(textBoxExpira.Text,"MM/yy", null, System.Globalization.DateTimeStyles.None,out _))
             {
-                int[] vector = new int[16];
-                for (int i = 0; i < numero.Length; i++)
-                {
-                    vector[i] = int.Parse(numero[i].ToString());
-                }
+                MessageBox.Show("ERROR :(, recuerda que la fecha de expiracion es dos digitos para el mes y dos para el año por favor");
+                validar = false;
             }
+            if (textBoxCVV.Text.Length!=3||!int.TryParse(textBoxCVV.Text,out _))
+            {
+                MessageBox.Show("ERROR :(, recuerda que el CVV es de ters digitos por favor");
+                validar = false;
+            }
+            if (textBoxNumContacto.Text.Length!=10||!long.TryParse(textBoxNumContacto.Text,out _))
+            {
+                MessageBox.Show("ERROR :(, recuerda que el numero de telefono es de 10 digitos por favor");
+                validar = false;
+            }
+            if (!Regex.IsMatch(textBoxCorreo.Text,@"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("ERROR :(, recuerda ingresar un formato valido de correo electronico por favor");
+                validar = false;
+            }
+            return validar;
         }
     }
 }
