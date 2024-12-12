@@ -88,7 +88,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

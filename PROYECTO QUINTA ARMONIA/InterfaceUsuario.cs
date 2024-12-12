@@ -23,10 +23,11 @@ namespace PROYECTO_QUINTA_ARMONIA
         private int cantProductos;
         private int cantidad = 0;
         List<ClassProductos> datos;
-        
+
         private int prodSelect = 0;
         private int existencias = 0;
         private string nomProd;
+        private float precio;
 
         public InterfaceUsuario()
         {
@@ -172,10 +173,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                     this.prodSelect = prod.Codigo;
                     this.existencias = prod.Existencias;
                     this.nomProd = prod.Nombre;
-                    this.richTextBoxInfo.AppendText("Nombre: " + prod.Nombre + "\n");
-                    this.richTextBoxInfo.AppendText("Descripción: " + prod.Descripcion + "\n");
-                    this.richTextBoxInfo.AppendText("Precio: " + prod.Precio + "\n");
-                    this.richTextBoxInfo.AppendText("Existencias: " + prod.Existencias + "\n");
+                    this.precio = prod.Precio;
+                    richTextBoxInfo.Rtf = @"{\rtf1\ansi 
+\pard\ql\sl360\slmult1\li0\b Nombre:\b0 " + prod.Nombre + @"\line
+\pard\ql\sl360\slmult1\li0\b Descripción:\b0 " + prod.Descripcion + @"\line
+\pard\ql\sl360\slmult1\li0\b Precio:\b0 " + prod.Precio + @"\line
+\pard\ql\sl360\slmult1\li0\b Existencias:\b0 " + prod.Existencias + @"}";
                 }
             }
             else
@@ -195,7 +198,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 labelCantidad.Text = cantidad.ToString();
                 mostrarInfoProducto(cod);
             }
-                
+
         }
 
         private void buttonLotus_Click(object sender, EventArgs e)
@@ -297,27 +300,32 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        private void EjecutarCompra() 
+        private void EjecutarCompra()
         {
             //Mensaje de confirmación con un ícono
             MessageBox.Show(
                 $"Se agregó al carrito: {this.nomProd} x {this.cantidad}", //Mensaje
                 "Producto agregado",                           //Título de la ventana
                 MessageBoxButtons.OK,                         //Botón de confirmación
-                MessageBoxIcon.Exclamation                    //Icono de exclamación
+                MessageBoxIcon.Information                    //Icono de exclamación
             );
         }
 
         private void buttonComprar_Click(object sender, EventArgs e)
         {
-            if (this.prodSelect != 0)
+            if (this.prodSelect != 0 && this.cantidad != 0)
             {
                 EjecutarCompra();
                 //Agregar a la lista
-                Compra item=new Compra(this.cantidad,this.nomProd, this.prodSelect);
+                float total = precio * cantidad;
+                Compra item = new Compra(this.cantidad, this.nomProd, this.prodSelect, total);
                 listaCompra.Add(item);
                 this.cantidad = 0;
                 labelCantidad.Text = cantidad.ToString();
+            }
+            else if (this.cantidad == 0)
+            {
+                MessageBox.Show("La cantidad de productos debe ser mayor a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -339,7 +347,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
-            FormVerCarrito f1 = new FormVerCarrito();
+            FormVerCarrito f1 = new FormVerCarrito(listaCompra);
             this.Hide();
             f1.ShowDialog();
             this.Show();
@@ -361,7 +369,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             {
                 MessageBox.Show("NO HAY MAS EXISTENCIAS");
             }
-            
+
         }
 
         private void buttonDown_Click(object sender, EventArgs e)
@@ -370,6 +378,17 @@ namespace PROYECTO_QUINTA_ARMONIA
             {
                 cantidad--;
                 labelCantidad.Text = cantidad.ToString();
+            }
+        }
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Deseas eliminar todo el carrito?", "Confirmación de eliminar",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                listaCompra.Clear();
+                MessageBox.Show($"Se eliminaron todos los productos", "Carrito vacio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

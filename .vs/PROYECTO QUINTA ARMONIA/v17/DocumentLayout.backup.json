@@ -1,86 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\",
+  "WorkspaceRootPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\listadoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\listadoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\basedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\basedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\ventastotales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\ventastotales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\classproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\classproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\presentacionsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\presentacionsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\presentacionsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\presentacionsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\vanes\\desktop\\aaw\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\clasemusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\clasemusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,254 +18,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BaseDatos.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\BaseDatos.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\BaseDatos.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\BaseDatos.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\BaseDatos.cs",
-              "ViewState": "AgIAACgBAAAAAAAAAAAmwC8BAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:32:25.191Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InterfaceUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAQwKYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:39:34.776Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "InterfaceUsuario.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:22:32.015Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Compra.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Compra.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\Compra.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Compra.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\Compra.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:48:46.077Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormAgregar.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:01:24.292Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormModificar.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwBoAAAAZAAAAAAAAAA==",
+              "Title": "FormVerCarrito.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:56:07.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T19:09:38.851Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormModificar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormModificar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:55:43.043Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ventasTotales.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\ventasTotales.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\ventasTotales.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:28:57.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormEliminar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T14:44:47.763Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "FormVerCarrito.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
               "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T03:06:13.806Z",
+              "WhenOpened": "2024-12-12T19:06:41.28Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormEliminar.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T03:34:33.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormVerCarrito.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T03:07:33.894Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClassProductos.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ClassProductos.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\ClassProductos.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ClassProductos.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\ClassProductos.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T22:26:44.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ClaseMusica.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ClaseMusica.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\ClaseMusica.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ClaseMusica.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\ClaseMusica.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T20:24:14.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PresentacionSistema.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAkwC0AAACYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:16:43.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InterfaceAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAgwJwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:30:31.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PresentacionSistema.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\PresentacionSistema.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:16:12.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InterfaceAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T23:42:28.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "listadoProductos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:22:16.517Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormAgregar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
-              "ToolTip": "C:\\Users\\vanes\\Desktop\\aaw\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs [Design]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:28:59.184Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
