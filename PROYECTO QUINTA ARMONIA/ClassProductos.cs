@@ -22,6 +22,15 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.precio = precio;
             this.existencias = existencias;
         }
+
+        public ClassProductos(string name, string desc, float precio, int existencias)
+        {
+            this.nombre = name;
+            this.descripcion = desc;
+            this.precio = precio;
+            this.existencias = existencias;
+        }
+
         public ClassProductos(int id)
         {
             this.codigo = id;

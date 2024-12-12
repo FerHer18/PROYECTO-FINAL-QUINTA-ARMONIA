@@ -21,6 +21,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         private List<string> imagenes;
         private int cantProductos;
         private int cantidad = 0;
+        List<ClassProductos> datos;
+
 
         public InterfaceUsuario()
         {
@@ -158,117 +160,93 @@ namespace PROYECTO_QUINTA_ARMONIA
                 return;
             }
             richTextBoxInfo.Text = "";
-            BaseDatos bd = new BaseDatos(); //instancia necesaria para concetar con la base de datos
-            try
+            BaseDatos obj = new BaseDatos(); //instancia necesaria para concetar con la base de datos
+            datos = obj.obtenerInfoProducto(imagen);
+
+            if (datos != null && datos.Count > 0)   //el .Count es para checar si una lista tiene elementos o es diferente de null
             {
-
-                //obtien la info 
-                string query = "SELECT nombre, descripcion, precio, existencias FROM inventario WHERE imagen= @imagen;";
-                MySqlCommand command = new MySqlCommand(query, bd.Connection);
-
-                command.Parameters.AddWithValue("@imagen", imagen); //se añade el codigo del producto
-                MySqlDataReader reader = command.ExecuteReader(); //lee
-
-                if (reader.Read())
+                foreach (var prod in datos)
                 {
-                    //extraer datos
-                    string nombre = reader["nombre"].ToString() ?? "";
-                    string descripcion = reader["descripcion"].ToString() ?? "";
-                    string precio = reader["precio"].ToString() ?? "";
-                    string existencias = reader["existencias"].ToString() ?? "";
-                    //mostrar 
-                    richTextBoxInfo.Rtf = @"{\rtf1\ansi 
-\pard\ql\sl360\slmult1\li0\b Nombre:\b0 " + nombre + @"\line
-\pard\ql\sl360\slmult1\li0\b Descripción:\b0 " + descripcion + @"\line
-\pard\ql\sl360\slmult1\li0\b Precio:\b0 " + precio + @"\line
-\pard\ql\sl360\slmult1\li0\b Existencias:\b0 " + existencias + @"}";
-
-                    //dejar esta lineas fuera de la sangria para que funcionen
-
-
+                    this.richTextBoxInfo.AppendText("Nombre: " + prod.Nombre + "\n");
+                    this.richTextBoxInfo.AppendText("Descripción: " + prod.Descripcion + "\n");
+                    this.richTextBoxInfo.AppendText("Precio: " + prod.Precio + "\n");
+                    this.richTextBoxInfo.AppendText("Existencias: " + prod.Existencias + "\n");
                 }
-                else
-                {
-                    richTextBoxInfo.Text = "No encontrado.";
-                }
-                reader.Close();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error: {ex.Message}");
-            }
-            finally
-            {
-                bd.Disconnect();
+                this.richTextBoxInfo.Text = "Producto no encontrado\n";
             }
         }
 
+        //el Tag funciona como get y set, entonces nos da el valor de la imagen y la convierte en string, la cual
+        //la utiliza el metodo mostrarInfoProducto
         private void buttonYakult_Click(object sender, EventArgs e)
         {
-            string cod = btn1.Tag?.ToString();
+            string cod = btn1.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void buttonLotus_Click(object sender, EventArgs e)
         {
-            string cod = btn3.Tag?.ToString();
+            string cod = btn3.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            string cod = btn2.Tag?.ToString();
+            string cod = btn2.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            string cod = btn4.Tag?.ToString();
+            string cod = btn4.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            string cod = btn5.Tag?.ToString();
+            string cod = btn5.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            string cod = btn6.Tag?.ToString();
+            string cod = btn6.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            string cod = btn7.Tag?.ToString();
+            string cod = btn7.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            string cod = btn8.Tag?.ToString();
+            string cod = btn8.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            string cod = btn9.Tag?.ToString();
+            string cod = btn9.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            string cod = btn10.Tag?.ToString();
+            string cod = btn10.Tag.ToString();
             if (!string.IsNullOrEmpty(cod))
                 mostrarInfoProducto(cod);
         }
@@ -292,7 +270,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             if (botonPresionado != null)
             {
                 //Obtener el código almacenado en el Tag del botón
-                string cod = botonPresionado.Tag?.ToString();
+                string cod = botonPresionado.Tag.ToString();
                 string nombre = "";
 
                 if (string.IsNullOrEmpty(cod))
