@@ -53,7 +53,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void InterfaceUsuario_Load(object sender, EventArgs e)
         {
             MostrarImagenes();
-
+            labelHolaUsuarioUI.Text = $"Hola, {this.Nombre}!";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -336,8 +336,9 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public List<Compra> getCompra() { 
-            return listaCompra; 
+        public List<Compra> getCompra()
+        {
+            return listaCompra;
         }
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
@@ -356,7 +357,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
-            FormVerCarrito f1 = new FormVerCarrito(listaCompra);
+            FormVerCarrito f1 = new FormVerCarrito(listaCompra, Nombre);
             this.Hide();
             f1.ShowDialog();
             this.Show();
@@ -406,6 +407,16 @@ namespace PROYECTO_QUINTA_ARMONIA
         }
 
         private void richTextBoxInfo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelHolaUsuarioUI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCantidad_Click(object sender, EventArgs e)
         {
 
         }
