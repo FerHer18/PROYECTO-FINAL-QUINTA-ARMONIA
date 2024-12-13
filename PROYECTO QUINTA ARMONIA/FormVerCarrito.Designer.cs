@@ -41,10 +41,10 @@
             buttonRegresarComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRegresarComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRegresarComprar.FlatStyle = FlatStyle.Flat;
-            buttonRegresarComprar.Location = new Point(668, 80);
+            buttonRegresarComprar.Location = new Point(534, 64);
             buttonRegresarComprar.Margin = new Padding(2);
             buttonRegresarComprar.Name = "buttonRegresarComprar";
-            buttonRegresarComprar.Size = new Size(209, 40);
+            buttonRegresarComprar.Size = new Size(167, 32);
             buttonRegresarComprar.TabIndex = 34;
             buttonRegresarComprar.UseVisualStyleBackColor = false;
             buttonRegresarComprar.Click += buttonRegresarComprar_Click;
@@ -56,9 +56,10 @@
             btnLogout.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnLogout.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnLogout.FlatStyle = FlatStyle.Flat;
-            btnLogout.Location = new Point(985, 759);
+            btnLogout.Location = new Point(788, 607);
+            btnLogout.Margin = new Padding(2, 2, 2, 2);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(143, 33);
+            btnLogout.Size = new Size(114, 26);
             btnLogout.TabIndex = 35;
             btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
@@ -70,9 +71,10 @@
             btnPagar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnPagar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnPagar.FlatStyle = FlatStyle.Flat;
-            btnPagar.Location = new Point(752, 477);
+            btnPagar.Location = new Point(602, 382);
+            btnPagar.Margin = new Padding(2, 2, 2, 2);
             btnPagar.Name = "btnPagar";
-            btnPagar.Size = new Size(304, 80);
+            btnPagar.Size = new Size(243, 64);
             btnPagar.TabIndex = 36;
             btnPagar.UseVisualStyleBackColor = false;
             btnPagar.Click += btnPagar_Click;
@@ -81,19 +83,20 @@
             // 
             richTextBoxMostrar.BorderStyle = BorderStyle.None;
             richTextBoxMostrar.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBoxMostrar.Location = new Point(141, 248);
+            richTextBoxMostrar.Location = new Point(113, 198);
+            richTextBoxMostrar.Margin = new Padding(2, 2, 2, 2);
             richTextBoxMostrar.Name = "richTextBoxMostrar";
-            richTextBoxMostrar.Size = new Size(410, 320);
+            richTextBoxMostrar.Size = new Size(328, 256);
             richTextBoxMostrar.TabIndex = 37;
             richTextBoxMostrar.Text = "";
             // 
             // FormVerCarrito
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.UIcarritoBackground1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1199, 820);
+            ClientSize = new Size(959, 656);
             Controls.Add(richTextBoxMostrar);
             Controls.Add(btnPagar);
             Controls.Add(btnLogout);

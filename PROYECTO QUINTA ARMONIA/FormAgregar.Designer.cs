@@ -183,7 +183,7 @@
             btnCargarImagen.BackgroundColor = Color.Transparent;
             btnCargarImagen.BackgroundImageLayout = ImageLayout.Stretch;
             btnCargarImagen.BorderColor = Color.Transparent;
-            btnCargarImagen.BorderRadius = 30;
+            btnCargarImagen.BorderRadius = 0;
             btnCargarImagen.BorderSize = 0;
             btnCargarImagen.FlatAppearance.BorderSize = 0;
             btnCargarImagen.FlatStyle = FlatStyle.Flat;
@@ -212,7 +212,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(274, 63);
+            label1.Location = new Point(293, 57);
             label1.Name = "label1";
             label1.Size = new Size(186, 23);
             label1.TabIndex = 17;

@@ -19,12 +19,13 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class PagoConTarjeta : Form
     {
         private Panel panelTicket;
+        private List<Compra> lista;
  
         // Ejemplo de inicialización del panel en el constructor del formulario
-        public PagoConTarjeta()
+        public PagoConTarjeta(List<Compra> listaCompra)
         {
             InitializeComponent();
-
+            lista = listaCompra;
             panelTicket = new Panel();
             panelTicket.Size = new Size(400, 600);
             panelTicket.Location = new Point(50, 50); // Ajusta la ubicación según sea necesario
@@ -44,9 +45,10 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             if (camposValidos())
             {
-                Ticket pagar = new Ticket();
+                Ticket pagar = new Ticket(lista);
                 this.Hide();
                 pagar.ShowDialog();
+                this.Close();
             }
             else
             {

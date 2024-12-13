@@ -69,10 +69,10 @@
             // 
             // textBoxBuscarCodigo
             // 
-            textBoxBuscarCodigo.Location = new Point(332, 140);
+            textBoxBuscarCodigo.Location = new Point(329, 140);
             textBoxBuscarCodigo.Name = "textBoxBuscarCodigo";
             textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
-            textBoxBuscarCodigo.Size = new Size(162, 27);
+            textBoxBuscarCodigo.Size = new Size(171, 27);
             textBoxBuscarCodigo.TabIndex = 2;
             textBoxBuscarCodigo.TextAlign = HorizontalAlignment.Center;
             // 
@@ -100,7 +100,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(280, 52);
+            label2.Location = new Point(291, 68);
             label2.Name = "label2";
             label2.Size = new Size(187, 23);
             label2.TabIndex = 18;
@@ -120,7 +120,7 @@
             // textBoxElimName
             // 
             textBoxElimName.Enabled = false;
-            textBoxElimName.Location = new Point(393, 210);
+            textBoxElimName.Location = new Point(393, 205);
             textBoxElimName.Name = "textBoxElimName";
             textBoxElimName.Size = new Size(175, 27);
             textBoxElimName.TabIndex = 21;
@@ -128,7 +128,7 @@
             // textBoxElimDesc
             // 
             textBoxElimDesc.Enabled = false;
-            textBoxElimDesc.Location = new Point(393, 243);
+            textBoxElimDesc.Location = new Point(393, 291);
             textBoxElimDesc.Name = "textBoxElimDesc";
             textBoxElimDesc.Size = new Size(175, 27);
             textBoxElimDesc.TabIndex = 22;
@@ -136,7 +136,7 @@
             // textBoxElimPrecio
             // 
             textBoxElimPrecio.Enabled = false;
-            textBoxElimPrecio.Location = new Point(393, 287);
+            textBoxElimPrecio.Location = new Point(393, 247);
             textBoxElimPrecio.Name = "textBoxElimPrecio";
             textBoxElimPrecio.Size = new Size(175, 27);
             textBoxElimPrecio.TabIndex = 23;
@@ -144,7 +144,7 @@
             // textBoxElimExist
             // 
             textBoxElimExist.Enabled = false;
-            textBoxElimExist.Location = new Point(393, 333);
+            textBoxElimExist.Location = new Point(393, 324);
             textBoxElimExist.Name = "textBoxElimExist";
             textBoxElimExist.Size = new Size(175, 27);
             textBoxElimExist.TabIndex = 24;

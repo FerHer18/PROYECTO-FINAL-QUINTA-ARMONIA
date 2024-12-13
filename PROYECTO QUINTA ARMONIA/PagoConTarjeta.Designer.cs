@@ -230,6 +230,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "PagoConTarjeta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PagoConTarjeta";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

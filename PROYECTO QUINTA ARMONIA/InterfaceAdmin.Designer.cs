@@ -76,7 +76,7 @@
             buttonRedondoVentaTot.FlatAppearance.MouseOverBackColor = Color.FromArgb(202, 218, 234);
             buttonRedondoVentaTot.FlatStyle = FlatStyle.Flat;
             buttonRedondoVentaTot.ForeColor = Color.Black;
-            buttonRedondoVentaTot.Location = new Point(420, 62);
+            buttonRedondoVentaTot.Location = new Point(457, 78);
             buttonRedondoVentaTot.Name = "buttonRedondoVentaTot";
             buttonRedondoVentaTot.Size = new Size(147, 41);
             buttonRedondoVentaTot.TabIndex = 0;
@@ -95,7 +95,7 @@
             buttonRedondoGrafica.FlatAppearance.MouseOverBackColor = Color.FromArgb(202, 218, 234);
             buttonRedondoGrafica.FlatStyle = FlatStyle.Flat;
             buttonRedondoGrafica.ForeColor = Color.Black;
-            buttonRedondoGrafica.Location = new Point(587, 62);
+            buttonRedondoGrafica.Location = new Point(637, 78);
             buttonRedondoGrafica.Name = "buttonRedondoGrafica";
             buttonRedondoGrafica.Size = new Size(160, 41);
             buttonRedondoGrafica.TabIndex = 8;
@@ -149,9 +149,9 @@
             buttonRedondoEliminar.FlatAppearance.BorderSize = 0;
             buttonRedondoEliminar.FlatStyle = FlatStyle.Flat;
             buttonRedondoEliminar.ForeColor = Color.Black;
-            buttonRedondoEliminar.Location = new Point(1066, 252);
+            buttonRedondoEliminar.Location = new Point(1075, 263);
             buttonRedondoEliminar.Name = "buttonRedondoEliminar";
-            buttonRedondoEliminar.Size = new Size(125, 41);
+            buttonRedondoEliminar.Size = new Size(125, 37);
             buttonRedondoEliminar.TabIndex = 11;
             buttonRedondoEliminar.TextColor = Color.Black;
             buttonRedondoEliminar.UseVisualStyleBackColor = false;
@@ -191,6 +191,7 @@
             buttonRedondoGrafica2.TabIndex = 13;
             buttonRedondoGrafica2.TextColor = Color.Black;
             buttonRedondoGrafica2.UseVisualStyleBackColor = false;
+            buttonRedondoGrafica2.Click += buttonRedondoGrafica2_Click;
             // 
             // buttonRedondoVentTot2
             // 
@@ -202,7 +203,7 @@
             buttonRedondoVentTot2.FlatAppearance.BorderSize = 0;
             buttonRedondoVentTot2.FlatStyle = FlatStyle.Flat;
             buttonRedondoVentTot2.ForeColor = Color.Black;
-            buttonRedondoVentTot2.Location = new Point(1075, 516);
+            buttonRedondoVentTot2.Location = new Point(1075, 529);
             buttonRedondoVentTot2.Name = "buttonRedondoVentTot2";
             buttonRedondoVentTot2.Size = new Size(125, 50);
             buttonRedondoVentTot2.TabIndex = 14;
@@ -325,7 +326,7 @@
             lblHora.AutoSize = true;
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Segoe UI", 10F);
-            lblHora.Location = new Point(764, 91);
+            lblHora.Location = new Point(822, 96);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(47, 23);
@@ -337,7 +338,7 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(764, 57);
+            lblFecha.Location = new Point(822, 73);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(54, 23);
@@ -359,7 +360,7 @@
             btnPlay.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnPlay.FlatStyle = FlatStyle.Flat;
             btnPlay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPlay.Location = new Point(1200, 6);
+            btnPlay.Location = new Point(1204, 73);
             btnPlay.Margin = new Padding(2);
             btnPlay.Name = "btnPlay";
             btnPlay.Size = new Size(46, 53);
@@ -377,7 +378,7 @@
             btnPause.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnPause.FlatStyle = FlatStyle.Flat;
             btnPause.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPause.Location = new Point(1250, 11);
+            btnPause.Location = new Point(1254, 73);
             btnPause.Margin = new Padding(2);
             btnPause.Name = "btnPause";
             btnPause.Size = new Size(59, 48);

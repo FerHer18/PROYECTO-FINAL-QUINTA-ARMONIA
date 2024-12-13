@@ -164,5 +164,13 @@ namespace PROYECTO_QUINTA_ARMONIA
             obj.ShowDialog();
             this.Show();
         }
+
+        private void buttonRedondoGrafica2_Click(object sender, EventArgs e)
+        {
+            Grafica obj = new Grafica();
+            this.Hide();
+            obj.ShowDialog();
+            this.Show();
+        }
     }
 }

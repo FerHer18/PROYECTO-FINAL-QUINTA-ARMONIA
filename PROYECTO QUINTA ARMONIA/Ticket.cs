@@ -16,10 +16,11 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class Ticket : Form
     {
-        public Ticket()
+        private List<Compra> lista;
+        public Ticket(List<Compra> listaCompra)
         {
             InitializeComponent();
-
+            lista = listaCompra;
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)
@@ -41,9 +42,9 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             generarTicket();
             this.Close();
-            InterfaceUsuario comprardeNuevo = new InterfaceUsuario();
-            comprardeNuevo.ShowDialog();
+            
         }
+    
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -67,23 +68,15 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void dataGridViewCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            InterfaceUsuario ProductosComprados = new InterfaceUsuario();
-            List<Compra> compra = ProductosComprados.getCompra();
-            dataGridViewCompras.DataSource = compra;
+
         }
 
-        private void buttonRegresar_Click_1(object sender, EventArgs e)
-        {
-            MetodoPago regresar = new MetodoPago();
-            this.Hide();
-            regresar.ShowDialog();
-        }
         private void generarTicket()
         {
-            int formWidth = 642;
-            int formHeight = 837;
+            int formWidth = 850;
+            int formHeight = 853;
             int ticketWidth = formWidth;
-            int ticketHeight = formHeight -120;
+            int ticketHeight = formHeight - 120;
             int x = 0;
             int y = 0;
 
@@ -135,6 +128,17 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void labelResumen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Ticket_Load(object sender, EventArgs e)
+        {
+            dataGridViewCompras.DataSource = lista;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

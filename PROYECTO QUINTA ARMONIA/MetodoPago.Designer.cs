@@ -141,6 +141,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "MetodoPago";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MetodoPago";
             Load += MetodoPago_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxMaster).EndInit();
