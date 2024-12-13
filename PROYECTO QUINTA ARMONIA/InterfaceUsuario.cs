@@ -23,6 +23,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private int cantProductos;
         private int cantidad = 0;
         List<ClassProductos> datos;
+        private bool nuevaCompra = false;
 
         private int prodSelect = 0;
         private int existencias = 0;
@@ -32,6 +33,12 @@ namespace PROYECTO_QUINTA_ARMONIA
         public InterfaceUsuario()
         {
             InitializeComponent();
+        }
+
+        public InterfaceUsuario(bool nueva)
+        {
+            InitializeComponent();
+            nuevaCompra = nueva;
         }
 
         public InterfaceUsuario(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
@@ -191,7 +198,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         //la utiliza el metodo mostrarInfoProducto
         private void buttonYakult_Click(object sender, EventArgs e)
         {
-            string cod = btn1.Tag.ToString() ?? "";
+            string cod = btn1.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -203,7 +210,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonLotus_Click(object sender, EventArgs e)
         {
-            string cod = btn3.Tag.ToString() ?? "";
+            string cod = btn3.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -214,7 +221,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            string cod = btn2.Tag.ToString() ?? "";
+            string cod = btn2.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -225,7 +232,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            string cod = btn4.Tag.ToString() ?? "";
+            string cod = btn4.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -236,7 +243,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            string cod = btn5.Tag.ToString() ?? "";
+            string cod = btn5.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -247,7 +254,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            string cod = btn6.Tag.ToString() ?? "";
+            string cod = btn6.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -258,7 +265,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            string cod = btn7.Tag.ToString() ?? "";
+            string cod = btn7.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -269,7 +276,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            string cod = btn8.Tag.ToString() ?? "";
+            string cod = btn8.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -280,7 +287,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            string cod = btn9.Tag.ToString() ?? "";
+            string cod = btn9.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -291,7 +298,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            string cod = btn10.Tag.ToString();
+            string cod = btn10.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(cod))
             {
                 cantidad = 0;
@@ -353,6 +360,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Hide();
             f1.ShowDialog();
             this.Show();
+            if (nuevaCompra == true)
+            {
+                listaCompra.Clear();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

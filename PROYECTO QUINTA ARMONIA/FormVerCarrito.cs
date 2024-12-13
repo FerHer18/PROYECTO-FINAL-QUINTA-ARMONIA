@@ -35,9 +35,10 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            MetodoPago pagar = new MetodoPago();
+            MetodoPago pagar = new MetodoPago(lista);
             this.Hide();
             pagar.ShowDialog();
+            this.Close();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
