@@ -109,7 +109,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
             if (textBoxCVV.Text.Length!=3||!int.TryParse(textBoxCVV.Text,out _))
             {
-                MessageBox.Show("ERROR :(, recuerda que el CVV es de ters digitos por favor");
+                MessageBox.Show("ERROR :(, recuerda que el CVV es de tres digitos por favor");
                 validar = false;
             }
             if (textBoxNumContacto.Text.Length!=10||!long.TryParse(textBoxNumContacto.Text,out _))
