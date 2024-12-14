@@ -92,16 +92,16 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public int existenciasProd(string nombreProducto)
+        public int existenciasProd(string imagen)
         {
             int existencias = 0;
-            string query = "SELECT existencias FROM inventario WHERE nombre= @nombreProducto";
+            string query = "SELECT existencias FROM inventario WHERE imagen= @imagen";
             if (this.connection.State != System.Data.ConnectionState.Open)
             {
                 this.connection.Open();
             }
             MySqlCommand command = new MySqlCommand(query, this.connection);
-            command.Parameters.AddWithValue("@nombreProducto", nombreProducto);
+            command.Parameters.AddWithValue("@imagen", imagen);
 
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())

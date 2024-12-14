@@ -815,3 +815,4 @@ C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bi
 C:\Users\Rosa Lizeth\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
 C:\Users\Rosa Lizeth\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
 C:\Users\Rosa Lizeth\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\Valeria Bernal\PROYECTO-FINAL-QUINTA-ARMONIA\PROYECTO QUINTA ARMONIA\bin\Debug\net8.0-windows\QRCoder.dll
