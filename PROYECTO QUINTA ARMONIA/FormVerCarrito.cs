@@ -43,9 +43,9 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            if(lista!=null && lista.Count > 0)
+            if (lista != null && lista.Count > 0)
             {
-                MetodoPago pagar = new MetodoPago(lista,Usuario, idUsuario);
+                MetodoPago pagar = new MetodoPago(lista, Usuario, idUsuario);
                 this.Hide();
                 pagar.ShowDialog();
                 this.Close();
@@ -54,7 +54,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             {
                 MessageBox.Show("No tienes nada en tu carrito");
             }
-            
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -62,6 +62,17 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Close();
             PresentacionSistema regreso = new PresentacionSistema();
             regreso.ShowDialog();
+        }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

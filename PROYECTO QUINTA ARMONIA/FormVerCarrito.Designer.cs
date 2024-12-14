@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             buttonRegresarComprar = new Button();
             btnLogout = new Button();
             btnPagar = new Button();
             richTextBoxMostrar = new RichTextBox();
             labelHola = new Label();
+            lblFecha = new Label();
+            lblHora = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // buttonRegresarComprar
@@ -42,10 +46,10 @@
             buttonRegresarComprar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRegresarComprar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRegresarComprar.FlatStyle = FlatStyle.Flat;
-            buttonRegresarComprar.Location = new Point(668, 80);
+            buttonRegresarComprar.Location = new Point(534, 64);
             buttonRegresarComprar.Margin = new Padding(2);
             buttonRegresarComprar.Name = "buttonRegresarComprar";
-            buttonRegresarComprar.Size = new Size(209, 40);
+            buttonRegresarComprar.Size = new Size(167, 32);
             buttonRegresarComprar.TabIndex = 34;
             buttonRegresarComprar.UseVisualStyleBackColor = false;
             buttonRegresarComprar.Click += buttonRegresarComprar_Click;
@@ -57,10 +61,10 @@
             btnLogout.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnLogout.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnLogout.FlatStyle = FlatStyle.Flat;
-            btnLogout.Location = new Point(985, 759);
+            btnLogout.Location = new Point(788, 607);
             btnLogout.Margin = new Padding(2);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(142, 32);
+            btnLogout.Size = new Size(114, 26);
             btnLogout.TabIndex = 35;
             btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
@@ -72,10 +76,10 @@
             btnPagar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnPagar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnPagar.FlatStyle = FlatStyle.Flat;
-            btnPagar.Location = new Point(752, 478);
+            btnPagar.Location = new Point(602, 382);
             btnPagar.Margin = new Padding(2);
             btnPagar.Name = "btnPagar";
-            btnPagar.Size = new Size(304, 80);
+            btnPagar.Size = new Size(243, 64);
             btnPagar.TabIndex = 36;
             btnPagar.UseVisualStyleBackColor = false;
             btnPagar.Click += btnPagar_Click;
@@ -84,10 +88,10 @@
             // 
             richTextBoxMostrar.BorderStyle = BorderStyle.None;
             richTextBoxMostrar.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBoxMostrar.Location = new Point(141, 248);
+            richTextBoxMostrar.Location = new Point(113, 198);
             richTextBoxMostrar.Margin = new Padding(2);
             richTextBoxMostrar.Name = "richTextBoxMostrar";
-            richTextBoxMostrar.Size = new Size(410, 320);
+            richTextBoxMostrar.Size = new Size(328, 256);
             richTextBoxMostrar.TabIndex = 37;
             richTextBoxMostrar.Text = "";
             // 
@@ -95,19 +99,54 @@
             // 
             labelHola.BackColor = Color.Transparent;
             labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelHola.Location = new Point(179, 85);
+            labelHola.Location = new Point(143, 68);
+            labelHola.Margin = new Padding(2, 0, 2, 0);
             labelHola.Name = "labelHola";
-            labelHola.Size = new Size(422, 38);
+            labelHola.Size = new Size(338, 30);
             labelHola.TabIndex = 38;
             labelHola.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFecha.ForeColor = SystemColors.ButtonHighlight;
+            lblFecha.Location = new Point(0, 9);
+            lblFecha.Margin = new Padding(2, 0, 2, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(58, 22);
+            lblFecha.TabIndex = 39;
+            lblFecha.Text = "Fecha";
+            lblFecha.Click += lblFecha_Click;
+            // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHora.ForeColor = SystemColors.ButtonHighlight;
+            lblHora.Location = new Point(835, 9);
+            lblHora.Margin = new Padding(2, 0, 2, 0);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(50, 22);
+            lblHora.TabIndex = 40;
+            lblHora.Text = "Hora";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // FormVerCarrito
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.UIcarritoBackground1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1199, 820);
+            ClientSize = new Size(959, 656);
+            Controls.Add(lblHora);
+            Controls.Add(lblFecha);
             Controls.Add(labelHola);
             Controls.Add(richTextBoxMostrar);
             Controls.Add(btnPagar);
@@ -120,6 +159,7 @@
             Text = "FormVerCarrito";
             Load += FormVerCarrito_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -129,5 +169,8 @@
         private Button btnPagar;
         private RichTextBox richTextBoxMostrar;
         private Label labelHola;
+        private Label lblFecha;
+        private Label lblHora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

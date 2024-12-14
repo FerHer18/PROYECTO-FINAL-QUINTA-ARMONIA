@@ -47,12 +47,12 @@
             picBox8 = new PictureBox();
             picBox9 = new PictureBox();
             picBox10 = new PictureBox();
-            lblHora = new Label();
-            lblFecha = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             btnPlay = new Button();
             btnPause = new Button();
             buttonRedondoModif = new WinFormsAppKhee.ButtonRedondo();
+            lblFecha = new Label();
+            lblHora = new Label();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox3).BeginInit();
@@ -321,30 +321,6 @@
             picBox10.TabIndex = 24;
             picBox10.TabStop = false;
             // 
-            // lblHora
-            // 
-            lblHora.AutoSize = true;
-            lblHora.BackColor = Color.Transparent;
-            lblHora.Font = new Font("Segoe UI", 10F);
-            lblHora.Location = new Point(822, 96);
-            lblHora.Margin = new Padding(2, 0, 2, 0);
-            lblHora.Name = "lblHora";
-            lblHora.Size = new Size(47, 23);
-            lblHora.TabIndex = 26;
-            lblHora.Text = "Hora";
-            // 
-            // lblFecha
-            // 
-            lblFecha.AutoSize = true;
-            lblFecha.BackColor = Color.Transparent;
-            lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(822, 73);
-            lblFecha.Margin = new Padding(2, 0, 2, 0);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(54, 23);
-            lblFecha.TabIndex = 25;
-            lblFecha.Text = "Fecha";
-            // 
             // timer1
             // 
             timer1.Enabled = true;
@@ -404,6 +380,32 @@
             buttonRedondoModif.UseVisualStyleBackColor = false;
             buttonRedondoModif.Click += buttonRedondoModif_Click;
             // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Sylfaen", 6F, FontStyle.Bold);
+            lblFecha.ForeColor = SystemColors.ButtonHighlight;
+            lblFecha.Location = new Point(11, 9);
+            lblFecha.Margin = new Padding(2, 0, 2, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(37, 14);
+            lblFecha.TabIndex = 30;
+            lblFecha.Text = "Fecha";
+            // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHora.ForeColor = SystemColors.ButtonHighlight;
+            lblHora.Location = new Point(1219, 9);
+            lblHora.Margin = new Padding(2, 0, 2, 0);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(50, 22);
+            lblHora.TabIndex = 31;
+            lblHora.Text = "Hora";
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -411,11 +413,11 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(lblHora);
+            Controls.Add(lblFecha);
             Controls.Add(buttonRedondoModif);
             Controls.Add(btnPlay);
             Controls.Add(btnPause);
-            Controls.Add(lblHora);
-            Controls.Add(lblFecha);
             Controls.Add(picBox10);
             Controls.Add(picBox9);
             Controls.Add(picBox8);
@@ -472,11 +474,11 @@
         private PictureBox picBox8;
         private PictureBox picBox9;
         private PictureBox picBox10;
-        private Label lblHora;
-        private Label lblFecha;
         private System.Windows.Forms.Timer timer1;
         private Button btnPlay;
         private Button btnPause;
         private WinFormsAppKhee.ButtonRedondo buttonRedondoModif;
+        private Label lblFecha;
+        private Label lblHora;
     }
 }

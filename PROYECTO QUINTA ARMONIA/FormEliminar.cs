@@ -55,8 +55,8 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             BaseDatos obj = new BaseDatos();
             ClassProductos aux = obj.obtenerIndividual(Convert.ToInt32(this.textBoxBuscarCodigo.Text));
-           // this.textBoxElimName.Text = Convert.ToString(aux.Nombre);
-           // limpiar();
+            // this.textBoxElimName.Text = Convert.ToString(aux.Nombre);
+            // limpiar();
             this.textBoxElimName.Text = aux.Nombre;
             this.textBoxElimDesc.Text = aux.Descripcion;
             this.textBoxElimPrecio.Text = Convert.ToString(aux.Precio);
@@ -69,6 +69,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.textBoxElimName.Text = string.Empty;
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }
