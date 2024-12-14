@@ -20,20 +20,22 @@ namespace PROYECTO_QUINTA_ARMONIA
     {
         private Panel panelTicket;
         private List<Compra> lista;
- 
+        private string usuario;
+        private int idUsuario;
         // Ejemplo de inicialización del panel en el constructor del formulario
-        public PagoConTarjeta(List<Compra> listaCompra)
+        public PagoConTarjeta(List<Compra> listaCompra,string name, int codigo)
         {
             InitializeComponent();
             lista = listaCompra;
             panelTicket = new Panel();
             panelTicket.Size = new Size(400, 600);
             panelTicket.Location = new Point(50, 50); // Ajusta la ubicación según sea necesario
-
+            idUsuario = codigo;
             // Añadir controles al panelTicket
             // Ejemplo: panelTicket.Controls.Add(new Label { Text = "Ejemplo" });
 
             this.Controls.Add(panelTicket);
+            this.usuario = name;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             if (camposValidos())
             {
-                Ticket pagar = new Ticket(lista);
+                Ticket pagar = new Ticket(lista,usuario, idUsuario);
                 this.Hide();
                 pagar.ShowDialog();
                 this.Close();

@@ -36,11 +36,11 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             label5 = new Label();
-            textBox37 = new TextBox();
+            txtSub = new TextBox();
             label6 = new Label();
-            textBox38 = new TextBox();
+            txtIva = new TextBox();
             label7 = new Label();
-            textBox39 = new TextBox();
+            txtTotal = new TextBox();
             label8 = new Label();
             label9 = new Label();
             panel1 = new Panel();
@@ -140,15 +140,16 @@
             label5.TabIndex = 55;
             label5.Text = "Sub-Total";
             // 
-            // textBox37
+            // txtSub
             // 
-            textBox37.BackColor = Color.White;
-            textBox37.Location = new Point(572, 626);
-            textBox37.Multiline = true;
-            textBox37.Name = "textBox37";
-            textBox37.ReadOnly = true;
-            textBox37.Size = new Size(69, 27);
-            textBox37.TabIndex = 56;
+            txtSub.BackColor = Color.White;
+            txtSub.Enabled = false;
+            txtSub.Location = new Point(572, 626);
+            txtSub.Multiline = true;
+            txtSub.Name = "txtSub";
+            txtSub.ReadOnly = true;
+            txtSub.Size = new Size(69, 27);
+            txtSub.TabIndex = 56;
             // 
             // label6
             // 
@@ -161,15 +162,16 @@
             label6.Text = "IVA";
             label6.Click += label6_Click;
             // 
-            // textBox38
+            // txtIva
             // 
-            textBox38.BackColor = Color.White;
-            textBox38.Location = new Point(572, 659);
-            textBox38.Multiline = true;
-            textBox38.Name = "textBox38";
-            textBox38.ReadOnly = true;
-            textBox38.Size = new Size(69, 27);
-            textBox38.TabIndex = 58;
+            txtIva.BackColor = Color.White;
+            txtIva.Enabled = false;
+            txtIva.Location = new Point(572, 659);
+            txtIva.Multiline = true;
+            txtIva.Name = "txtIva";
+            txtIva.ReadOnly = true;
+            txtIva.Size = new Size(69, 27);
+            txtIva.TabIndex = 58;
             // 
             // label7
             // 
@@ -181,15 +183,16 @@
             label7.TabIndex = 59;
             label7.Text = "TOTAL";
             // 
-            // textBox39
+            // txtTotal
             // 
-            textBox39.BackColor = Color.White;
-            textBox39.Location = new Point(572, 695);
-            textBox39.Multiline = true;
-            textBox39.Name = "textBox39";
-            textBox39.ReadOnly = true;
-            textBox39.Size = new Size(69, 27);
-            textBox39.TabIndex = 60;
+            txtTotal.BackColor = Color.White;
+            txtTotal.Enabled = false;
+            txtTotal.Location = new Point(572, 695);
+            txtTotal.Multiline = true;
+            txtTotal.Name = "txtTotal";
+            txtTotal.ReadOnly = true;
+            txtTotal.Size = new Size(69, 27);
+            txtTotal.TabIndex = 60;
             // 
             // label8
             // 
@@ -241,6 +244,7 @@
             dataGridViewCompras.AllowUserToDeleteRows = false;
             dataGridViewCompras.BackgroundColor = Color.WhiteSmoke;
             dataGridViewCompras.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCompras.Enabled = false;
             dataGridViewCompras.Location = new Point(85, 237);
             dataGridViewCompras.Name = "dataGridViewCompras";
             dataGridViewCompras.ReadOnly = true;
@@ -265,7 +269,7 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.White;
             lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(84, 195);
+            lblFecha.Location = new Point(85, 195);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(54, 23);
@@ -277,7 +281,7 @@
             lblHora.AutoSize = true;
             lblHora.BackColor = Color.White;
             lblHora.Font = new Font("Segoe UI", 10F);
-            lblHora.Location = new Point(583, 195);
+            lblHora.Location = new Point(555, 195);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(47, 23);
@@ -286,6 +290,7 @@
             // 
             // timer1
             // 
+            timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
             // Ticket
@@ -303,11 +308,11 @@
             Controls.Add(panel1);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(textBox39);
+            Controls.Add(txtTotal);
             Controls.Add(label7);
-            Controls.Add(textBox38);
+            Controls.Add(txtIva);
             Controls.Add(label6);
-            Controls.Add(textBox37);
+            Controls.Add(txtSub);
             Controls.Add(label5);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -336,11 +341,11 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label5;
-        private TextBox textBox37;
+        private TextBox txtSub;
         private Label label6;
-        private TextBox textBox38;
+        private TextBox txtIva;
         private Label label7;
-        private TextBox textBox39;
+        private TextBox txtTotal;
         private Label label8;
         private Label label9;
         private Panel panel1;
