@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             buttonRedondoCancelar = new WinFormsAppKhee.ButtonRedondo();
             dataGridView1 = new DataGridView();
@@ -36,6 +37,9 @@
             MONTO = new DataGridViewTextBoxColumn();
             label2 = new Label();
             txtTotal = new TextBox();
+            lblFecha = new Label();
+            lblHora = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -128,6 +132,37 @@
             txtTotal.TabIndex = 6;
             txtTotal.TextChanged += textBox1_TextChanged;
             // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Sylfaen", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFecha.ForeColor = SystemColors.ButtonHighlight;
+            lblFecha.Location = new Point(2, 9);
+            lblFecha.Margin = new Padding(2, 0, 2, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(50, 19);
+            lblFecha.TabIndex = 35;
+            lblFecha.Text = "Fecha";
+            // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHora.ForeColor = SystemColors.ButtonHighlight;
+            lblHora.Location = new Point(810, 9);
+            lblHora.Margin = new Padding(2, 0, 2, 0);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(50, 22);
+            lblHora.TabIndex = 34;
+            lblHora.Text = "Hora";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // ventasTotales
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -135,6 +170,8 @@
             BackgroundImage = Properties.Resources.fondoVentas;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(886, 663);
+            Controls.Add(lblFecha);
+            Controls.Add(lblHora);
             Controls.Add(txtTotal);
             Controls.Add(label2);
             Controls.Add(dataGridView1);
@@ -160,5 +197,8 @@
         private DataGridViewTextBoxColumn MONTO;
         private Label label2;
         private TextBox txtTotal;
+        private Label lblFecha;
+        private Label lblHora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

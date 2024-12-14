@@ -61,16 +61,22 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             BaseDatos obj = new BaseDatos();
             List<ClaseUsuarios> tot = obj.ConsultaUsuarios();
-            foreach(ClaseUsuarios us in tot)
+            foreach (ClaseUsuarios us in tot)
             {
                 if (us.Cuenta != "admin")
                 {
                     this.total += us.Monto;
                 }
-                
+
             }
 
             txtTotal.Text = "$" + this.total.ToString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }
