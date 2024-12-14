@@ -41,6 +41,7 @@
             lblFecha = new Label();
             lblHora = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            labelHola = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)baseDatosBindingSource).BeginInit();
             SuspendLayout();
@@ -51,9 +52,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(354, 72);
+            label1.Location = new Point(442, 90);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(215, 23);
+            label1.Size = new Size(263, 30);
             label1.TabIndex = 0;
             label1.Text = "LISTADO DE PRODUCTOS";
             // 
@@ -63,10 +65,11 @@
             dataGridView1.BackgroundColor = Color.FromArgb(201, 221, 243);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { codigo, nombre, descripcion, precio, existencias });
-            dataGridView1.Location = new Point(90, 125);
+            dataGridView1.Location = new Point(112, 156);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(723, 339);
+            dataGridView1.Size = new Size(904, 424);
             dataGridView1.TabIndex = 1;
             // 
             // codigo
@@ -121,12 +124,15 @@
             buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
+            buttonRedondoCancelar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonRedondoCancelar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
             buttonRedondoCancelar.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonRedondoCancelar.ForeColor = Color.White;
-            buttonRedondoCancelar.Location = new Point(364, 470);
+            buttonRedondoCancelar.Location = new Point(453, 588);
+            buttonRedondoCancelar.Margin = new Padding(4);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
-            buttonRedondoCancelar.Size = new Size(162, 45);
+            buttonRedondoCancelar.Size = new Size(229, 67);
             buttonRedondoCancelar.TabIndex = 2;
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
@@ -138,10 +144,10 @@
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Sylfaen", 6F, FontStyle.Bold);
             lblFecha.ForeColor = SystemColors.ButtonHighlight;
-            lblFecha.Location = new Point(0, 9);
+            lblFecha.Location = new Point(0, 11);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(37, 14);
+            lblFecha.Size = new Size(40, 16);
             lblFecha.TabIndex = 35;
             lblFecha.Text = "Fecha";
             // 
@@ -151,10 +157,10 @@
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHora.ForeColor = SystemColors.ButtonHighlight;
-            lblHora.Location = new Point(871, 9);
+            lblHora.Location = new Point(1089, 11);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(50, 22);
+            lblHora.Size = new Size(60, 26);
             lblHora.TabIndex = 34;
             lblHora.Text = "Hora";
             // 
@@ -163,19 +169,30 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // labelHola
+            // 
+            labelHola.BackColor = Color.Transparent;
+            labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelHola.Location = new Point(198, 87);
+            labelHola.Name = "labelHola";
+            labelHola.Size = new Size(223, 38);
+            labelHola.TabIndex = 38;
+            // 
             // listadoProductos
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondo_listado;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(957, 608);
+            ClientSize = new Size(1196, 760);
+            Controls.Add(labelHola);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
             Controls.Add(buttonRedondoCancelar);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             DoubleBuffered = true;
+            Margin = new Padding(4);
             Name = "listadoProductos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "listadoProductos";
@@ -200,5 +217,6 @@
         private Label lblFecha;
         private Label lblHora;
         private System.Windows.Forms.Timer timer1;
+        private Label labelHola;
     }
 }

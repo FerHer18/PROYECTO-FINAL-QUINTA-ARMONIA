@@ -47,6 +47,7 @@
             lblHora = new Label();
             lblFecha = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            labelHola = new Label();
             ((System.ComponentModel.ISupportInitialize)picBoxImagen).BeginInit();
             SuspendLayout();
             // 
@@ -58,11 +59,14 @@
             buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
+            buttonRedondoCancelar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonRedondoCancelar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
             buttonRedondoCancelar.ForeColor = Color.White;
-            buttonRedondoCancelar.Location = new Point(492, 379);
+            buttonRedondoCancelar.Location = new Point(615, 484);
+            buttonRedondoCancelar.Margin = new Padding(4);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
-            buttonRedondoCancelar.Size = new Size(129, 45);
+            buttonRedondoCancelar.Size = new Size(144, 46);
             buttonRedondoCancelar.TabIndex = 0;
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
@@ -76,11 +80,14 @@
             buttonRedondoConfirmar.BorderRadius = 0;
             buttonRedondoConfirmar.BorderSize = 0;
             buttonRedondoConfirmar.FlatAppearance.BorderSize = 0;
+            buttonRedondoConfirmar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonRedondoConfirmar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoConfirmar.FlatStyle = FlatStyle.Flat;
             buttonRedondoConfirmar.ForeColor = Color.White;
-            buttonRedondoConfirmar.Location = new Point(216, 375);
+            buttonRedondoConfirmar.Location = new Point(274, 474);
+            buttonRedondoConfirmar.Margin = new Padding(4);
             buttonRedondoConfirmar.Name = "buttonRedondoConfirmar";
-            buttonRedondoConfirmar.Size = new Size(118, 53);
+            buttonRedondoConfirmar.Size = new Size(140, 56);
             buttonRedondoConfirmar.TabIndex = 1;
             buttonRedondoConfirmar.TextColor = Color.White;
             buttonRedondoConfirmar.UseVisualStyleBackColor = false;
@@ -90,9 +97,10 @@
             // 
             labelCodigo.AutoSize = true;
             labelCodigo.BackColor = Color.Transparent;
-            labelCodigo.Location = new Point(109, 136);
+            labelCodigo.Location = new Point(136, 170);
+            labelCodigo.Margin = new Padding(4, 0, 4, 0);
             labelCodigo.Name = "labelCodigo";
-            labelCodigo.Size = new Size(155, 20);
+            labelCodigo.Size = new Size(188, 25);
             labelCodigo.TabIndex = 2;
             labelCodigo.Text = "Codigo del producto: ";
             // 
@@ -100,9 +108,10 @@
             // 
             labelDescrip.AutoSize = true;
             labelDescrip.BackColor = Color.Transparent;
-            labelDescrip.Location = new Point(103, 228);
+            labelDescrip.Location = new Point(129, 285);
+            labelDescrip.Margin = new Padding(4, 0, 4, 0);
             labelDescrip.Name = "labelDescrip";
-            labelDescrip.Size = new Size(180, 20);
+            labelDescrip.Size = new Size(216, 25);
             labelDescrip.TabIndex = 3;
             labelDescrip.Text = "Descripción del producto:";
             // 
@@ -110,9 +119,10 @@
             // 
             labelPrecio.AutoSize = true;
             labelPrecio.BackColor = Color.Transparent;
-            labelPrecio.Location = new Point(105, 271);
+            labelPrecio.Location = new Point(131, 339);
+            labelPrecio.Margin = new Padding(4, 0, 4, 0);
             labelPrecio.Name = "labelPrecio";
-            labelPrecio.Size = new Size(143, 20);
+            labelPrecio.Size = new Size(172, 25);
             labelPrecio.TabIndex = 4;
             labelPrecio.Text = "Precio del producto:";
             // 
@@ -120,45 +130,50 @@
             // 
             labelCantidad.AutoSize = true;
             labelCantidad.BackColor = Color.Transparent;
-            labelCantidad.Location = new Point(103, 318);
+            labelCantidad.Location = new Point(129, 398);
+            labelCantidad.Margin = new Padding(4, 0, 4, 0);
             labelCantidad.Name = "labelCantidad";
-            labelCantidad.Size = new Size(162, 20);
+            labelCantidad.Size = new Size(195, 25);
             labelCantidad.TabIndex = 5;
             labelCantidad.Text = "Cantidad del producto:";
             // 
             // textBoxCodigo
             // 
-            textBoxCodigo.Location = new Point(293, 133);
+            textBoxCodigo.Location = new Point(366, 166);
+            textBoxCodigo.Margin = new Padding(4);
             textBoxCodigo.Name = "textBoxCodigo";
             textBoxCodigo.PlaceholderText = "Codigo";
-            textBoxCodigo.Size = new Size(167, 27);
+            textBoxCodigo.Size = new Size(208, 31);
             textBoxCodigo.TabIndex = 6;
             textBoxCodigo.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxDescrip
             // 
-            textBoxDescrip.Location = new Point(293, 221);
+            textBoxDescrip.Location = new Point(366, 276);
+            textBoxDescrip.Margin = new Padding(4);
             textBoxDescrip.Name = "textBoxDescrip";
             textBoxDescrip.PlaceholderText = "Descripcion";
-            textBoxDescrip.Size = new Size(167, 27);
+            textBoxDescrip.Size = new Size(208, 31);
             textBoxDescrip.TabIndex = 7;
             textBoxDescrip.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxPrecio
             // 
-            textBoxPrecio.Location = new Point(293, 268);
+            textBoxPrecio.Location = new Point(366, 335);
+            textBoxPrecio.Margin = new Padding(4);
             textBoxPrecio.Name = "textBoxPrecio";
             textBoxPrecio.PlaceholderText = "Precio";
-            textBoxPrecio.Size = new Size(167, 27);
+            textBoxPrecio.Size = new Size(208, 31);
             textBoxPrecio.TabIndex = 8;
             textBoxPrecio.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxExistencias
             // 
-            textBoxExistencias.Location = new Point(293, 311);
+            textBoxExistencias.Location = new Point(366, 389);
+            textBoxExistencias.Margin = new Padding(4);
             textBoxExistencias.Name = "textBoxExistencias";
             textBoxExistencias.PlaceholderText = "Cantidad";
-            textBoxExistencias.Size = new Size(167, 27);
+            textBoxExistencias.Size = new Size(208, 31);
             textBoxExistencias.TabIndex = 9;
             textBoxExistencias.TextAlign = HorizontalAlignment.Center;
             // 
@@ -166,18 +181,20 @@
             // 
             labelNombre.AutoSize = true;
             labelNombre.BackColor = Color.Transparent;
-            labelNombre.Location = new Point(103, 183);
+            labelNombre.Location = new Point(129, 229);
+            labelNombre.Margin = new Padding(4, 0, 4, 0);
             labelNombre.Name = "labelNombre";
-            labelNombre.Size = new Size(157, 20);
+            labelNombre.Size = new Size(190, 25);
             labelNombre.TabIndex = 10;
             labelNombre.Text = "Nombre del producto:";
             // 
             // textBoxNombre
             // 
-            textBoxNombre.Location = new Point(293, 176);
+            textBoxNombre.Location = new Point(366, 220);
+            textBoxNombre.Margin = new Padding(4);
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.PlaceholderText = "Nombre";
-            textBoxNombre.Size = new Size(167, 27);
+            textBoxNombre.Size = new Size(208, 31);
             textBoxNombre.TabIndex = 11;
             textBoxNombre.TextAlign = HorizontalAlignment.Center;
             // 
@@ -190,11 +207,14 @@
             btnCargarImagen.BorderRadius = 0;
             btnCargarImagen.BorderSize = 0;
             btnCargarImagen.FlatAppearance.BorderSize = 0;
+            btnCargarImagen.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnCargarImagen.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnCargarImagen.FlatStyle = FlatStyle.Flat;
             btnCargarImagen.ForeColor = Color.White;
-            btnCargarImagen.Location = new Point(523, 128);
+            btnCargarImagen.Location = new Point(654, 160);
+            btnCargarImagen.Margin = new Padding(4);
             btnCargarImagen.Name = "btnCargarImagen";
-            btnCargarImagen.Size = new Size(108, 36);
+            btnCargarImagen.Size = new Size(135, 45);
             btnCargarImagen.TabIndex = 15;
             btnCargarImagen.TextColor = Color.White;
             btnCargarImagen.UseVisualStyleBackColor = false;
@@ -203,9 +223,10 @@
             // picBoxImagen
             // 
             picBoxImagen.BackColor = Color.Transparent;
-            picBoxImagen.Location = new Point(492, 184);
+            picBoxImagen.Location = new Point(615, 230);
+            picBoxImagen.Margin = new Padding(4);
             picBoxImagen.Name = "picBoxImagen";
-            picBoxImagen.Size = new Size(170, 154);
+            picBoxImagen.Size = new Size(212, 192);
             picBoxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
             picBoxImagen.TabIndex = 16;
             picBoxImagen.TabStop = false;
@@ -216,9 +237,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(293, 57);
+            label1.Location = new Point(366, 71);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(186, 23);
+            label1.Size = new Size(231, 30);
             label1.TabIndex = 17;
             label1.Text = "AGREGAR PRODUCTO";
             // 
@@ -228,10 +250,10 @@
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHora.ForeColor = SystemColors.ButtonHighlight;
-            lblHora.Location = new Point(711, -2);
+            lblHora.Location = new Point(889, -2);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(50, 22);
+            lblHora.Size = new Size(60, 26);
             lblHora.TabIndex = 32;
             lblHora.Text = "Hora";
             // 
@@ -241,10 +263,10 @@
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Sylfaen", 6F, FontStyle.Bold);
             lblFecha.ForeColor = SystemColors.ButtonHighlight;
-            lblFecha.Location = new Point(0, 6);
+            lblFecha.Location = new Point(0, 8);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(37, 14);
+            lblFecha.Size = new Size(40, 16);
             lblFecha.TabIndex = 33;
             lblFecha.Text = "Fecha";
             // 
@@ -253,13 +275,23 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // labelHola
+            // 
+            labelHola.BackColor = Color.Transparent;
+            labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelHola.Location = new Point(158, 75);
+            labelHola.Name = "labelHola";
+            labelHola.Size = new Size(126, 38);
+            labelHola.TabIndex = 34;
+            // 
             // FormAgregar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoAgregar;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(809, 513);
+            ClientSize = new Size(1011, 641);
+            Controls.Add(labelHola);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
             Controls.Add(label1);
@@ -278,6 +310,7 @@
             Controls.Add(buttonRedondoConfirmar);
             Controls.Add(buttonRedondoCancelar);
             DoubleBuffered = true;
+            Margin = new Padding(4);
             Name = "FormAgregar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAgregar";
@@ -307,5 +340,6 @@
         private Label lblHora;
         private Label lblFecha;
         private System.Windows.Forms.Timer timer1;
+        private Label labelHola;
     }
 }

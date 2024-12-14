@@ -19,7 +19,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormModificar_Load(object sender, EventArgs e)
         {
-
+            labelHola.Text = "Hola, Admin!";
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)

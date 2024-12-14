@@ -48,7 +48,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormEliminar_Load(object sender, EventArgs e)
         {
-
+            labelHola.Text = "Hola, Admin!";
         }
 
         private void buttonDatAct_Click(object sender, EventArgs e)

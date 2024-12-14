@@ -26,7 +26,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormAgregar_Load(object sender, EventArgs e)
         {
-
+            labelHola.Text = "Hola,Admin!";
         }
 
         private void buttonRedondoConfirmar_Click(object sender, EventArgs e)

@@ -37,6 +37,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void listadoProductos_Load(object sender, EventArgs e)
         {
             CargarDatosEnDataGrid();
+            labelHola.Text = "Hola, Admin!";
         }
 
         private void buttonRedondoCancelar_Click(object sender, EventArgs e)
