@@ -108,59 +108,78 @@ namespace PROYECTO_QUINTA_ARMONIA
 
             for (int i = 0; i < imagenes.Count; i++)
             {
-                switch (i)
+                int existencias = obj.existenciasProd(imagenes[i]);
+                if (existencias <= 0)
                 {
-                    case 0:
-                        this.btn1.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0]));
-                        btn1.Tag = imagenes[0];
-                        break;
-                    case 1:
-                        this.btn2.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1]));
-                        btn2.Tag = imagenes[1];
-                        break;
-                    case 2:
-                        this.btn3.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2]));
-                        btn3.Tag = imagenes[2];
-                        break;
-                    case 3:
-                        this.btn4.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3]));
-                        btn4.Tag = imagenes[3];
-                        break;
-                    case 4:
-                        this.btn5.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4]));
-                        btn5.Tag = imagenes[4];
-                        break;
-                    case 5:
-                        this.btn6.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5]));
-                        btn6.Tag = imagenes[5];
-                        break;
-                    case 6:
-                        this.btn7.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6]));
-                        btn7.Tag = imagenes[6];
-                        break;
-                    case 7:
-                        this.btn8.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7]));
-                        btn8.Tag = imagenes[7];
-                        break;
-                    case 8:
-                        this.btn9.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8]));
-                        btn9.Tag = imagenes[8];
-                        break;
-                    case 9:
-                        this.btn10.BackgroundImage = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9]));
-                        btn10.Tag = imagenes[9];
-                        break;
+                    switch (i)
+                    {
+                        case 0: btn1.Tag = false; break;
+                        case 1: btn2.Tag = false; break;
+                        case 2: btn3.Tag = false; break;
+                        case 3: btn4.Tag = false; break;
+                        case 4: btn5.Tag = false; break;
+                        case 5: btn6.Tag = false; break;
+                        case 6: btn7.Tag = false; break;
+                        case 7: btn8.Tag = false; break;
+                        case 8: btn9.Tag = false; break;
+                        case 9: btn10.Tag = false; break;
+                    }
+                    continue; // Pasar al siguiente producto
                 }
+                switch (i)
+            {
+                case 0:
+                    this.btn1.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0]));
+                    btn1.Tag = imagenes[0];
+                    break;
+                case 1:
+                    this.btn2.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1]));
+                    btn2.Tag = imagenes[1];
+                    break;
+                case 2:
+                    this.btn3.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2]));
+                    btn3.Tag = imagenes[2];
+                    break;
+                case 3:
+                    this.btn4.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3]));
+                    btn4.Tag = imagenes[3];
+                    break;
+                case 4:
+                    this.btn5.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4]));
+                    btn5.Tag = imagenes[4];
+                    break;
+                case 5:
+                    this.btn6.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5]));
+                    btn6.Tag = imagenes[5];
+                    break;
+                case 6:
+                    this.btn7.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6]));
+                    btn7.Tag = imagenes[6];
+                    break;
+                case 7:
+                    this.btn8.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7]));
+                    btn8.Tag = imagenes[7];
+                    break;
+                case 8:
+                    this.btn9.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8]));
+                    btn9.Tag = imagenes[8];
+                    break;
+                case 9:
+                    this.btn10.BackgroundImage = System.Drawing.Image.FromFile(
+Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9]));
+                    btn10.Tag = imagenes[9];
+                    break;
+            }
+                
             }
         }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
@@ -25,6 +26,21 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PagoEnOxxo2_Load(object sender, EventArgs e)
+        {
+            QRCodeGenerator qrCodeGenerator = new QRCodeGenerator();
+            QRCodeData codeData = qrCodeGenerator.CreateQrCode("OXXO", QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(codeData);
+
+            Bitmap qrCodeImage = qrCode.GetGraphic(10, Color.Black, Color.White, true);
+            pictureBoxQR.Image = qrCodeImage;
         }
     }
 }

@@ -92,6 +92,25 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
+        public int existenciasProd(string nombreProducto)
+        {
+            int existencias = 0;
+            string query = "SELECT existencias FROM inventario WHERE nombre= @nombreProducto";
+            if (this.connection.State != System.Data.ConnectionState.Open)
+            {
+                this.connection.Open();
+            }
+            MySqlCommand command = new MySqlCommand(query, this.connection);
+            command.Parameters.AddWithValue("@nombreProducto", nombreProducto);
+
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                existencias = reader.GetInt32("existencias");
+            }
+            reader.Close();
+            return existencias;
+        }
 
         public void guardar(int codigo, string nombre, string descripcion, float precio, int existencias, string imagen)
         {
@@ -134,6 +153,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.Disconnect();
             }
         }
+
         public List<string> NombreImagenes()
         {
             List<string> nombres = new List<string>();
