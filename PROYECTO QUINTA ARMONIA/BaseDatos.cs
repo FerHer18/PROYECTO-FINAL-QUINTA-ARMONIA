@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -472,6 +473,31 @@ namespace PROYECTO_QUINTA_ARMONIA
                 MessageBox.Show("Error al actualizar las existencias: " + ex.Message);
                 this.Disconnect();
             }
+        }
+
+        public DataTable ObtenerDatosGrafica()
+        {
+            DataTable datos = new DataTable();
+            try
+            {
+
+                string query = "SELECT nombre, total FROM inventario";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        adapter.Fill(datos); // Llena el DataTable con los resultados
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener datos: " + ex.Message);
+            }
+
+            return datos;
         }
 
     }
