@@ -172,6 +172,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             BaseDatos obj = new BaseDatos();
             obj.ActualizarExistencias(lista);
             obj.ActualizarMonto(idUsuario, total);
+            obj.ActualizarTotalProductos(lista);
             obj.Disconnect();
         }
     }

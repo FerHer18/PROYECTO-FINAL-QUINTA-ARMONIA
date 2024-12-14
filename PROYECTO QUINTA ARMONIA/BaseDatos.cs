@@ -428,5 +428,51 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
+        public void ActualizarTotalProductos(List<Compra> compra)
+        {
+            try
+            {
+                using (var transaction = this.connection.BeginTransaction())
+                {
+                    foreach (var item in compra)
+                    {
+                        // Leer las existencias actuales del producto
+                        string selectQuery = "SELECT total FROM inventario WHERE codigo = @codigo;";
+                        MySqlCommand selectCommand = new MySqlCommand(selectQuery, this.connection, transaction);
+                        selectCommand.Parameters.AddWithValue("@codigo", item.Codigo);
+
+                        double total = 0;
+                        using (MySqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                total = Convert.ToInt32(reader["total"]);
+                            }
+                            reader.Close();
+                        }
+
+                        // Calcular las nuevas existencias
+                        double nuevoTotal = total + item.Precio;
+
+                        // Actualizar las existencias
+                        string updateQuery = "UPDATE inventario SET total = @total WHERE codigo = @codigo;";
+                        MySqlCommand updateCommand = new MySqlCommand(updateQuery, this.connection, transaction);
+                        updateCommand.Parameters.AddWithValue("@total", nuevoTotal);
+                        updateCommand.Parameters.AddWithValue("@codigo", item.Codigo);
+
+                        updateCommand.ExecuteNonQuery();
+                    }
+
+                    // Confirma la transacción
+                    transaction.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar las existencias: " + ex.Message);
+                this.Disconnect();
+            }
+        }
+
     }
 }
