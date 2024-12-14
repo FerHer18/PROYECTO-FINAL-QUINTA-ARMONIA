@@ -54,7 +54,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void InterfaceUsuario_Load(object sender, EventArgs e)
         {
             MostrarImagenes();
-
+            labelHola.Text = $"Hola, {this.Nombre}!";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -361,7 +361,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
-            FormVerCarrito f1 = new FormVerCarrito(listaCompra,Nombre, id);
+            FormVerCarrito f1 = new FormVerCarrito(listaCompra,Nombre, id, Nombre);
             this.Hide();
             f1.ShowDialog();
             this.Show();
