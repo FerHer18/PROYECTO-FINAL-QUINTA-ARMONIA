@@ -23,7 +23,6 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
         {
-            //lo que se muestra del carrito
             richTextBoxMostrar.Text += "Productos agregados: \n\n";
             for (int i = 0; i < lista.Count; i++)
             {
