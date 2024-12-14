@@ -18,7 +18,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         public MetodoPago(List<Compra> listaCompra, string nombre, int codigo)
         {
             InitializeComponent();
-            lista= listaCompra;
+            lista = listaCompra;
             usuario = nombre;
             idUsuario = codigo;
         }
@@ -30,7 +30,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonTarjeta_Click(object sender, EventArgs e)
         {
-            PagoConTarjeta pagoConTarjeta = new PagoConTarjeta(lista,usuario, idUsuario);
+            PagoConTarjeta pagoConTarjeta = new PagoConTarjeta(lista, usuario, idUsuario);
             this.Hide();
             pagoConTarjeta.ShowDialog();
         }
@@ -38,6 +38,13 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void MetodoPago_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonOxxo_Click(object sender, EventArgs e)
+        {
+            PagoEnOxxo2 pagoEnOxxo2 = new PagoEnOxxo2();
+            this.Hide();
+            pagoEnOxxo2.ShowDialog();
         }
     }
 }
