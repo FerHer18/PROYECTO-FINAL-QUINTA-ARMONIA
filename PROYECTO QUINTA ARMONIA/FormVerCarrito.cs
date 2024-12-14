@@ -13,12 +13,10 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class FormVerCarrito : Form
     {
         private List<Compra> lista;
-        private string nombre;
-        public FormVerCarrito(List<Compra> listaCompra, string Nombre)
+        public FormVerCarrito(List<Compra> listaCompra)
         {
             InitializeComponent();
             this.lista = listaCompra;
-            this.nombre = Nombre;
         }
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
@@ -28,7 +26,6 @@ namespace PROYECTO_QUINTA_ARMONIA
             {
                 richTextBoxMostrar.Text += lista[i].Name + " x " + lista[i].Cantidad + " - $" + lista[i].Precio.ToString("F2") + "\n";
             }
-            labelHolaUsuarioUCI.Text = $"Hola, {this.nombre}!";
         }
 
         private void buttonRegresarComprar_Click(object sender, EventArgs e)
