@@ -17,11 +17,32 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class Ticket : Form
     {
         private List<Compra> lista;
-        public Ticket(List<Compra> listaCompra)
+        private float subtotal;
+        private double impuesto;
+        private double total;
+        private string usuario;
+        private int idUsuario;
+        public Ticket(List<Compra> listaCompra,string name, int codigo)
         {
             InitializeComponent();
             lista = listaCompra;
+            usuario = name;
+            idUsuario = codigo;
         }
+
+        public void ObtenerTotal()
+        {
+            foreach(var item in lista)
+            {
+                subtotal += item.Precio;
+            }
+            txtSub.Text= subtotal.ToString();
+            impuesto = subtotal * 0.06;
+            txtIva.Text= impuesto.ToString();
+            total += impuesto + subtotal;
+            txtTotal.Text = total.ToString();
+        }
+
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
@@ -133,12 +154,25 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void Ticket_Load(object sender, EventArgs e)
         {
             dataGridViewCompras.DataSource = lista;
+            ObtenerTotal();
+            dataGridViewCompras.ClearSelection(); // Limpia la selección inicial
+            dataGridViewCompras.CurrentCell = null; // Evita que una celda esté activa
+            ActualizarDatos();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToLongDateString();
-            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblHora.Text= DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        public void ActualizarDatos()
+        {
+            //Reflejar la compra en la base de datos
+            BaseDatos obj = new BaseDatos();
+            obj.ActualizarExistencias(lista);
+            obj.ActualizarMonto(idUsuario, total);
+            obj.Disconnect();
         }
     }
 }

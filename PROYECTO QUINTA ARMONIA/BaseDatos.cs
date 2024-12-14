@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace PROYECTO_QUINTA_ARMONIA
 {
@@ -43,11 +44,12 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public bool Login(string cuenta, string contraseña, out string tipoUsuario, out string nombreUsuario)   //el out sirve para declarar paramteros de salida, es el return
+        public bool Login(string cuenta, string contraseña, out string tipoUsuario, out string nombreUsuario, out int id)   //el out sirve para declarar paramteros de salida, es el return
         {
             tipoUsuario = string.Empty;
             nombreUsuario = string.Empty;
-
+            id = 0;
+            string codigo;
             if (string.IsNullOrWhiteSpace(cuenta) || string.IsNullOrWhiteSpace(contraseña))
             {
                 MessageBox.Show("Complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -70,6 +72,8 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             tipoUsuario = reader["Cuenta"].ToString();
                             nombreUsuario = reader["Nombre"].ToString();
+                            codigo = reader["id"].ToString();
+                            id = int.Parse(codigo);
                         }
                         return true;
                     }
@@ -327,6 +331,102 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         }
 
+        public void ActualizarExistencias(List<Compra> compra)
+        {
+            try
+            {
+                using (var transaction = this.connection.BeginTransaction())
+                {
+                    foreach (var item in compra)
+                    {
+                        // Leer las existencias actuales del producto
+                        string selectQuery = "SELECT existencias FROM inventario WHERE codigo = @codigo;";
+                        MySqlCommand selectCommand = new MySqlCommand(selectQuery, this.connection, transaction);
+                        selectCommand.Parameters.AddWithValue("@codigo", item.Codigo);
+
+                        int existencias = 0;
+                        using (MySqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                existencias = Convert.ToInt32(reader["existencias"]);
+                            }
+                            reader.Close();
+                        }
+
+                        // Calcular las nuevas existencias
+                        int nuevasExistencias = existencias - item.Cantidad;
+
+                        // Actualizar las existencias
+                        string updateQuery = "UPDATE inventario SET existencias = @existencias WHERE codigo = @codigo;";
+                        MySqlCommand updateCommand = new MySqlCommand(updateQuery, this.connection, transaction);
+                        updateCommand.Parameters.AddWithValue("@existencias", nuevasExistencias);
+                        updateCommand.Parameters.AddWithValue("@codigo", item.Codigo);
+
+                        updateCommand.ExecuteNonQuery();
+                    }
+
+                    // Confirma la transacción
+                    transaction.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar las existencias: " + ex.Message);
+                this.Disconnect();
+            }
+        }
+
+        public void ActualizarMonto(int usuario, double total)
+        {
+            try
+            {
+                using (var transaction = this.connection.BeginTransaction())
+                {
+                    string selectQuery = "SELECT monto FROM usuarios WHERE id = @id;";
+                    MySqlCommand selectCommand = new MySqlCommand(selectQuery, this.connection, transaction);
+                    selectCommand.Parameters.AddWithValue("@id", usuario);
+
+                    double monto = 0;
+
+                    // Usamos un bloque "using" para manejar el lector de datos
+                    using (MySqlDataReader reader = selectCommand.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            monto = Convert.ToDouble(reader["monto"]);
+                        }
+
+                        // Cerramos explícitamente el lector antes de continuar
+                        reader.Close();
+                    }
+
+                    // Calculamos el nuevo monto
+                    double nuevoMonto = monto + total;
+
+                    // Consulta para actualizar el monto
+                    string updateQuery = "UPDATE usuarios SET monto = @monto WHERE id = @id;";
+                    MySqlCommand updateCommand = new MySqlCommand(updateQuery, this.connection, transaction);
+                    updateCommand.Parameters.AddWithValue("@monto", nuevoMonto);
+                    updateCommand.Parameters.AddWithValue("@id", usuario);
+
+                    updateCommand.ExecuteNonQuery();
+
+                    // Confirmamos la transacción
+                    transaction.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el monto: " + ex.Message);
+
+                // Desconecta la conexión en caso de error
+                if (this.connection.State == System.Data.ConnectionState.Open)
+                {
+                    this.connection.Close();
+                }
+            }
+        }
 
     }
 }

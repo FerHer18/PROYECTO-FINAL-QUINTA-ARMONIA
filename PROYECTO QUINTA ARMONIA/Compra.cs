@@ -8,12 +8,12 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public class Compra
     {
-        private int cantidad;
-        private string name;
         private int codigo;
+        private string name;
         private float precio;
-
-        public Compra(int cantidad, string name, int codigo, float precio)
+        private int cantidad; 
+        
+        public Compra(int codigo, string name, float precio, int cantidad)
         {
             this.Cantidad = cantidad;
             this.Name = name;

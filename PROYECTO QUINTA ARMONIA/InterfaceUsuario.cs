@@ -29,6 +29,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private int existencias = 0;
         private string nomProd;
         private float precio;
+        private int id;
 
         public InterfaceUsuario()
         {
@@ -41,13 +42,13 @@ namespace PROYECTO_QUINTA_ARMONIA
             nuevaCompra = nueva;
         }
 
-        public InterfaceUsuario(string nombre) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
+        public InterfaceUsuario(string nombre, int codigo) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
         {
             InitializeComponent();
             this.Nombre = nombre;
             MessageBox.Show($"Bienvenido {this.Nombre}", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
             imagenes = new List<string>();
-
+            id = codigo;
         }
 
         private void InterfaceUsuario_Load(object sender, EventArgs e)
@@ -325,7 +326,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 EjecutarCompra();
                 //Agregar a la lista
                 float total = precio * cantidad;
-                Compra item = new Compra(this.cantidad, this.nomProd, this.prodSelect, total);
+                Compra item = new Compra(this.prodSelect, this.nomProd, total, this.cantidad);
                 listaCompra.Add(item);
                 this.cantidad = 0;
                 labelCantidad.Text = cantidad.ToString();
@@ -336,9 +337,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public List<Compra> getCompra() { 
-            return listaCompra; 
-        }
+        
         private void buttonRedondoRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -348,6 +347,12 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             ClaseMusica.Play();
         }
+        #region INUTIL POR AHORA
+        public List<Compra> getCompra()
+        {
+            return listaCompra;
+        }
+        #endregion
 
         private void btnPause_Click(object sender, EventArgs e)
         {
@@ -356,7 +361,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
-            FormVerCarrito f1 = new FormVerCarrito(listaCompra);
+            FormVerCarrito f1 = new FormVerCarrito(listaCompra,Nombre, id);
             this.Hide();
             f1.ShowDialog();
             this.Show();

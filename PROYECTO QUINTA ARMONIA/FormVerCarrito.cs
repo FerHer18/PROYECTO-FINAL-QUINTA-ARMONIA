@@ -13,10 +13,15 @@ namespace PROYECTO_QUINTA_ARMONIA
     public partial class FormVerCarrito : Form
     {
         private List<Compra> lista;
-        public FormVerCarrito(List<Compra> listaCompra)
+        private string Usuario;
+        private int idUsuario;
+
+        public FormVerCarrito(List<Compra> listaCompra, string usuario, int codigo)
         {
             InitializeComponent();
             this.lista = listaCompra;
+            this.Usuario = usuario;
+            this.idUsuario = codigo;
         }
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
@@ -30,15 +35,23 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonRegresarComprar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            MetodoPago pagar = new MetodoPago(lista);
-            this.Hide();
-            pagar.ShowDialog();
-            this.Close();
+            if(lista!=null && lista.Count > 0)
+            {
+                MetodoPago pagar = new MetodoPago(lista,Usuario, idUsuario);
+                this.Hide();
+                pagar.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("No tienes nada en tu carrito");
+            }
+            
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
