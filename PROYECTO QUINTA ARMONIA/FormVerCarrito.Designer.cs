@@ -101,6 +101,7 @@
             labelHolaUsuarioUCI.Size = new Size(295, 38);
             labelHolaUsuarioUCI.TabIndex = 38;
             labelHolaUsuarioUCI.TextAlign = ContentAlignment.MiddleLeft;
+            labelHolaUsuarioUCI.Click += labelHolaUsuarioUCI_Click;
             // 
             // FormVerCarrito
             // 

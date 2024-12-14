@@ -23,6 +23,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
         {
+            //lo que se muestra del carrito
             richTextBoxMostrar.Text += "Productos agregados: \n\n";
             for (int i = 0; i < lista.Count; i++)
             {
@@ -49,6 +50,11 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Close();
             PresentacionSistema regreso = new PresentacionSistema();
             regreso.ShowDialog();
+        }
+
+        private void labelHolaUsuarioUCI_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

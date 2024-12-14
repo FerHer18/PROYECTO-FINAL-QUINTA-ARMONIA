@@ -413,7 +413,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void labelHolaUsuarioUI_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void labelCantidad_Click(object sender, EventArgs e)
