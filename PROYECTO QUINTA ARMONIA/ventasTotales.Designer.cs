@@ -40,6 +40,7 @@
             lblFecha = new Label();
             lblHora = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            labelHola = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,9 +50,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(290, 71);
+            label1.Location = new Point(374, 97);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(245, 38);
+            label1.Size = new Size(290, 45);
             label1.TabIndex = 1;
             label1.Text = "VENTAS TOTALES";
             label1.Click += label1_Click;
@@ -64,12 +66,15 @@
             buttonRedondoCancelar.BorderRadius = 0;
             buttonRedondoCancelar.BorderSize = 0;
             buttonRedondoCancelar.FlatAppearance.BorderSize = 0;
+            buttonRedondoCancelar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonRedondoCancelar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoCancelar.FlatStyle = FlatStyle.Flat;
             buttonRedondoCancelar.Font = new Font("Tahoma", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonRedondoCancelar.ForeColor = Color.White;
-            buttonRedondoCancelar.Location = new Point(336, 517);
+            buttonRedondoCancelar.Location = new Point(406, 646);
+            buttonRedondoCancelar.Margin = new Padding(4);
             buttonRedondoCancelar.Name = "buttonRedondoCancelar";
-            buttonRedondoCancelar.Size = new Size(166, 45);
+            buttonRedondoCancelar.Size = new Size(222, 72);
             buttonRedondoCancelar.TabIndex = 3;
             buttonRedondoCancelar.TextColor = Color.White;
             buttonRedondoCancelar.UseVisualStyleBackColor = false;
@@ -80,10 +85,11 @@
             dataGridView1.BackgroundColor = Color.FromArgb(191, 210, 238);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, USUARIO, MONTO });
-            dataGridView1.Location = new Point(131, 184);
+            dataGridView1.Location = new Point(164, 230);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(601, 200);
+            dataGridView1.Size = new Size(751, 250);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -116,9 +122,10 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(162, 441);
+            label2.Location = new Point(202, 551);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(230, 38);
+            label2.Size = new Size(272, 45);
             label2.TabIndex = 5;
             label2.Text = "Total en ventas: ";
             // 
@@ -126,9 +133,10 @@
             // 
             txtTotal.Enabled = false;
             txtTotal.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTotal.Location = new Point(429, 454);
+            txtTotal.Location = new Point(536, 568);
+            txtTotal.Margin = new Padding(4);
             txtTotal.Name = "txtTotal";
-            txtTotal.Size = new Size(238, 40);
+            txtTotal.Size = new Size(296, 47);
             txtTotal.TabIndex = 6;
             txtTotal.TextChanged += textBox1_TextChanged;
             // 
@@ -138,10 +146,10 @@
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Sylfaen", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFecha.ForeColor = SystemColors.ButtonHighlight;
-            lblFecha.Location = new Point(2, 9);
+            lblFecha.Location = new Point(2, 11);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(50, 19);
+            lblFecha.Size = new Size(58, 23);
             lblFecha.TabIndex = 35;
             lblFecha.Text = "Fecha";
             // 
@@ -151,10 +159,10 @@
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHora.ForeColor = SystemColors.ButtonHighlight;
-            lblHora.Location = new Point(810, 9);
+            lblHora.Location = new Point(1012, 11);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(50, 22);
+            lblHora.Size = new Size(60, 26);
             lblHora.TabIndex = 34;
             lblHora.Text = "Hora";
             // 
@@ -163,13 +171,23 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // labelHola
+            // 
+            labelHola.BackColor = Color.Transparent;
+            labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelHola.Location = new Point(179, 102);
+            labelHola.Name = "labelHola";
+            labelHola.Size = new Size(200, 38);
+            labelHola.TabIndex = 39;
+            // 
             // ventasTotales
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoVentas;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(886, 663);
+            ClientSize = new Size(1108, 829);
+            Controls.Add(labelHola);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
             Controls.Add(txtTotal);
@@ -178,6 +196,7 @@
             Controls.Add(buttonRedondoCancelar);
             Controls.Add(label1);
             DoubleBuffered = true;
+            Margin = new Padding(4);
             Name = "ventasTotales";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ventasTotales";
@@ -200,5 +219,6 @@
         private Label lblFecha;
         private Label lblHora;
         private System.Windows.Forms.Timer timer1;
+        private Label labelHola;
     }
 }

@@ -35,6 +35,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void InterfaceAdmin_Load(object sender, EventArgs e)
         {
             mostrarImagenes();
+            labelHola.Text = "Hola,Admin!";
         }
 
         private void buttonRedondoAgregar_Click(object sender, EventArgs e)

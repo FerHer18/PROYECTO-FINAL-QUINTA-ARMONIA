@@ -43,13 +43,18 @@ namespace PROYECTO_QUINTA_ARMONIA
                 chart1.Series["Datos"].Points.AddXY(articulo, total);
             }
 
-            chart1.Series["Datos"].IsValueShownAsLabel = true;  
+            chart1.Series["Datos"].IsValueShownAsLabel = true;
 
         }
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Grafica_Load(object sender, EventArgs e)
+        {
+            labelHola.Text = "Hola, Admin!";
         }
     }
 }
