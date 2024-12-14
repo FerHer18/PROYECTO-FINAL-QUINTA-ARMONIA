@@ -85,7 +85,7 @@
             // pictureBox5
             // 
             pictureBox5.BackColor = Color.White;
-            pictureBox5.Location = new Point(76, 90);
+            pictureBox5.Location = new Point(47, 90);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(580, 688);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -112,7 +112,7 @@
             // 
             pictureBox2.BackColor = Color.White;
             pictureBox2.Image = Properties.Resources.Letras_removebg_preview2;
-            pictureBox2.Location = new Point(76, 90);
+            pictureBox2.Location = new Point(47, 90);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(172, 102);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -123,7 +123,7 @@
             // 
             pictureBox3.BackColor = Color.White;
             pictureBox3.Image = Properties.Resources.Recursos__1__removebg_preview2;
-            pictureBox3.Location = new Point(498, 90);
+            pictureBox3.Location = new Point(469, 90);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(158, 102);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -134,7 +134,7 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Location = new Point(475, 633);
+            label5.Location = new Point(451, 633);
             label5.Name = "label5";
             label5.Size = new Size(73, 20);
             label5.TabIndex = 55;
@@ -144,7 +144,7 @@
             // 
             txtSub.BackColor = Color.White;
             txtSub.Enabled = false;
-            txtSub.Location = new Point(572, 626);
+            txtSub.Location = new Point(543, 630);
             txtSub.Multiline = true;
             txtSub.Name = "txtSub";
             txtSub.ReadOnly = true;
@@ -155,7 +155,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.White;
-            label6.Location = new Point(511, 662);
+            label6.Location = new Point(493, 662);
             label6.Name = "label6";
             label6.Size = new Size(31, 20);
             label6.TabIndex = 57;
@@ -166,7 +166,7 @@
             // 
             txtIva.BackColor = Color.White;
             txtIva.Enabled = false;
-            txtIva.Location = new Point(572, 659);
+            txtIva.Location = new Point(544, 663);
             txtIva.Multiline = true;
             txtIva.Name = "txtIva";
             txtIva.ReadOnly = true;
@@ -177,7 +177,7 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.White;
-            label7.Location = new Point(498, 695);
+            label7.Location = new Point(474, 695);
             label7.Name = "label7";
             label7.Size = new Size(50, 20);
             label7.TabIndex = 59;
@@ -187,7 +187,7 @@
             // 
             txtTotal.BackColor = Color.White;
             txtTotal.Enabled = false;
-            txtTotal.Location = new Point(572, 695);
+            txtTotal.Location = new Point(543, 695);
             txtTotal.Multiline = true;
             txtTotal.Name = "txtTotal";
             txtTotal.ReadOnly = true;
@@ -199,7 +199,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.White;
             label8.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(144, 633);
+            label8.Location = new Point(88, 626);
             label8.Name = "label8";
             label8.Size = new Size(309, 38);
             label8.TabIndex = 61;
@@ -210,7 +210,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.White;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(191, 669);
+            label9.Location = new Point(142, 669);
             label9.Name = "label9";
             label9.Size = new Size(175, 28);
             label9.TabIndex = 50;
@@ -219,21 +219,21 @@
             // 
             // panel1
             // 
-            panel1.Location = new Point(84, 221);
+            panel1.Location = new Point(56, 221);
             panel1.Name = "panel1";
             panel1.Size = new Size(557, 10);
             panel1.TabIndex = 66;
             // 
             // panel3
             // 
-            panel3.Location = new Point(84, 604);
+            panel3.Location = new Point(56, 604);
             panel3.Name = "panel3";
             panel3.Size = new Size(557, 11);
             panel3.TabIndex = 68;
             // 
             // panel4
             // 
-            panel4.Location = new Point(88, 728);
+            panel4.Location = new Point(56, 728);
             panel4.Name = "panel4";
             panel4.Size = new Size(561, 10);
             panel4.TabIndex = 69;
@@ -245,7 +245,7 @@
             dataGridViewCompras.BackgroundColor = Color.WhiteSmoke;
             dataGridViewCompras.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCompras.Enabled = false;
-            dataGridViewCompras.Location = new Point(85, 237);
+            dataGridViewCompras.Location = new Point(56, 237);
             dataGridViewCompras.Name = "dataGridViewCompras";
             dataGridViewCompras.ReadOnly = true;
             dataGridViewCompras.RowHeadersWidth = 51;
@@ -258,7 +258,7 @@
             label10.AutoSize = true;
             label10.BackColor = Color.White;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(172, 697);
+            label10.Location = new Point(130, 697);
             label10.Name = "label10";
             label10.Size = new Size(211, 28);
             label10.TabIndex = 71;
@@ -269,7 +269,7 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.White;
             lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.Location = new Point(85, 195);
+            lblFecha.Location = new Point(47, 195);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(54, 23);

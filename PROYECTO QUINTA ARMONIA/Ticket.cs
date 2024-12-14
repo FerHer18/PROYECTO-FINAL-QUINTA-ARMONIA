@@ -94,10 +94,10 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void generarTicket()
         {
-            int formWidth = 850;
+            int formWidth = 680;
             int formHeight = 853;
             int ticketWidth = formWidth;
-            int ticketHeight = formHeight - 120;
+            int ticketHeight = formHeight - 100;
             int x = 0;
             int y = 0;
 
