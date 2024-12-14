@@ -44,6 +44,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
 
             chart1.Series["Datos"].IsValueShownAsLabel = true;
+            obj.Disconnect();
 
         }
 

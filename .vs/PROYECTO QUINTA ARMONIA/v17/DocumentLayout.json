@@ -1,41 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\",
+  "WorkspaceRootPath": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\ventastotales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\valeria bernal\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\valeria bernal\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\valeria bernal\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\valeria bernal\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formvercarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\interfaceusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\ventastotales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\ventastotales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\listadoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\listadoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\listadoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formmodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|c:\\users\\rosa lizeth\\proyecto-final-quinta-armonia\\proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8499C7E-95DE-427C-ADF9-4BDB5457DFC2}|PROYECTO QUINTA ARMONIA\\PROYECTO QUINTA ARMONIA.csproj|solutionrelative:proyecto quinta armonia\\formagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -46,15 +58,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "InterfaceAdmin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs [Dise\u00F1o]",
               "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceAdmin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T05:25:07.333Z",
@@ -63,76 +75,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "FormAgregar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs",
               "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormAgregar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormAgregar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T05:24:55.353Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormEliminar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T05:24:57.573Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormModificar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormModificar.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T05:24:59.793Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "listadoProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T05:25:14.063Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FormEliminar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormEliminar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T05:24:57.573Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormModificar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormModificar.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormModificar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormModificar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T05:24:59.793Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "listadoProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\listadoProductos.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\listadoProductos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T05:25:14.063Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ventasTotales.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\ventasTotales.cs",
               "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\ventasTotales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\ventasTotales.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T05:25:58.193Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\Form2.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T04:18:16.668Z",
@@ -140,28 +147,72 @@
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormVerCarrito.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
-              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\Form2.cs",
+              "ToolTip": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Form2.cs",
+              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\Form2.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T06:08:27.693Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-14T14:34:09.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "ToolTip": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T14:33:38.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ticket.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\Ticket.cs",
+              "ToolTip": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\Ticket.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\Ticket.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T14:33:18.015Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormVerCarrito.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs",
+              "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\FormVerCarrito.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T06:08:27.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "InterfaceUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Valeria Bernal\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
               "RelativeDocumentMoniker": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs",
               "ToolTip": "C:\\Users\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Rosa Lizeth\\PROYECTO-FINAL-QUINTA-ARMONIA\\PROYECTO QUINTA ARMONIA\\InterfaceUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T06:08:19.092Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-14T06:08:19.092Z"
             }
           ]
         }
