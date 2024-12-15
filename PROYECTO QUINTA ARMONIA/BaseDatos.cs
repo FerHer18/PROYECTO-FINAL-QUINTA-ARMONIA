@@ -178,6 +178,30 @@ namespace PROYECTO_QUINTA_ARMONIA
             return nombres;
         }
 
+        public List<string> NombreImagenesNo()
+        {
+            List<string> nombres = new List<string>();
+
+            try
+            {
+                string query = "SELECT imagenAgotada FROM inventario";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    nombres.Add(reader["imagenAgotada"].ToString() ?? "");
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+
+            return nombres;
+        }
+
         public List<ClassProductos> Consulta()
         {
             List<ClassProductos> info = new List<ClassProductos>();
