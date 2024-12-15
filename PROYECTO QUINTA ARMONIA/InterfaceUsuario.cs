@@ -20,6 +20,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private string Nombre; //atributo necesario para mensaje de bienvenida en inicio de sesion
         List<Compra> listaCompra = new List<Compra>();
         private List<string> imagenes = new List<string>();
+        private List<string> imagenesNo = new List<string>();
         private int cantProductos;
         private int cantidad = 0;
         List<ClassProductos> datos;
@@ -94,6 +95,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             imagenes = obj.NombreImagenes();
             cantProductos = imagenes.Count;
 
+            imagenesNo.Clear();
+            imagenesNo = obj.NombreImagenesNo();
+
+
             btn1.Image = null;
             btn2.Image = null;
             btn3.Image = null;
@@ -104,6 +109,18 @@ namespace PROYECTO_QUINTA_ARMONIA
             btn8.Image = null;
             btn9.Image = null;
             btn10.Image = null;
+
+            btn1.BackgroundImage = null;
+            btn2.BackgroundImage = null;
+            btn3.BackgroundImage = null;
+            btn4.BackgroundImage = null;
+            btn5.BackgroundImage = null;
+            btn6.BackgroundImage = null;
+            btn7.BackgroundImage = null;
+            btn8.BackgroundImage = null;
+            btn9.BackgroundImage = null;
+            btn10.BackgroundImage = null;
+
 
             int existencias;
 
@@ -118,6 +135,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                             this.btn1.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0])); 
                         }
+                        else
+                        {
+                            this.btn1.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[0]));
+                        }
                         btn1.Tag = imagenes[0];
                         break;
                     case 1:
@@ -125,7 +147,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn2.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1]));
-                        }      
+                        }
+                        else
+                        {
+                            this.btn2.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[1]));
+                        }  
                         btn2.Tag = imagenes[1];
                         break;
                     case 2:
@@ -134,6 +161,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                             this.btn3.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2]));
                         }
+                        else
+                        {
+                            this.btn3.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[2]));
+                        }
                         btn3.Tag = imagenes[2];
                         break;
                     case 3:
@@ -141,7 +173,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn4.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3]));
-                        }    
+                        }
+                        else
+                        {
+                            this.btn4.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[3]));
+                        }
                         btn4.Tag = imagenes[3];
                         break;
                     case 4:
@@ -149,7 +186,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn5.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4]));
-                        } 
+                        }
+                        else
+                        {
+                            this.btn5.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[4]));
+                        }
                         btn5.Tag = imagenes[4];
                         break;
                     case 5:
@@ -157,6 +199,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn6.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5]));
+                        }
+                        else
+                        {
+                            this.btn6.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[5]));
                         }
                         btn6.Tag = imagenes[5];
                         break;
@@ -166,6 +213,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                             this.btn7.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6]));
                         }
+                        else
+                        {
+                            this.btn7.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[6]));
+                        }
                         btn7.Tag = imagenes[6];
                         break;
                     case 7:
@@ -173,7 +225,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn8.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7]));
-                        }                        
+                        }
+                        else
+                        {
+                            this.btn8.BackgroundImage = System.Drawing.Image.FromFile(
+                               Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[7]));
+                        }
                         btn8.Tag = imagenes[7];
                         break;
                     case 8:
@@ -181,7 +238,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn9.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8]));
-                        }                     
+                        }
+                        else
+                        {
+                            this.btn9.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[8]));
+                        }
                         btn9.Tag = imagenes[8];
                         break;
                     case 9:
@@ -189,7 +251,12 @@ namespace PROYECTO_QUINTA_ARMONIA
                         {
                             this.btn10.BackgroundImage = System.Drawing.Image.FromFile(
                                 Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9]));
-                        }                   
+                        }
+                        else
+                        {
+                            this.btn10.BackgroundImage = System.Drawing.Image.FromFile(
+                                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenesNo[9]));
+                        }
                         btn10.Tag = imagenes[9];
                         break;
                 }

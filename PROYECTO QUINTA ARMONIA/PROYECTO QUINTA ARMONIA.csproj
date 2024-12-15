@@ -11,17 +11,27 @@
 
   <ItemGroup>
     <None Remove="calpico-HD.png" />
+    <None Remove="calpico-No.png" />
     <None Remove="coffee-HD.png" />
+    <None Remove="coffee-No.png" />
     <None Remove="lotus-HD.png" />
+    <None Remove="lotus-No.png" />
     <None Remove="mochi-HD.png" />
+    <None Remove="mochi-No.png" />
     <None Remove="musica-fondo.mp3" />
     <None Remove="musica-fondo.wav" />
     <None Remove="ramen-HD.png" />
+    <None Remove="ramen-No.png" />
     <None Remove="ramune-HD.png" />
+    <None Remove="ramune-No.png" />
     <None Remove="takoyaki-HD.png" />
+    <None Remove="takoyaki-No.png" />
     <None Remove="tiramisu-HD.png" />
+    <None Remove="tiramisu-No.png" />
     <None Remove="water-HD.png" />
+    <None Remove="water-No.png" />
     <None Remove="yakult-HD.png" />
+    <None Remove="yakult-No.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +55,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="calpico-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="coffee-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lotus-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mochi-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="musica-fondo.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -63,19 +85,34 @@
     <Content Include="ramen-HD.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ramen-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ramune-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ramune-No.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="takoyaki-HD.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="takoyaki-No.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="tiramisu-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tiramisu-No.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="water-HD.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="yakult-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="yakult-No.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -89,6 +126,12 @@
 
   <ItemGroup>
     <Content Include="coffee-HD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="water-No.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
