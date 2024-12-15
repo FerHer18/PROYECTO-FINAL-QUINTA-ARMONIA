@@ -23,7 +23,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         private int cantProductos;
         private int cantidad = 0;
         List<ClassProductos> datos;
-        private bool nuevaCompra = false;
+        public bool NuevaCompra { get; set; } = false;
 
         private int prodSelect = 0;
         private int existencias = 0;
@@ -39,7 +39,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         public InterfaceUsuario(bool nueva)
         {
             InitializeComponent();
-            nuevaCompra = nueva;
+            NuevaCompra = nueva;
         }
 
         public InterfaceUsuario(string nombre, int codigo) //cosntructor para que salga mensaje de bienvenido al iniciar sesion en usuario
@@ -403,14 +403,21 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonVerCarrito_Click(object sender, EventArgs e)
         {
-            FormVerCarrito f1 = new FormVerCarrito(listaCompra,Nombre, id, Nombre);
+            FormVerCarrito f1 = new FormVerCarrito(listaCompra,Nombre, id, Nombre, this);
             this.Hide();
             f1.ShowDialog();
             this.Show();
-            if (nuevaCompra == true)
+            if (NuevaCompra == true)
             {
                 listaCompra.Clear();
+                NuevaCompra = false;
             }
+
+        }
+
+        private void InterfaceUsuario_Shown(object sender, EventArgs e)
+        {
+            MostrarImagenes();
         }
 
         private void button1_Click(object sender, EventArgs e)

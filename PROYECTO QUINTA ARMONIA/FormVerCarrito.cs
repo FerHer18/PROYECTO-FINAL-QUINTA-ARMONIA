@@ -17,13 +17,16 @@ namespace PROYECTO_QUINTA_ARMONIA
         private int idUsuario;
         private string nombre;
 
-        public FormVerCarrito(List<Compra> listaCompra, string usuario, int codigo, string nombre)
+        private InterfaceUsuario inter;
+
+        public FormVerCarrito(List<Compra> listaCompra, string usuario, int codigo, string nombre, InterfaceUsuario interUsuario)
         {
             InitializeComponent();
             this.lista = listaCompra;
             this.Usuario = usuario;
             this.idUsuario = codigo;
             this.nombre = nombre;
+            this.inter = interUsuario;
         }
 
         private void FormVerCarrito_Load(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             if (lista != null && lista.Count > 0)
             {
-                MetodoPago pagar = new MetodoPago(lista, Usuario, idUsuario);
+                MetodoPago pagar = new MetodoPago(lista, Usuario, idUsuario,this.inter);
                 this.Hide();
                 pagar.ShowDialog();
                 this.Close();
