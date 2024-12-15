@@ -495,6 +495,42 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
+        public List<ClassProductos> obtenerProd(string img)
+        {
+            List<ClassProductos> info = new List<ClassProductos>();
+            ClassProductos item = null;
+            int codigo;
+            string name;
+            string desc;
+            float precio;
+            int existencias;
+            try
+            {
+                string query = "SELECT * FROM inventario where imagen = " + img + ";";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    codigo = Convert.ToInt32(reader["codigo"]);
+                    name = Convert.ToString(reader["nombre"]) ?? "";
+                    desc = Convert.ToString(reader["descripcion"]) ?? "";
+                    precio = Convert.ToInt32(reader["precio"]);
+                    existencias = Convert.ToInt32(reader["existencias"]);
+
+                    item = new ClassProductos(codigo, name, desc, precio, existencias);
+                    info.Add(item);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+            return info;
+        }
+
         public DataTable ObtenerDatosGrafica()
         {
             DataTable datos = new DataTable();

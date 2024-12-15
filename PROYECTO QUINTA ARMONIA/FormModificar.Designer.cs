@@ -35,8 +35,16 @@
             timer1 = new System.Windows.Forms.Timer(components);
             labelHola = new Label();
             btnConfirmar = new Button();
-            btnDatosActuales = new Button();
-            btnCargarImagen = new Button();
+            textBoxCodigo = new TextBox();
+            textBoxModifDescr = new TextBox();
+            textBoxModifPrecio = new TextBox();
+            textBoxModifName = new TextBox();
+            textBoxModifCant = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -46,10 +54,9 @@
             buttonRegresar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonRegresar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRegresar.FlatStyle = FlatStyle.Flat;
-            buttonRegresar.Location = new Point(581, 502);
-            buttonRegresar.Margin = new Padding(4);
+            buttonRegresar.Location = new Point(476, 402);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(143, 50);
+            buttonRegresar.Size = new Size(103, 40);
             buttonRegresar.TabIndex = 0;
             buttonRegresar.UseVisualStyleBackColor = false;
             buttonRegresar.Click += buttonRegresar_Click;
@@ -60,10 +67,10 @@
             lblFecha.BackColor = Color.Transparent;
             lblFecha.Font = new Font("Sylfaen", 6F, FontStyle.Bold);
             lblFecha.ForeColor = SystemColors.ButtonHighlight;
-            lblFecha.Location = new Point(-2, 4);
+            lblFecha.Location = new Point(-2, 3);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(40, 16);
+            lblFecha.Size = new Size(37, 14);
             lblFecha.TabIndex = 35;
             lblFecha.Text = "Fecha";
             // 
@@ -73,10 +80,10 @@
             lblHora.BackColor = Color.Transparent;
             lblHora.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHora.ForeColor = SystemColors.ButtonHighlight;
-            lblHora.Location = new Point(881, 0);
+            lblHora.Location = new Point(705, 0);
             lblHora.Margin = new Padding(2, 0, 2, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(60, 26);
+            lblHora.Size = new Size(50, 22);
             lblHora.TabIndex = 34;
             lblHora.Text = "Hora";
             // 
@@ -89,9 +96,10 @@
             // 
             labelHola.BackColor = Color.Transparent;
             labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelHola.Location = new Point(160, 74);
+            labelHola.Location = new Point(128, 59);
+            labelHola.Margin = new Padding(2, 0, 2, 0);
             labelHola.Name = "labelHola";
-            labelHola.Size = new Size(199, 38);
+            labelHola.Size = new Size(159, 30);
             labelHola.TabIndex = 37;
             // 
             // btnConfirmar
@@ -101,57 +109,122 @@
             btnConfirmar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnConfirmar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnConfirmar.FlatStyle = FlatStyle.Flat;
-            btnConfirmar.Location = new Point(282, 502);
-            btnConfirmar.Margin = new Padding(4);
+            btnConfirmar.Location = new Point(226, 402);
             btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(143, 50);
+            btnConfirmar.Size = new Size(114, 40);
             btnConfirmar.TabIndex = 38;
             btnConfirmar.UseVisualStyleBackColor = false;
             // 
-            // btnDatosActuales
+            // textBoxCodigo
             // 
-            btnDatosActuales.BackColor = Color.Transparent;
-            btnDatosActuales.FlatAppearance.BorderSize = 0;
-            btnDatosActuales.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnDatosActuales.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnDatosActuales.FlatStyle = FlatStyle.Flat;
-            btnDatosActuales.Location = new Point(675, 150);
-            btnDatosActuales.Margin = new Padding(4);
-            btnDatosActuales.Name = "btnDatosActuales";
-            btnDatosActuales.Size = new Size(143, 50);
-            btnDatosActuales.TabIndex = 39;
-            btnDatosActuales.UseVisualStyleBackColor = false;
+            textBoxCodigo.Enabled = false;
+            textBoxCodigo.Location = new Point(388, 156);
+            textBoxCodigo.Name = "textBoxCodigo";
+            textBoxCodigo.Size = new Size(169, 27);
+            textBoxCodigo.TabIndex = 41;
             // 
-            // btnCargarImagen
+            // textBoxModifDescr
             // 
-            btnCargarImagen.BackColor = Color.Transparent;
-            btnCargarImagen.FlatAppearance.BorderSize = 0;
-            btnCargarImagen.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnCargarImagen.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnCargarImagen.FlatStyle = FlatStyle.Flat;
-            btnCargarImagen.Location = new Point(675, 219);
-            btnCargarImagen.Margin = new Padding(4);
-            btnCargarImagen.Name = "btnCargarImagen";
-            btnCargarImagen.Size = new Size(143, 50);
-            btnCargarImagen.TabIndex = 40;
-            btnCargarImagen.UseVisualStyleBackColor = false;
+            textBoxModifDescr.Location = new Point(388, 243);
+            textBoxModifDescr.Name = "textBoxModifDescr";
+            textBoxModifDescr.Size = new Size(169, 27);
+            textBoxModifDescr.TabIndex = 42;
+            // 
+            // textBoxModifPrecio
+            // 
+            textBoxModifPrecio.Location = new Point(388, 286);
+            textBoxModifPrecio.Name = "textBoxModifPrecio";
+            textBoxModifPrecio.Size = new Size(169, 27);
+            textBoxModifPrecio.TabIndex = 43;
+            // 
+            // textBoxModifName
+            // 
+            textBoxModifName.Location = new Point(388, 200);
+            textBoxModifName.Name = "textBoxModifName";
+            textBoxModifName.Size = new Size(169, 27);
+            textBoxModifName.TabIndex = 44;
+            // 
+            // textBoxModifCant
+            // 
+            textBoxModifCant.Location = new Point(388, 332);
+            textBoxModifCant.Name = "textBoxModifCant";
+            textBoxModifCant.Size = new Size(169, 27);
+            textBoxModifCant.TabIndex = 45;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(192, 159);
+            label1.Name = "label1";
+            label1.Size = new Size(148, 20);
+            label1.TabIndex = 46;
+            label1.Text = "Codigo del producto";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(186, 203);
+            label2.Name = "label2";
+            label2.Size = new Size(154, 20);
+            label2.TabIndex = 47;
+            label2.Text = "Nombre del producto";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Location = new Point(163, 246);
+            label3.Name = "label3";
+            label3.Size = new Size(177, 20);
+            label3.TabIndex = 48;
+            label3.Text = "Descripcion del producto";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Location = new Point(200, 289);
+            label4.Name = "label4";
+            label4.Size = new Size(140, 20);
+            label4.TabIndex = 49;
+            label4.Text = "Precio del producto";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Location = new Point(175, 335);
+            label5.Name = "label5";
+            label5.Size = new Size(165, 20);
+            label5.TabIndex = 50;
+            label5.Text = "Cantidad de existencias";
             // 
             // FormModificar
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondoModificar;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1011, 641);
-            Controls.Add(btnCargarImagen);
-            Controls.Add(btnDatosActuales);
+            ClientSize = new Size(809, 513);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(textBoxModifCant);
+            Controls.Add(textBoxModifName);
+            Controls.Add(textBoxModifPrecio);
+            Controls.Add(textBoxModifDescr);
+            Controls.Add(textBoxCodigo);
             Controls.Add(btnConfirmar);
             Controls.Add(labelHola);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
             Controls.Add(buttonRegresar);
             DoubleBuffered = true;
-            Margin = new Padding(4);
             Name = "FormModificar";
             Text = "FormModificar";
             Load += FormModificar_Load;
@@ -167,7 +240,15 @@
         private System.Windows.Forms.Timer timer1;
         private Label labelHola;
         private Button btnConfirmar;
-        private Button btnDatosActuales;
-        private Button btnCargarImagen;
+        private TextBox textBoxCodigo;
+        private TextBox textBoxModifDescr;
+        private TextBox textBoxModifPrecio;
+        private TextBox textBoxModifName;
+        private TextBox textBoxModifCant;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }
