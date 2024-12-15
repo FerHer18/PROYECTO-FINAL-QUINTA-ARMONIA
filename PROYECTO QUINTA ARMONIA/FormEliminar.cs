@@ -38,7 +38,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
                 obj.Disconnect();
 
-                MessageBox.Show("Producto eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //M}essageBox.Show("Producto eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

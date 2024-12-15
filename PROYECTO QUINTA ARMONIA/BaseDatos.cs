@@ -140,17 +140,55 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         public void eliminar(int cod)
         {
-            string query = "";
             try
             {
-                query = "DELETE FROM inventario WHERE codigo = " + cod + ";";
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show(query + "\nRegistro Eliminado");
+                string selectQuery = "SELECT * FROM inventario WHERE codigo = @cod;";
+                using (MySqlCommand selectCmd = new MySqlCommand(selectQuery, connection))
+                {
+                    selectCmd.Parameters.AddWithValue("@cod", cod);
+                    using (MySqlDataReader reader = selectCmd.ExecuteReader())
+                    {
+                        if (!reader.Read())
+                        {
+                            MessageBox.Show("El producto con el código especificado no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+
+                        string productoInfo = $"Código: {reader["codigo"]}\n" +
+                                              $"Nombre: {reader["nombre"]}\n" +
+                                              $"Existencias: {reader["existencias"]}\n" +
+                                              $"Precio: {reader["precio"]}";
+
+                        DialogResult result = MessageBox.Show(
+                            "¿Seguro que desea eliminar el producto?\n\n" + productoInfo,
+                            "Confirmación",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning
+                        );
+
+                        if (result != DialogResult.Yes)
+                        {
+                            MessageBox.Show("Operación cancelada.");
+                            return;
+                        }
+                    }
+                }
+
+                string deleteQuery = "DELETE FROM inventario WHERE codigo = @cod;";
+                using (MySqlCommand deleteCmd = new MySqlCommand(deleteQuery, connection))
+                {
+                    deleteCmd.Parameters.AddWithValue("@cod", cod);
+                    deleteCmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Producto eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(query + "\nError: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
                 this.Disconnect();
             }
         }
@@ -621,6 +659,32 @@ namespace PROYECTO_QUINTA_ARMONIA
 
             return datos;
         }
+
+        public void actualizar(int cod, string name, string desc, float precio, int cant)
+        {
+            try
+            {
+                string query = "UPDATE inventario SET nombre = @name, descripcion = @desc, precio = @precio, existencias = @cant WHERE codigo = @cod;";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@desc", desc);
+                    cmd.Parameters.AddWithValue("@precio", precio);
+                    cmd.Parameters.AddWithValue("@cant", cant);
+                    cmd.Parameters.AddWithValue("@cod", cod);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Registro actualizado correctamente.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la actualización: " + ex.Message);
+            }
+        }
+
 
     }
 }
