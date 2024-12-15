@@ -22,12 +22,14 @@ namespace PROYECTO_QUINTA_ARMONIA
         private double total;
         private string usuario;
         private int idUsuario;
-        public Ticket(List<Compra> listaCompra,string name, int codigo)
+        private InterfaceUsuario inter;
+        public Ticket(List<Compra> listaCompra,string name, int codigo, InterfaceUsuario inter)
         {
             InitializeComponent();
             lista = listaCompra;
             usuario = name;
             idUsuario = codigo;
+            this.inter = inter;
         }
 
         public void ObtenerTotal()
@@ -158,6 +160,8 @@ namespace PROYECTO_QUINTA_ARMONIA
             dataGridViewCompras.ClearSelection(); // Limpia la selección inicial
             dataGridViewCompras.CurrentCell = null; // Evita que una celda esté activa
             ActualizarDatos();
+            inter.NuevaCompra = true;
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
