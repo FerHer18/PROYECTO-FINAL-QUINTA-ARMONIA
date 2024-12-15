@@ -141,6 +141,7 @@
             textBoxElimName.Name = "textBoxElimName";
             textBoxElimName.Size = new Size(175, 27);
             textBoxElimName.TabIndex = 21;
+            textBoxElimName.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxElimDesc
             // 
@@ -149,6 +150,7 @@
             textBoxElimDesc.Name = "textBoxElimDesc";
             textBoxElimDesc.Size = new Size(175, 27);
             textBoxElimDesc.TabIndex = 22;
+            textBoxElimDesc.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxElimPrecio
             // 
@@ -157,6 +159,7 @@
             textBoxElimPrecio.Name = "textBoxElimPrecio";
             textBoxElimPrecio.Size = new Size(175, 27);
             textBoxElimPrecio.TabIndex = 23;
+            textBoxElimPrecio.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxElimExist
             // 
@@ -165,6 +168,7 @@
             textBoxElimExist.Name = "textBoxElimExist";
             textBoxElimExist.Size = new Size(175, 27);
             textBoxElimExist.TabIndex = 24;
+            textBoxElimExist.TextAlign = HorizontalAlignment.Center;
             // 
             // lblFecha
             // 

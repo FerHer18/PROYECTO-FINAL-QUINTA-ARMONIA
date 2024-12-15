@@ -61,6 +61,8 @@
             buttonRedondoRegresar.BorderRadius = 0;
             buttonRedondoRegresar.BorderSize = 0;
             buttonRedondoRegresar.FlatAppearance.BorderSize = 0;
+            buttonRedondoRegresar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonRedondoRegresar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoRegresar.FlatStyle = FlatStyle.Flat;
             buttonRedondoRegresar.ForeColor = Color.Black;
             buttonRedondoRegresar.Location = new Point(1135, 702);
