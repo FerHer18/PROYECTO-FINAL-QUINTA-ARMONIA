@@ -103,7 +103,7 @@
             buttonRedondoEliminar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoEliminar.FlatStyle = FlatStyle.Flat;
             buttonRedondoEliminar.ForeColor = Color.Black;
-            buttonRedondoEliminar.Location = new Point(1075, 263);
+            buttonRedondoEliminar.Location = new Point(1085, 302);
             buttonRedondoEliminar.Name = "buttonRedondoEliminar";
             buttonRedondoEliminar.Size = new Size(125, 37);
             buttonRedondoEliminar.TabIndex = 11;
@@ -123,7 +123,7 @@
             buttonRedondoAgregar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondoAgregar.FlatStyle = FlatStyle.Flat;
             buttonRedondoAgregar.ForeColor = Color.Black;
-            buttonRedondoAgregar.Location = new Point(1058, 208);
+            buttonRedondoAgregar.Location = new Point(1059, 224);
             buttonRedondoAgregar.Name = "buttonRedondoAgregar";
             buttonRedondoAgregar.Size = new Size(151, 39);
             buttonRedondoAgregar.TabIndex = 12;

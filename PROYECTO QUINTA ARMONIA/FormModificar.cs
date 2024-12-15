@@ -13,33 +13,32 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class FormModificar : Form
     {
-        List<ClassProductos> datos;
-        public FormModificar()
+        private string imagen;
+        private ClassProductos prod = null;
+        public FormModificar(string imagen)
         {
             InitializeComponent();
+            this.imagen = imagen;
         }
 
-        public void mostrarDatos(string img)
+        public void mostrarDatos()
         {
-            InitializeComponent();
             BaseDatos obj = new BaseDatos();
-            datos = obj.obtenerProd(img);
+            prod = obj.obtenerProd(imagen);
+            obj.Disconnect();
+            this.textBoxModifName.Text = prod.Nombre;
+            this.textBoxModifDescr.Text = prod.Descripcion;
+            this.textBoxModifPrecio.Text = prod.Precio.ToString();
+            this.textBoxModifCant.Text = prod.Existencias.ToString();
+            this.textBoxCodigo.Text = prod.Codigo.ToString();
 
-            if (datos.Count > 0)
-            {
-                var producto = datos[0];
-
-                this.textBoxModifName.Text = producto.Nombre;
-                this.textBoxModifDescr.Text = producto.Descripcion;
-                this.textBoxModifPrecio.Text = producto.Precio.ToString();
-                this.textBoxModifCant.Text = producto.Existencias.ToString();
-                this.textBoxCodigo.Text = producto.Codigo.ToString();
-            }
+            
         }
 
         private void FormModificar_Load(object sender, EventArgs e)
         {
             labelHola.Text = "Hola, Admin!";
+            mostrarDatos();
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)
