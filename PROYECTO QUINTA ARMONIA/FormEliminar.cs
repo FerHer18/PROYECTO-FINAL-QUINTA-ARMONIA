@@ -37,6 +37,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.textBoxBuscarCodigo.Text = string.Empty;   //limpia, es lo mismo que poner = "";
                 this.textBoxBuscarCodigo.PlaceholderText = "Codigo de producto";
                 obj.Disconnect();
+                limpiar();
 
                 //M}essageBox.Show("Producto eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -66,7 +67,12 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         public void limpiar()
         {
-            this.textBoxElimName.Text = string.Empty;
+            this.textBoxElimName.Text = "";
+            this.textBoxBuscarCodigo.Text = "";
+            this.textBoxBuscarCodigo.PlaceholderText = "Codigo del producto";
+            this.textBoxElimDesc.Text = "";
+            this.textBoxElimExist.Text = "";
+            this.textBoxElimPrecio.Text = "";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
