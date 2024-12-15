@@ -377,7 +377,50 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         }
 
-        public void ActualizarExistencias(List<Compra> compra)
+        public void RestarExistencias(Compra compra)
+        {
+            try
+            {
+                using (var transaction = this.connection.BeginTransaction())
+                {
+                        // Leer las existencias actuales del producto
+                        string selectQuery = "SELECT existencias FROM inventario WHERE codigo = @codigo;";
+                        MySqlCommand selectCommand = new MySqlCommand(selectQuery, this.connection, transaction);
+                        selectCommand.Parameters.AddWithValue("@codigo", compra.Codigo);
+
+                        int existencias = 0;
+                        using (MySqlDataReader reader = selectCommand.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                existencias = Convert.ToInt32(reader["existencias"]);
+                            }
+                            reader.Close();
+                        }
+
+                        // Calcular las nuevas existencias
+                        int nuevasExistencias = existencias - compra.Cantidad;
+
+                        // Actualizar las existencias
+                        string updateQuery = "UPDATE inventario SET existencias = @existencias WHERE codigo = @codigo;";
+                        MySqlCommand updateCommand = new MySqlCommand(updateQuery, this.connection, transaction);
+                        updateCommand.Parameters.AddWithValue("@existencias", nuevasExistencias);
+                        updateCommand.Parameters.AddWithValue("@codigo", compra.Codigo);
+
+                        updateCommand.ExecuteNonQuery();
+
+                    // Confirma la transacción
+                    transaction.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar las existencias: " + ex.Message);
+                this.Disconnect();
+            }
+        }
+
+        public void SumarExistencias(List<Compra> compra)
         {
             try
             {
@@ -401,7 +444,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                         }
 
                         // Calcular las nuevas existencias
-                        int nuevasExistencias = existencias - item.Cantidad;
+                        int nuevasExistencias = existencias + item.Cantidad;
 
                         // Actualizar las existencias
                         string updateQuery = "UPDATE inventario SET existencias = @existencias WHERE codigo = @codigo;";
