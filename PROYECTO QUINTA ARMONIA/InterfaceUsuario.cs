@@ -437,6 +437,11 @@ namespace PROYECTO_QUINTA_ARMONIA
                 float total = precio * cantidad;
                 Compra item = new Compra(this.prodSelect, this.nomProd, total, this.cantidad);
                 listaCompra.Add(item);
+
+                BaseDatos obj = new BaseDatos();
+                obj.RestarExistencias(item);
+                obj.Disconnect();
+
                 this.cantidad = 0;
                 labelCantidad.Text = cantidad.ToString();
             }
@@ -521,6 +526,9 @@ namespace PROYECTO_QUINTA_ARMONIA
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                BaseDatos obj = new BaseDatos();
+                obj.SumarExistencias(listaCompra);
+                obj.Disconnect();
                 listaCompra.Clear();
                 MessageBox.Show($"Se eliminaron todos los productos", "Carrito vacio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

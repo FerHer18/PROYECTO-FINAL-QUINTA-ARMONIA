@@ -174,7 +174,6 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             //Reflejar la compra en la base de datos
             BaseDatos obj = new BaseDatos();
-            obj.ActualizarExistencias(lista);
             obj.ActualizarMonto(idUsuario, total);
             obj.ActualizarTotalProductos(lista);
             obj.Disconnect();
