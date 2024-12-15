@@ -112,18 +112,19 @@ namespace PROYECTO_QUINTA_ARMONIA
             return existencias;
         }
 
-        public void guardar(int codigo, string nombre, string descripcion, float precio, int existencias, string imagen)
+        public void guardar(int codigo, string nombre, string descripcion, float precio, int existencias, string imagen, string imagenNo)
         {
             string query = "";
             try
             {
-                query = "INSERT INTO inventario (codigo, nombre, descripcion, precio, existencias, imagen) VALUES ("
+                query = "INSERT INTO inventario (codigo, nombre, descripcion, precio, existencias, imagen, imagenAgotada) VALUES ("
                        + "'" + codigo + "',"
                        + "'" + nombre + "',"
                        + "'" + descripcion + "',"
                        + "'" + precio + "',"
                        + "'" + existencias + "',"
-                       + "'" + imagen + "')";
+                       + "'" + imagen + "',"
+                       + "'" + imagenNo + "')";
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
@@ -519,9 +520,8 @@ namespace PROYECTO_QUINTA_ARMONIA
             }
         }
 
-        public List<ClassProductos> obtenerProd(string img)
+        public ClassProductos obtenerProd(string img)
         {
-            List<ClassProductos> info = new List<ClassProductos>();
             ClassProductos item = null;
             int codigo;
             string name;
@@ -530,11 +530,11 @@ namespace PROYECTO_QUINTA_ARMONIA
             int existencias;
             try
             {
-                string query = "SELECT * FROM inventario where imagen = " + img + ";";
+                string query = "SELECT * FROM inventario where imagen = @imagen;";
                 MySqlCommand command = new MySqlCommand(query, this.connection);
-
+                command.Parameters.AddWithValue("@Imagen", img);
                 MySqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
+                if (reader.Read())
                 {
                     codigo = Convert.ToInt32(reader["codigo"]);
                     name = Convert.ToString(reader["nombre"]) ?? "";
@@ -543,7 +543,6 @@ namespace PROYECTO_QUINTA_ARMONIA
                     existencias = Convert.ToInt32(reader["existencias"]);
 
                     item = new ClassProductos(codigo, name, desc, precio, existencias);
-                    info.Add(item);
                 }
                 reader.Close();
             }
@@ -552,7 +551,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
                 this.Disconnect();
             }
-            return info;
+            return item;
         }
 
         public DataTable ObtenerDatosGrafica()

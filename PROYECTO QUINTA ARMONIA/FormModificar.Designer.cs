@@ -226,6 +226,7 @@
             Controls.Add(buttonRegresar);
             DoubleBuffered = true;
             Name = "FormModificar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormModificar";
             Load += FormModificar_Load;
             ResumeLayout(false);

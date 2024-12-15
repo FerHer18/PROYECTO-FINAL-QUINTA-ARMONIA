@@ -205,6 +205,16 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_agregar {
+            get {
+                object obj = ResourceManager.GetObject("fondo-agregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_grafica {
             get {
                 object obj = ResourceManager.GetObject("fondo-grafica", resourceCulture);
@@ -248,6 +258,26 @@ namespace PROYECTO_QUINTA_ARMONIA.Properties {
         internal static System.Drawing.Bitmap fondoAgregar {
             get {
                 object obj = ResourceManager.GetObject("fondoAgregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoAgregar1 {
+            get {
+                object obj = ResourceManager.GetObject("fondoAgregar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoAgregar2 {
+            get {
+                object obj = ResourceManager.GetObject("fondoAgregar2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

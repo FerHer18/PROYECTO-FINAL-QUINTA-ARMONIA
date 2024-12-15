@@ -83,13 +83,18 @@ namespace PROYECTO_QUINTA_ARMONIA
             obj.Disconnect();
 
             Button[] botones = { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10 };
+            for (int i = 0; i < botones.Length; i++)
+            {
+                botones[i].BackgroundImage = null;
+                botones[i].Image = null;
+            }
 
             for (int i = 0; i < botones.Length; i++)
             {
                 if (i < imagenes.Count)
                 {
                     botones[i].Tag = imagenes[i];
-                    botones[i].BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[i]));
+                    botones[i].BackgroundImage = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[i]));
                 }
                 else
                 {
@@ -139,8 +144,8 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button1.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
+                Fm.mostrarDatos();
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -153,8 +158,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button2.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -167,8 +171,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button3.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -181,8 +184,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button4.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -195,8 +197,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button5.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -209,8 +210,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button6.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -223,8 +223,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button7.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -237,8 +236,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button8.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -250,8 +248,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button9.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
@@ -263,8 +260,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             string dirImg = button10.Tag?.ToString() ?? "";
             if (!string.IsNullOrEmpty(dirImg))
             {
-                FormModificar Fm = new FormModificar();
-                Fm.mostrarDatos(dirImg);
+                FormModificar Fm = new FormModificar(dirImg);
                 this.Hide();
                 Fm.ShowDialog();
                 this.Show();
