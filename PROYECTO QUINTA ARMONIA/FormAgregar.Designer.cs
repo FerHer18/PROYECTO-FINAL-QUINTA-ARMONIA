@@ -212,9 +212,9 @@
             btnCargarImagen.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnCargarImagen.FlatStyle = FlatStyle.Flat;
             btnCargarImagen.ForeColor = Color.White;
-            btnCargarImagen.Location = new Point(550, 149);
+            btnCargarImagen.Location = new Point(554, 164);
             btnCargarImagen.Name = "btnCargarImagen";
-            btnCargarImagen.Size = new Size(142, 54);
+            btnCargarImagen.Size = new Size(166, 54);
             btnCargarImagen.TabIndex = 15;
             btnCargarImagen.TextColor = Color.White;
             btnCargarImagen.UseVisualStyleBackColor = false;
@@ -306,9 +306,9 @@
             buttonRedondo1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonRedondo1.FlatStyle = FlatStyle.Flat;
             buttonRedondo1.ForeColor = Color.White;
-            buttonRedondo1.Location = new Point(842, 164);
+            buttonRedondo1.Location = new Point(794, 169);
             buttonRedondo1.Name = "buttonRedondo1";
-            buttonRedondo1.Size = new Size(163, 54);
+            buttonRedondo1.Size = new Size(193, 54);
             buttonRedondo1.TabIndex = 36;
             buttonRedondo1.TextColor = Color.White;
             buttonRedondo1.UseVisualStyleBackColor = false;

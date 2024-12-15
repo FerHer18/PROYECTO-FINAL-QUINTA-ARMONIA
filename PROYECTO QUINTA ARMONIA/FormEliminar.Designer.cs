@@ -204,7 +204,7 @@
             // labelHola
             // 
             labelHola.BackColor = Color.Transparent;
-            labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelHola.Font = new Font("Arial Rounded MT Bold", 9F);
             labelHola.Location = new Point(130, 65);
             labelHola.Margin = new Padding(2, 0, 2, 0);
             labelHola.Name = "labelHola";

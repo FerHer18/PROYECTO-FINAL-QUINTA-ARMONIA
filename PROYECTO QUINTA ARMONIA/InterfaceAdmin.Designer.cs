@@ -51,6 +51,7 @@
             button8 = new Button();
             button9 = new Button();
             button10 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // buttonRedondoRegresar
@@ -218,12 +219,12 @@
             // 
             lblFecha.AutoSize = true;
             lblFecha.BackColor = Color.Transparent;
-            lblFecha.Font = new Font("Sylfaen", 6F, FontStyle.Bold);
+            lblFecha.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
             lblFecha.ForeColor = SystemColors.ButtonHighlight;
             lblFecha.Location = new Point(11, 9);
             lblFecha.Margin = new Padding(2, 0, 2, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(37, 14);
+            lblFecha.Size = new Size(50, 19);
             lblFecha.TabIndex = 30;
             lblFecha.Text = "Fecha";
             // 
@@ -249,6 +250,7 @@
             labelHola.Name = "labelHola";
             labelHola.Size = new Size(254, 30);
             labelHola.TabIndex = 32;
+            labelHola.Click += labelHola_Click;
             // 
             // button1
             // 
@@ -400,6 +402,18 @@
             button10.UseVisualStyleBackColor = false;
             button10.Click += button10_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(581, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 32);
+            label1.TabIndex = 43;
+            label1.Text = "ACTIVO";
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -407,6 +421,7 @@
             BackgroundImage = Properties.Resources.fondoAdmin;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1320, 766);
+            Controls.Add(label1);
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
@@ -459,5 +474,6 @@
         private Button button8;
         private Button button9;
         private Button button10;
+        private Label label1;
     }
 }

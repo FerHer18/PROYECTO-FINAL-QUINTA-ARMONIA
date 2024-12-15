@@ -16,9 +16,17 @@ namespace PROYECTO_QUINTA_ARMONIA
 {
     public partial class PagoEnOxxo2 : Form
     {
-        public PagoEnOxxo2()
+        private List<Compra> lista;
+        private string usuario;
+        private int idUsuario;
+        private InterfaceUsuario inter;
+        public PagoEnOxxo2(List<Compra> listaCompra, string name, int codigo, InterfaceUsuario inter)
         {
             InitializeComponent();
+            lista = listaCompra;
+            idUsuario = codigo;
+            this.usuario = name;
+            this.inter = inter;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -51,10 +59,10 @@ namespace PROYECTO_QUINTA_ARMONIA
         {
             int formWidth = 660;
             int formHeight = 830;
-            int ticketWidth = formWidth;
-            int ticketHeight = formHeight - 100;
-            int x = 146;
-            int y = 260;
+            int ticketWidth = formWidth -100;
+            int ticketHeight = formHeight - 260;
+            int x = 0;
+            int y = 0;
 
             Bitmap bitmap = new Bitmap(ticketWidth, ticketHeight);
 
@@ -104,6 +112,10 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void buttonGenerar_Click_1(object sender, EventArgs e)
         {
             generarTicket();
+            Ticket obj = new Ticket(lista, usuario, idUsuario, inter);
+            this.Hide();
+            obj.ShowDialog();
+            this.Close();
         }
     }
 }
