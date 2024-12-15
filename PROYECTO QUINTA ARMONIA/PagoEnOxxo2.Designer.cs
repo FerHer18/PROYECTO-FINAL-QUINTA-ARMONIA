@@ -43,9 +43,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Recursos4;
-            pictureBox1.Location = new Point(-3, -1);
+            pictureBox1.Location = new Point(-5, -2);
+            pictureBox1.Margin = new Padding(5, 5, 5, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(547, 594);
+            pictureBox1.Size = new Size(889, 950);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -55,9 +56,10 @@
             // 
             pictureBox2.BackColor = Color.Beige;
             pictureBox2.Image = Properties.Resources.Letras_removebg_preview1;
-            pictureBox2.Location = new Point(12, 12);
+            pictureBox2.Location = new Point(20, 19);
+            pictureBox2.Margin = new Padding(5, 5, 5, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(190, 109);
+            pictureBox2.Size = new Size(309, 174);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -67,9 +69,10 @@
             // 
             pictureBox3.BackColor = Color.Beige;
             pictureBox3.Image = Properties.Resources.Recursos__1__removebg_preview1;
-            pictureBox3.Location = new Point(342, 12);
+            pictureBox3.Location = new Point(556, 19);
+            pictureBox3.Margin = new Padding(5, 5, 5, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(190, 109);
+            pictureBox3.Size = new Size(309, 174);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -77,18 +80,21 @@
             // buttonGenerar
             // 
             buttonGenerar.BackColor = Color.PaleGoldenrod;
-            buttonGenerar.Location = new Point(385, 507);
+            buttonGenerar.Location = new Point(626, 811);
+            buttonGenerar.Margin = new Padding(5, 5, 5, 5);
             buttonGenerar.Name = "buttonGenerar";
-            buttonGenerar.Size = new Size(147, 60);
+            buttonGenerar.Size = new Size(239, 96);
             buttonGenerar.TabIndex = 16;
             buttonGenerar.Text = "GENERAR";
             buttonGenerar.UseVisualStyleBackColor = false;
+            buttonGenerar.Click += buttonGenerar_Click;
             // 
             // pictureBoxQR
             // 
-            pictureBoxQR.Location = new Point(115, 171);
+            pictureBoxQR.Location = new Point(187, 274);
+            pictureBoxQR.Margin = new Padding(5, 5, 5, 5);
             pictureBoxQR.Name = "pictureBoxQR";
-            pictureBoxQR.Size = new Size(284, 284);
+            pictureBoxQR.Size = new Size(462, 454);
             pictureBoxQR.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxQR.TabIndex = 17;
             pictureBoxQR.TabStop = false;
@@ -99,24 +105,24 @@
             label1.BackColor = Color.Beige;
             label1.Font = new Font("Sylfaen", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(12, 527);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(20, 843);
             label1.Name = "label1";
-            label1.Size = new Size(383, 22);
+            label1.Size = new Size(567, 35);
             label1.TabIndex = 18;
             label1.Text = "Escanea este código en tu OXXO más cercano";
             // 
             // PagoEnOxxo2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(544, 579);
+            ClientSize = new Size(884, 926);
             Controls.Add(label1);
             Controls.Add(pictureBoxQR);
             Controls.Add(buttonGenerar);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Margin = new Padding(5, 5, 5, 5);
             Name = "PagoEnOxxo2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PagoEnOxxo2";
