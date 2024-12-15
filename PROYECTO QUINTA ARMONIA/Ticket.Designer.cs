@@ -99,6 +99,7 @@
             buttonContinuar.BackgroundImage = Properties.Resources.flechaAdelante;
             buttonContinuar.BackgroundImageLayout = ImageLayout.Stretch;
             buttonContinuar.FlatAppearance.BorderSize = 0;
+            buttonContinuar.FlatStyle = FlatStyle.Flat;
             buttonContinuar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonContinuar.Location = new Point(684, 692);
             buttonContinuar.Name = "buttonContinuar";

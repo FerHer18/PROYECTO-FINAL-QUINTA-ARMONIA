@@ -266,5 +266,10 @@ namespace PROYECTO_QUINTA_ARMONIA
                 this.Show();
             }
         }
+
+        private void labelHola_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

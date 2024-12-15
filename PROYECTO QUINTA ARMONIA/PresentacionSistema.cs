@@ -47,7 +47,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 {
                     MessageBox.Show("---> BIENVENIDO A QUINTA ARMONIA <---");
 
-                    if (tipoUsuario == "admin" || tipoUsuario == "admin1")
+                    if (tipoUsuario == "admin")
                     {
                         this.Hide();
                         InterfaceAdmin interfaceAdm = new InterfaceAdmin(nombreUsuario);

@@ -36,6 +36,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             PagoConTarjeta pagoConTarjeta = new PagoConTarjeta(lista, usuario, idUsuario, this.inter);
             this.Hide();
             pagoConTarjeta.ShowDialog();
+            this.Close();
         }
 
         private void MetodoPago_Load(object sender, EventArgs e)
@@ -45,9 +46,10 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void buttonOxxo_Click(object sender, EventArgs e)
         {
-            PagoEnOxxo2 pagoEnOxxo2 = new PagoEnOxxo2();
+            PagoEnOxxo2 pagoEnOxxo2 = new PagoEnOxxo2(lista, usuario, idUsuario, this.inter);
             this.Hide();
             pagoEnOxxo2.ShowDialog();
+            this.Close();
         }
     }
 }
