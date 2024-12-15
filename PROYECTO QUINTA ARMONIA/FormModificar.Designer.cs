@@ -45,6 +45,7 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -114,6 +115,7 @@
             btnConfirmar.Size = new Size(114, 40);
             btnConfirmar.TabIndex = 38;
             btnConfirmar.UseVisualStyleBackColor = false;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // textBoxCodigo
             // 
@@ -202,6 +204,18 @@
             label5.TabIndex = 50;
             label5.Text = "Cantidad de existencias";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(280, 62);
+            label6.Name = "label6";
+            label6.Size = new Size(202, 23);
+            label6.TabIndex = 51;
+            label6.Text = "MODIFICAR PRODUCTO";
+            // 
             // FormModificar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -209,6 +223,7 @@
             BackgroundImage = Properties.Resources.fondoModificar;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(809, 513);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -251,5 +266,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
     }
 }

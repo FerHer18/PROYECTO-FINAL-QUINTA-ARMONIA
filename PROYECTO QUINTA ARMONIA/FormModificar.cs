@@ -32,7 +32,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.textBoxModifCant.Text = prod.Existencias.ToString();
             this.textBoxCodigo.Text = prod.Codigo.ToString();
 
-            
+
         }
 
         private void FormModificar_Load(object sender, EventArgs e)
@@ -55,6 +55,26 @@ namespace PROYECTO_QUINTA_ARMONIA
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            int cod;
+            string nombre;
+            string desc;
+            float precio;
+            int existencias;
+
+
+            nombre = this.textBoxModifName.Text;
+            desc = this.textBoxModifDescr.Text;
+            precio = Convert.ToSingle(this.textBoxModifPrecio.Text);    //para convertirlo a flotante
+            existencias = Convert.ToInt32(this.textBoxModifCant.Text);
+            cod = Convert.ToInt32(this.textBoxCodigo.Text);
+
+            BaseDatos obj = new BaseDatos();
+            obj.actualizar(cod, nombre, desc, precio, existencias);
+            obj.Disconnect();
         }
     }
 }

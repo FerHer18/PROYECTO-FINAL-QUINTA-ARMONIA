@@ -45,7 +45,7 @@
             pictureBox1.Image = Properties.Resources.Recursos4;
             pictureBox1.Location = new Point(-3, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(547, 594);
+            pictureBox1.Size = new Size(576, 594);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -77,16 +77,19 @@
             // buttonGenerar
             // 
             buttonGenerar.BackColor = Color.PaleGoldenrod;
-            buttonGenerar.Location = new Point(385, 507);
+            buttonGenerar.FlatAppearance.BorderSize = 0;
+            buttonGenerar.FlatStyle = FlatStyle.Flat;
+            buttonGenerar.Location = new Point(400, 508);
             buttonGenerar.Name = "buttonGenerar";
             buttonGenerar.Size = new Size(147, 60);
             buttonGenerar.TabIndex = 16;
             buttonGenerar.Text = "GENERAR";
             buttonGenerar.UseVisualStyleBackColor = false;
+            buttonGenerar.Click += buttonGenerar_Click_1;
             // 
             // pictureBoxQR
             // 
-            pictureBoxQR.Location = new Point(115, 171);
+            pictureBoxQR.Location = new Point(130, 167);
             pictureBoxQR.Name = "pictureBoxQR";
             pictureBoxQR.Size = new Size(284, 284);
             pictureBoxQR.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -110,7 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(544, 579);
+            ClientSize = new Size(576, 579);
             Controls.Add(label1);
             Controls.Add(pictureBoxQR);
             Controls.Add(buttonGenerar);

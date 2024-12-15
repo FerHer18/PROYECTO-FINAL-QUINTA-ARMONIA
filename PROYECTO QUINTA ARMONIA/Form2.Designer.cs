@@ -79,7 +79,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(491, 105);
+            label1.Location = new Point(497, 82);
             label1.Name = "label1";
             label1.Size = new Size(281, 23);
             label1.TabIndex = 33;
@@ -91,7 +91,7 @@
             chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chart1.Legends.Add(legend1);
-            chart1.Location = new Point(212, 172);
+            chart1.Location = new Point(346, 131);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -99,7 +99,7 @@
             series1.Name = "Series1";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
             chart1.Series.Add(series1);
-            chart1.Size = new Size(585, 531);
+            chart1.Size = new Size(564, 401);
             chart1.TabIndex = 34;
             chart1.Text = "chart1";
             // 
@@ -110,10 +110,10 @@
             buttonVerCarrito.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonVerCarrito.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonVerCarrito.FlatStyle = FlatStyle.Flat;
-            buttonVerCarrito.Location = new Point(1014, 647);
+            buttonVerCarrito.Location = new Point(1014, 487);
             buttonVerCarrito.Margin = new Padding(2);
             buttonVerCarrito.Name = "buttonVerCarrito";
-            buttonVerCarrito.Size = new Size(192, 67);
+            buttonVerCarrito.Size = new Size(192, 54);
             buttonVerCarrito.TabIndex = 35;
             buttonVerCarrito.UseVisualStyleBackColor = false;
             buttonVerCarrito.Click += buttonVerCarrito_Click;
@@ -122,10 +122,10 @@
             // 
             labelHola.BackColor = Color.Transparent;
             labelHola.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelHola.Location = new Point(310, 98);
+            labelHola.Location = new Point(303, 75);
             labelHola.Margin = new Padding(2, 0, 2, 0);
             labelHola.Name = "labelHola";
-            labelHola.Size = new Size(182, 30);
+            labelHola.Size = new Size(136, 30);
             labelHola.TabIndex = 40;
             // 
             // Grafica
@@ -134,7 +134,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondo_grafica;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1253, 826);
+            ClientSize = new Size(1253, 624);
             Controls.Add(labelHola);
             Controls.Add(buttonVerCarrito);
             Controls.Add(chart1);
