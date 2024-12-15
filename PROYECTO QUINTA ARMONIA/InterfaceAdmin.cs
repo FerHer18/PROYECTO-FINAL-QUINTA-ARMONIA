@@ -77,56 +77,23 @@ namespace PROYECTO_QUINTA_ARMONIA
         public void mostrarImagenes()
         {
             BaseDatos obj = new BaseDatos();
-            imagenes.Clear();
+            //imagenes.Clear();
             imagenes = obj.NombreImagenes();
             cantProductos = imagenes.Count;
             obj.Disconnect();
 
-            picBox1.Image = null;
-            picBox2.Image = null;
-            picBox3.Image = null;
-            picBox4.Image = null;
-            picBox5.Image = null;
-            picBox6.Image = null;
-            picBox7.Image = null;
-            picBox8.Image = null;
-            picBox9.Image = null;
-            picBox10.Image = null;
+            Button[] botones = { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10 };
 
-            for (int i = 0; i < imagenes.Count; i++)
+            for (int i = 0; i < botones.Length; i++)
             {
-                switch (i)
+                if (i < imagenes.Count)
                 {
-                    case 0:
-                        this.picBox1.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[0])); break;
-                    case 1:
-                        this.picBox2.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[1])); break;
-                    case 2:
-                        this.picBox3.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[2])); break;
-                    case 3:
-                        this.picBox4.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[3])); break;
-                    case 4:
-                        this.picBox5.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[4])); break;
-                    case 5:
-                        this.picBox6.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[5])); break;
-                    case 6:
-                        this.picBox7.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[6])); break;
-                    case 7:
-                        this.picBox8.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[7])); break;
-                    case 8:
-                        this.picBox9.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[8])); break;
-                    case 9:
-                        this.picBox10.Image = System.Drawing.Image.FromFile(
-    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[9])); break;
+                    botones[i].Tag = imagenes[i];
+                    botones[i].BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagenes[i]));
+                }
+                else
+                {
+                    botones[i].BackgroundImage = null;
                 }
             }
         }
@@ -158,20 +125,150 @@ namespace PROYECTO_QUINTA_ARMONIA
             ClaseMusica.Pause();
         }
 
-        private void buttonRedondoModif_Click(object sender, EventArgs e)
-        {
-            FormModificar obj = new FormModificar();
-            this.Hide();
-            obj.ShowDialog();
-            this.Show();
-        }
-
         private void buttonRedondoGrafica2_Click(object sender, EventArgs e)
         {
             Grafica obj = new Grafica();
             this.Hide();
             obj.ShowDialog();
             this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button1.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button2.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button3.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button4.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Button btn = sender as Button;
+            string dirImg = button5.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button6.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button7.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //Button btn = sender as Button;
+            string dirImg = button8.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string dirImg = button9.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string dirImg = button10.Tag?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(dirImg))
+            {
+                FormModificar Fm = new FormModificar();
+                Fm.mostrarDatos(dirImg);
+                this.Hide();
+                Fm.ShowDialog();
+                this.Show();
+            }
         }
     }
 }
