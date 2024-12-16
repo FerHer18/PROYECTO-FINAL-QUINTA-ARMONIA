@@ -19,11 +19,6 @@ namespace PROYECTO_QUINTA_ARMONIA
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CargarDatosEnDataGrid()
         {
             BaseDatos obj = new BaseDatos();
@@ -36,6 +31,37 @@ namespace PROYECTO_QUINTA_ARMONIA
             dataGridView1.DataSource = ventas;
             obj.Disconnect();
         }
+  
+        private void ventasTotales_Load(object sender, EventArgs e)
+        {
+            CargarDatosEnDataGrid();
+            ObtenerTotal();
+            labelHola.Text = "Hola, Admin!";
+        }
+        public void ObtenerTotal()
+        {
+            BaseDatos obj = new BaseDatos();
+            List<ClaseUsuarios> tot = obj.ConsultaUsuarios();
+            foreach (ClaseUsuarios us in tot)
+            {
+                this.total += us.Monto;
+
+            }
+
+            txtTotal.Text = "$" + this.total.ToString();
+            obj.Disconnect();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -46,38 +72,10 @@ namespace PROYECTO_QUINTA_ARMONIA
             this.Close();
         }
 
-        private void ventasTotales_Load(object sender, EventArgs e)
-        {
-            CargarDatosEnDataGrid();
-            ObtenerTotal();
-            labelHola.Text = "Hola, Admin!";
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
-        public void ObtenerTotal()
-        {
-            BaseDatos obj = new BaseDatos();
-            List<ClaseUsuarios> tot = obj.ConsultaUsuarios();
-            foreach (ClaseUsuarios us in tot)
-            {
-                if (us.Cuenta != "admin")
-                {
-                    this.total += us.Monto;
-                }
-
-            }
-
-            txtTotal.Text = "$" + this.total.ToString();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lblFecha.Text = DateTime.Now.ToLongDateString();
-            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
+       
     }
 }

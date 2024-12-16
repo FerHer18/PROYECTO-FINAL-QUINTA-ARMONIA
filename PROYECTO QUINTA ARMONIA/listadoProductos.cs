@@ -22,7 +22,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             BaseDatos obj = new BaseDatos();
             List<ClassProductos> listado = obj.Consulta();
 
-            List<ClassProductos> ordenado = listado.OrderByDescending(p => p.Existencias).ToList();
+            List<ClassProductos> ordenado = listado.OrderBy(p => p.Existencias).ToList();
 
             dataGridView1.Columns["codigo"].DataPropertyName = "Codigo";
             dataGridView1.Columns["nombre"].DataPropertyName = "Nombre";

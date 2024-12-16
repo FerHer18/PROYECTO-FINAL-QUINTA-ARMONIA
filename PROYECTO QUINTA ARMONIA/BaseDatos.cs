@@ -546,12 +546,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             catch (Exception ex)
             {
                 MessageBox.Show("Error al actualizar el monto: " + ex.Message);
-
-                // Desconecta la conexión en caso de error
-                if (this.connection.State == System.Data.ConnectionState.Open)
-                {
-                    this.connection.Close();
-                }
+                this.Disconnect();
             }
         }
 
@@ -655,6 +650,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             catch (Exception ex)
             {
                 throw new Exception("Error al obtener datos: " + ex.Message);
+                this.Disconnect();
             }
 
             return datos;
