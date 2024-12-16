@@ -27,7 +27,7 @@ namespace PROYECTO_QUINTA_ARMONIA
 
         private void PresentacionSistema_Load(object sender, EventArgs e)
         {
-            
+            ClaseMusica.Play();
         }
 
         private void textBoxusuario_TextChanged(object sender, EventArgs e)

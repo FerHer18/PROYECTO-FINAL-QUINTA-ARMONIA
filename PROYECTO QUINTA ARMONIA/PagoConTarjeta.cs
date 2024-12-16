@@ -23,17 +23,14 @@ namespace PROYECTO_QUINTA_ARMONIA
         private string usuario;
         private int idUsuario;
         private InterfaceUsuario inter;
-        // Ejemplo de inicialización del panel en el constructor del formulario
         public PagoConTarjeta(List<Compra> listaCompra,string name, int codigo, InterfaceUsuario inter)
         {
             InitializeComponent();
             lista = listaCompra;
             panelTicket = new Panel();
             panelTicket.Size = new Size(400, 600);
-            panelTicket.Location = new Point(50, 50); // Ajusta la ubicación según sea necesario
+            panelTicket.Location = new Point(50, 50);
             idUsuario = codigo;
-            // Añadir controles al panelTicket
-            // Ejemplo: panelTicket.Controls.Add(new Label { Text = "Ejemplo" });
 
             this.Controls.Add(panelTicket);
             this.usuario = name;

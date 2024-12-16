@@ -54,7 +54,6 @@ namespace PROYECTO_QUINTA_ARMONIA
             pictureBoxQR.Image = qrCodeImage;
         }
 
-
         private void generarTicket()
         {
             int formWidth = 660;
@@ -71,7 +70,7 @@ namespace PROYECTO_QUINTA_ARMONIA
                 g.CopyFromScreen(this.PointToScreen(new Point(x, y)), Point.Empty, new Size(ticketWidth, ticketHeight));
             }
             PdfDocument document = new PdfDocument();
-            document.Info.Title = "Tu ticket será exportado en Formato PDF";
+            document.Info.Title = "Comprobante generado";
 
             PdfPage page = document.AddPage();
             XGraphics gfx = XGraphics.FromPdfPage(page);
@@ -91,7 +90,7 @@ namespace PROYECTO_QUINTA_ARMONIA
             {
                 string filePath = saveFileDialog.FileName;
                 document.Save(filePath);
-                MessageBox.Show($"Tu ticket será guardado en: {filePath}");
+                MessageBox.Show($"Exportando a... {filePath}");
 
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
                 {
